@@ -1,0 +1,14 @@
+{
+  "name": "call-team-ivr-line",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Call Team IVR Hotline Dashboard — visual IVR flows generated from a Google Sheet.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "fetch": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

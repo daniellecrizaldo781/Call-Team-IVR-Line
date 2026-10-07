@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Call Team IVR Hotlines</title>
+<meta name="description" content="Call Team IVR Hotline Dashboard — visual IVR flows for every Oricle hotline.">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="stylesheet" href="styles.css?v=20261007-1">
+</head>
+<body>
+
+<!-- ── Top navigation ─────────────────────────────────────────────────────── -->
+<header class="topnav" id="topnav">
+  <button class="nav-logo" data-page="home" aria-label="Call Team IVR Home">
+    <span class="logo-glyph" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="20" height="20"><rect x="4" y="10" width="3.2" height="10" rx="1" fill="#fff"/><rect x="10.4" y="6" width="3.2" height="14" rx="1" fill="#fff"/><rect x="16.8" y="3" width="3.2" height="17" rx="1" fill="#fff"/></svg>
+    </span>
+    <span class="nav-title">Call Team IVR</span>
+  </button>
+  <nav class="tn-nav" id="tnNav" aria-label="Primary">
+    <button class="tn-item" data-page="home">Dashboard</button>
+    <div class="tn-drop" id="brandDrop">
+      <button class="tn-item tn-drop-trigger" aria-haspopup="true" aria-expanded="false">
+        Hotlines <span class="caret">▾</span>
+      </button>
+      <div class="tn-drop-menu" id="brandMenu" role="menu"></div>
+    </div>
+  </nav>
+  <div class="topnav-right">
+    <button class="tn-icon" id="refreshBtn" title="Refresh data now" aria-label="Refresh data">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M20 12a8 8 0 1 1-2.5-5.8"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M20 3v6h-6"/></svg>
+    </button>
+    <button class="navtoggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ── Status strip ───────────────────────────────────────────────────────── -->
+<div class="statusbar" id="statusbar" role="status">
+  <div class="status-inner">
+    <span id="statusMsg">Loading IVR data…</span>
+    <span class="status-spacer"></span>
+    <span class="status-meta" id="lastUpdated">—</span>
+  </div>
+</div>
+
+<main class="wrap" id="main">
+  <!-- ── HOME / DASHBOARD ─────────────────────────────────────────────────── -->
+  <section class="page" id="pageHome" data-page-view="home">
+    <div class="headrow">
+      <div>
+        <h1>CALL TEAM IVR HOTLINES</h1>
+        <p class="sub">Select a hotline to view its full IVR flow. Data syncs automatically from the Google Sheet every 15 minutes.</p>
+      </div>
+    </div>
+    <div class="brands" id="brandGrid" aria-live="polite"></div>
+  </section>
+
+  <!-- ── BRAND / IVR PAGE ─────────────────────────────────────────────────── -->
+  <section class="page hidden" id="pageBrand" data-page-view="brand">
+    <div class="headrow brand-head">
+      <div>
+        <button class="backbtn" data-page="home" aria-label="Back to dashboard">← Dashboard</button>
+        <h1 id="brandTitle">—</h1>
+        <p class="sub" id="brandSub">Call Team IVR Hotline</p>
+      </div>
+      <div class="head-actions">
+        <button class="toolbtn" id="expandAllBtn" title="Expand all branches">Expand All</button>
+        <button class="toolbtn" id="collapseAllBtn" title="Collapse all branches">Collapse All</button>
+        <button class="toolbtn" id="printBtn" title="Print this IVR flow">Print</button>
+        <button class="toolbtn" id="copyBtn" title="Copy IVR text">Copy IVR</button>
+      </div>
+    </div>
+    <div class="flow-wrap" id="flowWrap">
+      <div class="flow-canvas" id="flowCanvas" role="img" aria-label="IVR flow diagram"></div>
+    </div>
+    <div class="flow-hint" id="flowHint">Drag to pan · Scroll to zoom · Click a branch header to collapse it</div>
+  </section>
+
+  <!-- ── Error / fallback state ───────────────────────────────────────────── -->
+  <section class="page hidden" id="pageError" data-page-view="error">
+    <div class="errbox">
+      <h1>We couldn't load the IVR data</h1>
+      <p id="errText">There was a problem getting the latest information from the spreadsheet.</p>
+      <p id="errFallback" class="muted">Showing the last successfully-synced data, if available.</p>
+      <div class="err-actions">
+        <button class="toolbtn" id="errRetry">Try again</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>Call Team IVR Hotline Dashboard</span>
+  <span>Powered by Oricle · Data source: Google Sheets</span>
+</footer>
+
+<!-- 🔒 NO Google credentials live in this code. The sheet is read securely
+     server-side in GitHub Actions and baked into data.json. -->
+
+<script src="js/app.js?v=20261007-1"></script>
+<script src="js/flow.js?v=20261007-1"></script>
+</body>
+</html>
