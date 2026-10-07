@@ -114,16 +114,14 @@ function showHome() {
     return;
   }
   grid.innerHTML = brands.map(b => {
-    const full = App.data.full.find(f => f.slug === b.slug) || b;
-    const preview = (full.nodes && full.nodes[0] && full.nodes[0].title) ? " · " + escapeHtml(full.nodes[0].title) : "";
-    return `
-      <button class="brand-card" data-slug="${escapeHtml(b.slug)}" aria-label="Open ${escapeHtml(b.brand)} IVR flow">
-        <div class="bc-type">Hotline</div>
-        <h3>${escapeHtml(b.brand)}</h3>
-        <div class="bc-meta">${b.nodeCount} IVR nodes · ${b.edgeCount} connections${preview}</div>
-        <span class="go">View IVR flow →</span>
-      </button>`;
-  }).join("");
+      const full = App.data.full.find(f => f.slug === b.slug) || b;
+      return `
+        <button class="brand-card" data-slug="${escapeHtml(b.slug)}" aria-label="Open ${escapeHtml(b.brand)} IVR flow">
+          <div class="bc-type">Hotline</div>
+          <h3>${escapeHtml(b.brand)}</h3>
+          <span class="go">View IVR flow →</span>
+        </button>`;
+        }).join("");
   grid.querySelectorAll(".brand-card").forEach(card => {
     card.addEventListener("click", () => openBrand(card.dataset.slug));
   });

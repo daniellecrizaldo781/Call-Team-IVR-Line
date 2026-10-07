@@ -1,229 +1,249 @@
-/* ── flow.js — IVR flow diagram renderer (geometric, sheet-faithful) ─────── */
+/* ── flow.js — IVR flow diagram renderer (clean top-down tree) ───────────── */
 "use strict";
-
-const X_UNIT = 92;        // px per spreadsheet column
-const VGAP = 26;          // vertical gap between rows
-const HPAD = 26;          // left/top padding
-const MIN_H = 74;         // min row height baseline
 
 let collapsedSet = new Set(); // node ids whose subtree is collapsed
 
-const TYPE_LABEL = {
-  greeting: "Greeting",
-  menu: "Menu",
-  option: "Option",
-  transfer: "Transfer",
-  endpoint: "Endpoint",
-  fallback: "Fallback",
-  info: "Info",
-  repeat: "Repeat",
-  service: "Agent",
-  message: "Message",
+const TYPE_ICON = {
+  greeting: "🎙️", menu: "☰", option: "🔢", transfer: "👤",
+  endpoint: "✉️", fallback: "⚠️", info: "ℹ️", repeat: "🔁",
+  service: "🎧", message: "🔊",
 };
 
 function escapeHtml(s) {
   return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
 
-function nodeHeight(node) {
-  const lines = (node.body || node.title || "").split("\n").length;
-  const base = node.options && node.options.length ? 30 : 16;
-  const body = Math.max(node.options && node.options.length ? 92 : 74, 44 + lines * 16);
-  return body + 34;
+// ── build a tree from the graph, starting at the main root ─────────────────
+// The sheet is a forest; we render the largest coherent flow (the one rooted at
+// "Call Comes In"). Children are ordered by their sheet column (left→right).
+function buildTree(brand) {
+  const byId = new Map(brand.nodes.map(n => [n.id, n]));
+  const children = new Map();
+  for (const e of brand.edges) {
+    if (!children.has(e.from)) children.set(e.from, []);
+    children.get(e.from).push(e.to);
+  }
+  // pick the root with the most descendants (the main flow)
+  const memo = new Map();
+  function size(id) {
+    if (memo.has(id)) return memo.get(id);
+    let s = 1;
+    for (const c of children.get(id) || []) s += size(c);
+    memo.set(id, s);
+    return s;
+  }
+  let root = null, best = -1;
+  for (const r of brand.roots) {
+    const s = size(r);
+    if (s > best) { best = s; root = r; }
+  }
+  if (!root && brand.nodes.length) root = brand.nodes[0].id;
+
+  // order children by column
+  const orderedChildren = id => (children.get(id) || []).slice()
+    .sort((a, b) => (byId.get(a)?.col ?? 0) - (byId.get(b)?.col ?? 0));
+
+  return { byId, children, orderedChildren, root };
 }
 
+// ── layout: tidy top-down tree (Reingold–Tilford style) ────────────────────
+// Each node gets (x, y). Leaves are spaced horizontally; parents center over
+// their children. y = depth * rowHeight.
+function layoutTree(tree, brand) {
+  const { byId, orderedChildren } = tree;
+  const NODE_W = 250, NODE_H = 96, H_GAP = 34, V_GAP = 46, PAD = 30;
+  const pos = new Map(); // id -> {x, y, w, h}
+  const depth = new Map();
+
+  // compute subtree leaf count for horizontal spacing
+  const leafCount = new Map();
+  function leaves(id) {
+    const ch = orderedChildren(id);
+    if (!ch.length) { leafCount.set(id, 1); return 1; }
+    let s = 0;
+    for (const c of ch) s += leaves(c);
+    leafCount.set(id, s);
+    return s;
+  }
+  leaves(tree.root);
+
+  // assign x via a cursor that walks leaves left→right
+  let cursor = 0;
+  function assignX(id) {
+    const ch = orderedChildren(id);
+    if (!ch.length) {
+      pos.set(id, { x: cursor, y: 0, w: NODE_W, h: NODE_H });
+      cursor += NODE_W + H_GAP;
+      return;
+    }
+    for (const c of ch) assignX(c);
+    // parent centered over children
+    const xs = ch.map(c => pos.get(c).x);
+    const minX = Math.min(...xs), maxX = Math.max(...xs);
+    pos.set(id, { x: (minX + maxX) / 2, y: 0, w: NODE_W, h: NODE_H });
+  }
+  assignX(tree.root);
+
+  // assign y by depth (BFS)
+  const q = [tree.root];
+  depth.set(tree.root, 0);
+  while (q.length) {
+    const id = q.shift();
+    const d = depth.get(id);
+    for (const c of orderedChildren(id)) {
+      depth.set(c, d + 1);
+      q.push(c);
+    }
+  }
+  for (const [id, p] of pos) {
+    p.y = depth.get(id) * (NODE_H + V_GAP);
+  }
+  // normalize x to >= PAD
+  let minX = Infinity;
+  for (const p of pos.values()) minX = Math.min(minX, p.x);
+  for (const p of pos.values()) p.x += PAD - minX;
+
+  return { pos, NODE_W, NODE_H, H_GAP, V_GAP, PAD };
+}
+
+// ── render ──────────────────────────────────────────────────────────────────
 function renderFlow(brand) {
   const canvas = document.getElementById("flowCanvas");
-  const wrap = document.getElementById("flowWrap");
-  const collapsedRoots = collapsedSet;
+  const tree = buildTree(brand);
+  const { pos, NODE_W, NODE_H, V_GAP, PAD } = layoutTree(tree, brand);
+  const { byId, orderedChildren } = tree;
 
-  // ── compute geometry ──────────────────────────────────────────────────────
-  const byRow = new Map();
-  for (const n of brand.nodes) {
-    if (!byRow.has(n.row)) byRow.set(n.row, []);
-    byRow.get(n.row).push(n);
+  // compute canvas size
+  let maxX = PAD, maxY = PAD;
+  for (const p of pos.values()) {
+    maxX = Math.max(maxX, p.x + NODE_W);
+    maxY = Math.max(maxY, p.y + NODE_H);
   }
-  const rows = [...byRow.keys()].sort((a, b) => a - b);
-
-  // cumulative Y per row
-  const yPos = new Map();
-  let y = HPAD;
-  let maxX = HPAD;
-  for (const r of rows) {
-    let rh = MIN_H;
-    for (const n of byRow.get(r)) {
-      if (!collapsedRoots.has(n.id)) {
-        rh = Math.max(rh, nodeHeight(n));
-        maxX = Math.max(maxX, HPAD + (n.col + n.colSpan) * X_UNIT);
-      }
-    }
-    yPos.set(r, y);
-    y += rh + VGAP;
-  }
-  const totalH = y + HPAD;
+  maxX += PAD; maxY += PAD;
 
   const inner = document.createElement("div");
   inner.className = "flow-inner";
-  const svgNs = "http://www.w3.org/2000/svg";
+  inner.style.width = maxX + "px";
+  inner.style.height = maxY + "px";
 
-  // ── SVG connectors layer ──────────────────────────────────────────────────
+  // SVG connectors
+  const svgNs = "http://www.w3.org/2000/svg";
   const svg = document.createElementNS(svgNs, "svg");
   svg.setAttribute("class", "flow-svg");
   svg.setAttribute("width", maxX);
-  svg.setAttribute("height", totalH);
-  const posOf = id => (nodePosCache.get(id) || null);
-  const drawConnector = (fromX, fromY, toX, toY, hot) => {
-    const path = document.createElementNS(svgNs, "path");
-    const midY = (fromY + toY) / 2;
-    const d = `M ${fromX} ${fromY} C ${fromX} ${midY}, ${toX} ${midY}, ${toX} ${toY}`;
-    path.setAttribute("d", d);
-    if (hot) path.setAttribute("class", "hot");
-    svg.appendChild(path);
-  };
+  svg.setAttribute("height", maxY);
+  svg.style.zIndex = "0";
   inner.appendChild(svg);
 
-  // ── node layer (capture positions while building) ─────────────────────────
-  const nodeEls = new Map();
-  const nodePosCache = new Map(); // id -> {x, y, w, h}
+  // place nodes
+  const placed = new Set();
+  const place = (id) => {
+    if (placed.has(id)) return;
+    placed.add(id);
+    const n = byId.get(id);
+    const p = pos.get(id);
+    if (!n || !p) return;
+    const collapsed = collapsedSet.has(id) && orderedChildren(id).length > 0;
+    const hasKids = orderedChildren(id).length > 0 && !collapsed;
 
-  for (const r of rows) {
-    const rowNodes = byRow.get(r).slice().sort((a, b) => a.col - b.col);
-    for (const n of rowNodes) {
-      const w = Math.max(n.colSpan * X_UNIT - 10, 150);
-      const x = HPAD + n.col * X_UNIT;
-      const yp = yPos.get(r);
-      const hp = nodeHeight(n);
-      nodePosCache.set(n.id, { x, y: yp, w, h: hp });
-    }
-  }
-
-  const placeNode = (n) => {
-    const p = nodePosCache.get(n.id);
-    if (!p) return;
     const el = document.createElement("div");
     el.className = `ivr-node t-${n.type || "message"}`;
     el.style.left = p.x + "px";
     el.style.top = p.y + "px";
-    el.style.width = p.w + "px";
-    el.style.height = p.h + "px";
-    const collapsed = collapsedRoots.has(n.id) && (brand.edges.some(e => e.from === n.id));
-    const hasKids = brand.edges.some(e => e.from === n.id) && !collapsedRoots.has(n.id);
+    el.style.width = NODE_W + "px";
+    el.style.zIndex = "1";
 
-    let head = `<div class="nd-head">${TYPE_LABEL[n.type] || "Step"}${hasKids ? `<button class="nd-toggle" data-t="${escapeHtml(n.id)}" title="Collapse branch" aria-label="Collapse branch">−</button>` : ""}</div>`;
-    if (collapsed) {
-      head = `<div class="nd-head">${TYPE_LABEL[n.type] || "Step"}<button class="nd-toggle" data-t="${escapeHtml(n.id)}" title="Expand branch" aria-label="Expand branch">+</button></div>`;
-    }
+    const toggle = hasKids
+      ? `<button class="nd-toggle" data-t="${escapeHtml(id)}" title="Collapse branch" aria-label="Collapse branch">−</button>`
+      : (collapsed ? `<button class="nd-toggle" data-t="${escapeHtml(id)}" title="Expand branch" aria-label="Expand branch">+</button>` : "");
+    const icon = TYPE_ICON[n.type] || "•";
     const opts = (n.options && n.options.length)
       ? `<div class="nd-opt">${n.options.map(o => `<span class="opt-chip">${escapeHtml(o.key)} · ${escapeHtml(o.label)}</span>`).join("")}</div>` : "";
     let body = escapeHtml(n.body || n.title || "");
-    body = body.length > 900 ? body.slice(0, 900) + "…" : body;
-    el.innerHTML = head + `<div class="nd-body">${body}</div>` + opts;
-    canvas.appendChild(el);
-    nodeEls.set(n.id, el);
+    body = body.length > 700 ? body.slice(0, 700) + "…" : body;
 
-    // collapse toggle
+    el.innerHTML =
+      `<div class="nd-head"><span class="nd-icon">${icon}</span><span class="nd-title">${escapeHtml(n.title)}</span>${toggle}</div>` +
+      `<div class="nd-body">${body}</div>` + opts;
+    inner.appendChild(el);
+
     const tgl = el.querySelector(".nd-toggle");
-    if (tgl) tgl.addEventListener("click", (e) => {
-      e.stopPropagation();
-      toggleBranch(n.id);
-    });
+    if (tgl) tgl.addEventListener("click", (e) => { e.stopPropagation(); toggleBranch(id); });
   };
 
-  inner.appendChild(svg);
+  // BFS place (respect collapse)
+  const q = [tree.root];
+  while (q.length) {
+    const id = q.shift();
+    place(id);
+    if (collapsedSet.has(id)) continue;
+    for (const c of orderedChildren(id)) q.push(c);
+  }
+
+  // draw connectors between placed parents & children
+  const draw = (fromId, toId) => {
+    const pf = pos.get(fromId), cf = pos.get(toId);
+    if (!pf || !cf) return;
+    const path = document.createElementNS(svgNs, "path");
+    const x1 = pf.x + NODE_W / 2, y1 = pf.y + NODE_H;
+    const x2 = cf.x + NODE_W / 2, y2 = cf.y;
+    const midY = (y1 + y2) / 2;
+    path.setAttribute("d", `M ${x1} ${y1} C ${x1} ${midY}, ${x2} ${midY}, ${x2} ${y2}`);
+    svg.appendChild(path);
+  };
+  for (const e of brand.edges) {
+    if (placed.has(e.from) && placed.has(e.to)) draw(e.from, e.to);
+  }
+
   canvas.innerHTML = "";
   canvas.appendChild(inner);
-
-  // build nodes (but skip rendering children of a collapsed root)
-  const renderedIds = new Set();
-  const buildNodeTree = (id) => {
-    if (renderedIds.has(id)) return;
-    renderedIds.add(id);
-    const n = brand.nodes.find(x => x.id === id);
-    if (!n) return;
-    placeNode(n);
-    // children
-    const kids = brand.edges.filter(e => e.from === id).map(e => e.to);
-    for (const k of kids) {
-      if (collapsedRoots.has(id)) {
-        markHidden(k); // subtree hidden
-      } else {
-        buildNodeTree(k);
-      }
-    }
-  };
-  const markHidden = (id) => {
-    if (renderedIds.has(id)) return;
-    renderedIds.add(id);
-    const kids = brand.edges.filter(e => e.from === id).map(e => e.to);
-    kids.forEach(markHidden);
-  };
-
-  // render all roots (the sheet may have several)
-  const rootIds = [...brand.roots];
-  const seenIds = new Set();
-  const allNodesId = new Map(brand.nodes.map(n => [n.id, n]));
-  for (const rid of rootIds) buildNodeTree(rid);
-  for (const n of brand.nodes) buildNodeTree(n.id); // stragglers
-
-  // ── draw connectors between rendered parents & children ───────────────────
-  for (const e of brand.edges) {
-    const pf = posOf(e.from);
-    const cf = posOf(e.to);
-    if (!pf || !cf) continue;
-    drawConnector(pf.x + pf.w / 2, pf.y + pf.h, cf.x + cf.w / 2, cf.y, false);
-  }
-  // position svg behind nodes (append after is fine visually; set z-index)
-  svg.style.zIndex = "0";
-  inner.querySelectorAll(".ivr-node").forEach(el => el.style.zIndex = "1");
-
-  // dim hidden (collapsed) descendants
-  markHiddenAll();
-  function markHiddenAll() {
-    // children of collapsed nodes are not placed -> nothing to dim
-  }
-
-  // ── sizing / zoom-fit ─────────────────────────────────────────────────────
-  inner.style.width = maxX + "px";
-  inner.style.height = totalH + "px";
-  fitView(maxX, totalH);
+  fitView(maxX, maxY);
 }
 
-/* collapse one branch: hide the child subtree of `id` */
+/* ── collapse / expand ───────────────────────────────────────────────────── */
 function toggleBranch(id) {
   if (collapsedSet.has(id)) collapsedSet.delete(id);
   else collapsedSet.add(id);
-  if (App.currentBrand) {
-    const brand = App.data.full.find(b => b.slug === App.currentBrand);
-    if (brand) renderFlow(brand);
-  }
+  rerender();
 }
 function setAllBranches(collapse) {
   if (!App.currentBrand) return;
   const brand = App.data.full.find(b => b.slug === App.currentBrand);
   if (!brand) return;
   if (collapse) {
-    // collapse every node that has children except roots
-    const childIds = new Set(brand.edges.map(e => e.from));
-    brand.nodes.forEach(n => { if (childIds.has(n.id) && !brand.roots.includes(n.id)) collapsedSet.add(n.id); });
+    const tree = buildTree(brand);
+    const { orderedChildren } = tree;
+    const q = [tree.root];
+    while (q.length) {
+      const id = q.shift();
+      if (orderedChildren(id).length) collapsedSet.add(id);
+      for (const c of orderedChildren(id)) q.push(c);
+    }
   } else {
     collapsedSet.clear();
   }
-  renderFlow(brand);
+  rerender();
+}
+function rerender() {
+  if (!App.currentBrand) return;
+  const brand = App.data.full.find(b => b.slug === App.currentBrand);
+  if (brand) renderFlow(brand);
 }
 
-/* ── pan / zoom (wheel + pointer-drag) ────────────────────────────────────── */
+/* ── pan / zoom ───────────────────────────────────────────────────────────── */
 let scale = 1;
 function fitView(w, h) {
   const cv = document.getElementById("flowCanvas");
   const rect = cv.getBoundingClientRect();
   const s = Math.min(1, (rect.width - 20) / Math.max(w, 400));
-  scale = Math.max(0.35, s);
+  scale = Math.max(0.3, s);
   applyTransform();
 }
 function applyTransform() {
   const inner = document.querySelector(".flow-inner");
   if (!inner) return;
   inner.style.transform = `scale(${scale})`;
+  inner.style.transformOrigin = "0 0";
 }
 function initFlowControls() {
   const canvas = document.getElementById("flowCanvas");
@@ -233,7 +253,7 @@ function initFlowControls() {
     applyTransform();
   }, { passive: false });
 
-  let dragging = false, startX = 0, startY = 0, stLeft = 0;
+  let dragging = false, startX = 0, startY = 0, stLeft = 0, stTop = 0;
   canvas.addEventListener("mousedown", (e) => {
     if (e.target.closest(".ivr-node, .nd-toggle, button")) return;
     dragging = true;
@@ -250,7 +270,6 @@ function initFlowControls() {
     dragging = false;
     canvas.classList.remove("dragging");
   });
-  // touch pan
   let t0 = null, t0scroll = null;
   canvas.addEventListener("touchstart", (e) => {
     if (e.touches.length !== 1) return;
@@ -266,7 +285,7 @@ function initFlowControls() {
   canvas.addEventListener("touchend", () => { t0 = null; });
 }
 
-/* ── print ────────────────────────────────────────────────────────────────── */
+/* ── print / copy ─────────────────────────────────────────────────────────── */
 function printFlow() {
   if (!App.currentBrand) return;
   const brand = App.data.full.find(b => b.slug === App.currentBrand);
@@ -286,7 +305,6 @@ function printFlow() {
   w.print();
 }
 
-/* ── copy IVR text ────────────────────────────────────────────────────────── */
 function copyFlow() {
   if (!App.currentBrand) return;
   const brand = App.data.full.find(b => b.slug === App.currentBrand);
@@ -309,7 +327,7 @@ function fallbackCopy(text, done) {
 
 document.addEventListener("DOMContentLoaded", initFlowControls);
 
-// expose for app.js (classic scripts share globals; explicit for clarity)
+// expose for app.js
 window.renderFlow = renderFlow;
 window.setAllBranches = setAllBranches;
 window.toggleBranch = toggleBranch;

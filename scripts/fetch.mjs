@@ -50,18 +50,19 @@ export function collectCells(wb) {
 // column spans overlap) is treated as the BODY of that node and merged into it.
 // This handles "Audio Message" label + message text stacked with slight col offset.
 export function buildNodes(cards, arrows) {
-  const arrowRows = new Set(arrows.map(a => a.r));
   const sorted = [...cards].sort((a, b) => a.r - b.r || a.c - b.c);
   const nodes = [];
   const overlaps = (n, card) => !(n.col1 < card.c0 || card.col1 < n.col0);
   const cardSpan = card => card.m ? [card.m.c0, card.m.c1] : [card.c, card.c];
+  // an arrow blocks a vertical merge only if it sits in the SAME column span
+  const arrowInSpan = (row, c0, c1) => arrows.some(a => a.r === row && a.c >= c0 && a.c <= c1);
   for (const card of sorted) {
     const [c0, c1] = cardSpan(card);
     card.c0 = c0; card.c1 = c1;
     // find nearest existing node directly above (max endR) that overlaps and no arrow between
     let target = null;
     for (const n of nodes) {
-      if (n.endR === card.r - 1 && !arrowRows.has(card.r - 1) && overlaps(n, card)) {
+      if (n.endR === card.r - 1 && !arrowInSpan(card.r - 1, c0, c1) && overlaps(n, card)) {
         if (!target || n.endR > target.endR) target = n;
       }
     }

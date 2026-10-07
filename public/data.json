@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-07T09:57:59.185Z",
+  "generatedAt": "2026-10-07T10:23:18.688Z",
   "sourceSheet": "",
   "brandCount": 1,
   "brands": [
     {
       "brand": "Oricle Hearing Aid",
       "slug": "oricle-hearing-aid",
-      "nodeCount": 292,
+      "nodeCount": 226,
       "edgeCount": 223
     }
   ],
@@ -14,78 +14,12 @@
     {
       "brand": "Oricle Hearing Aid",
       "slug": "oricle-hearing-aid",
-      "nodeCount": 292,
+      "nodeCount": 226,
       "edgeCount": 223,
       "roots": [
         "oricle-hearing-aid_r0c12",
         "oricle-hearing-aid_r8c35",
-        "oricle-hearing-aid_r10c0",
-        "oricle-hearing-aid_r13c30",
-        "oricle-hearing-aid_r15c12",
-        "oricle-hearing-aid_r15c31",
-        "oricle-hearing-aid_r15c32",
-        "oricle-hearing-aid_r15c33",
-        "oricle-hearing-aid_r15c35",
-        "oricle-hearing-aid_r18c27",
-        "oricle-hearing-aid_r18c29",
-        "oricle-hearing-aid_r18c65",
-        "oricle-hearing-aid_r19c0",
-        "oricle-hearing-aid_r19c4",
-        "oricle-hearing-aid_r19c8",
-        "oricle-hearing-aid_r20c26",
-        "oricle-hearing-aid_r20c47",
-        "oricle-hearing-aid_r20c66",
-        "oricle-hearing-aid_r20c67",
-        "oricle-hearing-aid_r20c68",
-        "oricle-hearing-aid_r21c35",
-        "oricle-hearing-aid_r21c39",
-        "oricle-hearing-aid_r21c43",
-        "oricle-hearing-aid_r21c47",
-        "oricle-hearing-aid_r23c12",
-        "oricle-hearing-aid_r23c16",
-        "oricle-hearing-aid_r23c20",
-        "oricle-hearing-aid_r23c29",
-        "oricle-hearing-aid_r23c62",
-        "oricle-hearing-aid_r23c64",
-        "oricle-hearing-aid_r24c31",
-        "oricle-hearing-aid_r24c35",
-        "oricle-hearing-aid_r24c39",
-        "oricle-hearing-aid_r24c43",
-        "oricle-hearing-aid_r25c1",
-        "oricle-hearing-aid_r25c5",
-        "oricle-hearing-aid_r25c9",
-        "oricle-hearing-aid_r25c24",
-        "oricle-hearing-aid_r25c61",
-        "oricle-hearing-aid_r26c12",
-        "oricle-hearing-aid_r26c16",
-        "oricle-hearing-aid_r26c20",
-        "oricle-hearing-aid_r27c2",
-        "oricle-hearing-aid_r27c6",
-        "oricle-hearing-aid_r27c10",
-        "oricle-hearing-aid_r28c47",
-        "oricle-hearing-aid_r28c51",
-        "oricle-hearing-aid_r28c55",
-        "oricle-hearing-aid_r28c64",
-        "oricle-hearing-aid_r29c0",
-        "oricle-hearing-aid_r29c4",
-        "oricle-hearing-aid_r29c8",
-        "oricle-hearing-aid_r29c66",
-        "oricle-hearing-aid_r30c36",
-        "oricle-hearing-aid_r30c40",
-        "oricle-hearing-aid_r30c44",
-        "oricle-hearing-aid_r30c59",
-        "oricle-hearing-aid_r31c47",
-        "oricle-hearing-aid_r31c51",
-        "oricle-hearing-aid_r31c55",
-        "oricle-hearing-aid_r34c14",
-        "oricle-hearing-aid_r34c18",
-        "oricle-hearing-aid_r34c22",
-        "oricle-hearing-aid_r34c35",
-        "oricle-hearing-aid_r34c39",
-        "oricle-hearing-aid_r34c43",
-        "oricle-hearing-aid_r36c12",
-        "oricle-hearing-aid_r36c16",
-        "oricle-hearing-aid_r36c20"
+        "oricle-hearing-aid_r15c35"
       ],
       "nodes": [
         {
@@ -219,25 +153,10 @@
         },
         {
           "id": "oricle-hearing-aid_r9c0",
-          "type": "option",
-          "title": "KEY 1 (INQUIRY)",
-          "body": "KEY 1 (INQUIRY)",
-          "row": 9,
-          "col": 0,
-          "colSpan": 28,
-          "options": [
-            {
-              "key": "1",
-              "label": "INQUIRY"
-            }
-          ]
-        },
-        {
-          "id": "oricle-hearing-aid_r10c0",
           "type": "greeting",
-          "title": "Thank you for Calling Oricle Hearing",
-          "body": "Thank you for Calling Oricle Hearing\r\n\r\nTo learn if our hearing aid works for your type of hearing loss, Press 1.\r\n\r\n\r\nTo learn about what’s included in the package, Press 2.\r\n\r\n\r\nTo learn about Bluetooth connectivity, Press 3.\r\n\r\n\r\nFor shipping and store location, Press 4.\r\n\r\n\r\nFor other brand or product questions, press 5",
-          "row": 10,
+          "title": "KEY 1 (INQUIRY)",
+          "body": "KEY 1 (INQUIRY)\n\nThank you for Calling Oricle Hearing\r\n\r\nTo learn if our hearing aid works for your type of hearing loss, Press 1.\r\n\r\n\r\nTo learn about what’s included in the package, Press 2.\r\n\r\n\r\nTo learn about Bluetooth connectivity, Press 3.\r\n\r\n\r\nFor shipping and store location, Press 4.\r\n\r\n\r\nFor other brand or product questions, press 5",
+          "row": 9,
           "col": 0,
           "colSpan": 28,
           "options": [
@@ -322,9 +241,9 @@
         },
         {
           "id": "oricle-hearing-aid_r12c30",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nThank you for calling Oricle Hearing! \r\n\r\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com. \r\n\r\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\r\n\r\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\r\n\r\nThank you for your understanding.",
           "row": 12,
           "col": 30,
           "colSpan": 1,
@@ -431,16 +350,6 @@
           "options": []
         },
         {
-          "id": "oricle-hearing-aid_r13c30",
-          "type": "endpoint",
-          "title": "Thank you for calling Oricle Hearing!",
-          "body": "Thank you for calling Oricle Hearing! \r\n\r\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com. \r\n\r\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\r\n\r\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\r\n\r\nThank you for your understanding.",
-          "row": 13,
-          "col": 30,
-          "colSpan": 1,
-          "options": []
-        },
-        {
           "id": "oricle-hearing-aid_r13c64",
           "type": "option",
           "title": "Key 2 (Audiologist Consultation)",
@@ -517,9 +426,9 @@
         },
         {
           "id": "oricle-hearing-aid_r14c31",
-          "type": "message",
+          "type": "repeat",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nIVR LINE\n\nThank you for calling Oricle Hearing Aid.\r\n\r\nOur hearing aid only works and is only suitable for people with mild to moderate hearing loss and does not help with tinutitis\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
           "row": 14,
           "col": 31,
           "colSpan": 1,
@@ -527,9 +436,9 @@
         },
         {
           "id": "oricle-hearing-aid_r14c32",
-          "type": "message",
+          "type": "info",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nSorry, there are currently no agents available at the moment.\r\n\r\nPlease stay on the line as you wait for an agent to be available.\r\n\r\nThank you for your patience.\n\nThank you for calling Oricle Hearing Aid.\r\n\r\nEach hearing aid package includes the device itself, three additional silicone tips, a charging case, a charging cord, and a cleaning brush.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
           "row": 14,
           "col": 32,
           "colSpan": 1,
@@ -537,9 +446,9 @@
         },
         {
           "id": "oricle-hearing-aid_r14c33",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!\n\nThank you for calling Oricle Hearing Aid.\n\nAt this time, our hearing aids do not have Bluetooth connectivity.\n\nThey are designed to provide clear and reliable sound enhancement without the need for Bluetooth pairing or additional device connections.\n\nTo repeat this message or speak to an agent, please stay on the line.",
           "row": 14,
           "col": 33,
           "colSpan": 1,
@@ -547,24 +456,24 @@
         },
         {
           "id": "oricle-hearing-aid_r14c35",
-          "type": "option",
+          "type": "endpoint",
           "title": "KEY 1 (INQUIRY)",
-          "body": "KEY 1 (INQUIRY)",
+          "body": "KEY 1 (INQUIRY)\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!\n\nThank you for Calling Oricle \r\n\r\n\r\nTo learn where our company is located and where your product is shipped from, Press 1 \r\n\r\n\r\nTo learn about our physical store, Press 2 \r\n\r\n\r\n To learn where our product is made, Press 3",
           "row": 14,
           "col": 35,
           "colSpan": 28,
           "options": [
             {
               "key": "1",
-              "label": "INQUIRY"
+              "label": "To learn about our physical store, Press 2"
             }
           ]
         },
         {
           "id": "oricle-hearing-aid_r15c0",
-          "type": "repeat",
+          "type": "message",
           "title": "Audio Message",
-          "body": "Audio Message\n\nThank you for calling Oricle Hearing Aid.\r\n\r\nOur hearing aid only works and is only suitable for people with mild to moderate hearing loss and does not help with tinutitis\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
+          "body": "Audio Message",
           "row": 15,
           "col": 0,
           "colSpan": 3,
@@ -572,9 +481,9 @@
         },
         {
           "id": "oricle-hearing-aid_r15c4",
-          "type": "repeat",
+          "type": "message",
           "title": "Audio Message",
-          "body": "Audio Message\n\nThank you for calling Oricle Hearing Aid.\r\n\r\nEach hearing aid package includes the device itself, three additional silicone tips, a charging case, a charging cord, and a cleaning brush.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
+          "body": "Audio Message",
           "row": 15,
           "col": 4,
           "colSpan": 3,
@@ -582,28 +491,13 @@
         },
         {
           "id": "oricle-hearing-aid_r15c8",
-          "type": "repeat",
+          "type": "message",
           "title": "Audio Message",
-          "body": "Audio Message\n\nThank you for calling Oricle Hearing Aid.\n\nAt this time, our hearing aids do not have Bluetooth connectivity.\n\nThey are designed to provide clear and reliable sound enhancement without the need for Bluetooth pairing or additional device connections.\n\nTo repeat this message or speak to an agent, please stay on the line.",
+          "body": "Audio Message",
           "row": 15,
           "col": 8,
           "colSpan": 3,
           "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r15c12",
-          "type": "greeting",
-          "title": "IVR LINE",
-          "body": "IVR LINE\n\nThank you for Calling Oricle \r\n\r\n\r\nTo learn where our company is located and where your product is shipped from, Press 1 \r\n\r\n\r\nTo learn about our physical store, Press 2 \r\n\r\n\r\n To learn where our product is made, Press 3",
-          "row": 15,
-          "col": 12,
-          "colSpan": 13,
-          "options": [
-            {
-              "key": "1",
-              "label": "To learn about our physical store, Press 2"
-            }
-          ]
         },
         {
           "id": "oricle-hearing-aid_r15c26",
@@ -632,36 +526,6 @@
           "body": "OHA MASTERS AGENT QUEUE\n200S RINGING TIME",
           "row": 15,
           "col": 29,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r15c31",
-          "type": "info",
-          "title": "Sorry, there are currently no agents available at the moment.",
-          "body": "Sorry, there are currently no agents available at the moment.\r\n\r\nPlease stay on the line as you wait for an agent to be available.\r\n\r\nThank you for your patience.",
-          "row": 15,
-          "col": 31,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r15c32",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 15,
-          "col": 32,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r15c33",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 15,
-          "col": 33,
           "colSpan": 1,
           "options": []
         },
@@ -746,9 +610,9 @@
         },
         {
           "id": "oricle-hearing-aid_r17c27",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!\n\nIf you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 17,
           "col": 27,
           "colSpan": 1,
@@ -756,9 +620,9 @@
         },
         {
           "id": "oricle-hearing-aid_r17c29",
-          "type": "message",
+          "type": "info",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nSorry, there are currently no agents available at the moment.\r\n\r\nPlease stay on the line as you wait for an agent to be available.\r\n\r\nThank you for your patience.\n\nIf you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.",
           "row": 17,
           "col": 29,
           "colSpan": 1,
@@ -776,9 +640,9 @@
         },
         {
           "id": "oricle-hearing-aid_r17c65",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nThank you for calling Oricle Hearing! \r\n\r\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com. \r\n\r\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\r\n\r\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\r\n\r\nThank you for your understanding.\n\nIf you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.\n\nIVR LINE\n\nThank you for calling Oricle Hearing Aid.\r\n\r\nOur hearing aid only works and is only suitable for people with mild to moderate hearing loss and does not help with tinutitis\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
           "row": 17,
           "col": 65,
           "colSpan": 1,
@@ -842,26 +706,6 @@
           "row": 18,
           "col": 8,
           "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r18c27",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 18,
-          "col": 27,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r18c29",
-          "type": "info",
-          "title": "Sorry, there are currently no agents available at the moment.",
-          "body": "Sorry, there are currently no agents available at the moment.\r\n\r\nPlease stay on the line as you wait for an agent to be available.\r\n\r\nThank you for your patience.",
-          "row": 18,
-          "col": 29,
-          "colSpan": 1,
           "options": []
         },
         {
@@ -935,46 +779,6 @@
           "options": []
         },
         {
-          "id": "oricle-hearing-aid_r18c65",
-          "type": "endpoint",
-          "title": "Thank you for calling Oricle Hearing!",
-          "body": "Thank you for calling Oricle Hearing! \r\n\r\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com. \r\n\r\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\r\n\r\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\r\n\r\nThank you for your understanding.",
-          "row": 18,
-          "col": 65,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r19c0",
-          "type": "menu",
-          "title": "If you would like to speak with an agent, please press 1.",
-          "body": "If you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.",
-          "row": 19,
-          "col": 0,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r19c4",
-          "type": "menu",
-          "title": "If you would like to speak with an agent, please press 1.",
-          "body": "If you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.",
-          "row": 19,
-          "col": 4,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r19c8",
-          "type": "menu",
-          "title": "If you would like to speak with an agent, please press 1.",
-          "body": "If you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.",
-          "row": 19,
-          "col": 8,
-          "colSpan": 3,
-          "options": []
-        },
-        {
           "id": "oricle-hearing-aid_r19c26",
           "type": "message",
           "title": "Audio Message",
@@ -996,9 +800,9 @@
         },
         {
           "id": "oricle-hearing-aid_r19c66",
-          "type": "message",
+          "type": "info",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nSorry, there are currently no agents available at the moment.\r\n\r\nPlease stay on the line as you wait for an agent to be available.\r\n\r\nThank you for your patience.\n\nThank you for calling Oricle Hearing Aid.\r\n\r\nEach hearing aid package includes the device itself, three additional silicone tips, a charging case, a charging cord, and a cleaning brush.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
           "row": 19,
           "col": 66,
           "colSpan": 1,
@@ -1006,9 +810,9 @@
         },
         {
           "id": "oricle-hearing-aid_r19c67",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!\n\nThank you for calling Oricle Hearing Aid.\n\nAt this time, our hearing aids do not have Bluetooth connectivity.\n\nThey are designed to provide clear and reliable sound enhancement without the need for Bluetooth pairing or additional device connections.\n\nTo repeat this message or speak to an agent, please stay on the line.",
           "row": 19,
           "col": 67,
           "colSpan": 1,
@@ -1016,13 +820,18 @@
         },
         {
           "id": "oricle-hearing-aid_r19c68",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!\n\nThank you for Calling Oricle \r\n\r\n\r\nTo learn where our company is located and where your product is shipped from, Press 1 \r\n\r\n\r\nTo learn about our physical store, Press 2 \r\n\r\n\r\n To learn where our product is made, Press 3",
           "row": 19,
           "col": 68,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "To learn about our physical store, Press 2"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r20c12",
@@ -1061,16 +870,6 @@
           "body": "NO OR WRONG INPUT",
           "row": 20,
           "col": 24,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r20c26",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 20,
-          "col": 26,
           "colSpan": 1,
           "options": []
         },
@@ -1115,16 +914,6 @@
           "options": []
         },
         {
-          "id": "oricle-hearing-aid_r20c47",
-          "type": "message",
-          "title": "IVR LINE",
-          "body": "IVR LINE",
-          "row": 20,
-          "col": 47,
-          "colSpan": 13,
-          "options": []
-        },
-        {
           "id": "oricle-hearing-aid_r20c61",
           "type": "info",
           "title": "WAITING EXPERIENCE",
@@ -1155,36 +944,6 @@
           "options": []
         },
         {
-          "id": "oricle-hearing-aid_r20c66",
-          "type": "info",
-          "title": "Sorry, there are currently no agents available at the moment.",
-          "body": "Sorry, there are currently no agents available at the moment.\r\n\r\nPlease stay on the line as you wait for an agent to be available.\r\n\r\nThank you for your patience.",
-          "row": 20,
-          "col": 66,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r20c67",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 20,
-          "col": 67,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r20c68",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 20,
-          "col": 68,
-          "colSpan": 1,
-          "options": []
-        },
-        {
           "id": "oricle-hearing-aid_r21c31",
           "type": "transfer",
           "title": "OHA MASTERS AGENT QUEUE",
@@ -1193,51 +952,6 @@
           "col": 31,
           "colSpan": 1,
           "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r21c35",
-          "type": "repeat",
-          "title": "Thank you for calling Oricle Hearing Aid.",
-          "body": "Thank you for calling Oricle Hearing Aid.\r\n\r\nOur hearing aid only works and is only suitable for people with mild to moderate hearing loss and does not help with tinutitis\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 21,
-          "col": 35,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r21c39",
-          "type": "repeat",
-          "title": "Thank you for calling Oricle Hearing Aid.",
-          "body": "Thank you for calling Oricle Hearing Aid.\r\n\r\nEach hearing aid package includes the device itself, three additional silicone tips, a charging case, a charging cord, and a cleaning brush.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 21,
-          "col": 39,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r21c43",
-          "type": "repeat",
-          "title": "Thank you for calling Oricle Hearing Aid.",
-          "body": "Thank you for calling Oricle Hearing Aid.\n\nAt this time, our hearing aids do not have Bluetooth connectivity.\n\nThey are designed to provide clear and reliable sound enhancement without the need for Bluetooth pairing or additional device connections.\n\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 21,
-          "col": 43,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r21c47",
-          "type": "greeting",
-          "title": "Thank you for Calling Oricle",
-          "body": "Thank you for Calling Oricle \r\n\r\n\r\nTo learn where our company is located and where your product is shipped from, Press 1 \r\n\r\n\r\nTo learn about our physical store, Press 2 \r\n\r\n\r\n To learn where our product is made, Press 3",
-          "row": 21,
-          "col": 47,
-          "colSpan": 13,
-          "options": [
-            {
-              "key": "1",
-              "label": "To learn about our physical store, Press 2"
-            }
-          ]
         },
         {
           "id": "oricle-hearing-aid_r22c0",
@@ -1331,9 +1045,9 @@
         },
         {
           "id": "oricle-hearing-aid_r22c12",
-          "type": "message",
+          "type": "repeat",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nThank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
           "row": 22,
           "col": 12,
           "colSpan": 3,
@@ -1341,9 +1055,9 @@
         },
         {
           "id": "oricle-hearing-aid_r22c16",
-          "type": "message",
+          "type": "info",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nThank you for calling Oricle Hearing Aid.\r\n\r\n\r\nWe appreciate your interest in our products and for considering giving them a try.\r\n\r\n\r\nAt this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.\r\n\r\n\r\nIf you’d like assistance with your purchase, please stay on the line to speak with a representative.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
           "row": 22,
           "col": 16,
           "colSpan": 3,
@@ -1351,9 +1065,9 @@
         },
         {
           "id": "oricle-hearing-aid_r22c20",
-          "type": "message",
+          "type": "repeat",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nThank you for calling Oricle Hearing Aid.\r\n\r\n\r\nAs a proud US-based company, all of our products are carefully developed and formulated in the United States to ensure the highest quality standards.\r\n\r\nOur devices are manufactured in China, and all orders are shipped directly from the US to provide reliable and timely delivery.\r\n\r\n\r\n\r\nEach product undergoes strict quality testing to ensure excellent performance, so you can feel confident in choosing Oricle Hearing Aid.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
           "row": 22,
           "col": 20,
           "colSpan": 3,
@@ -1371,9 +1085,9 @@
         },
         {
           "id": "oricle-hearing-aid_r22c29",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 22,
           "col": 29,
           "colSpan": 1,
@@ -1391,9 +1105,9 @@
         },
         {
           "id": "oricle-hearing-aid_r22c62",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!\n\nThis line is busy at the moment, please leave a message for a callback request.\n\nThank you for calling Oricle Hearing Aid.\r\n\r\nOur hearing aid only works and is only suitable for people with mild to moderate hearing loss and does not help with tinutitis\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.\n\nIf you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!\n\nThank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!\n\nThank you for calling Oricle Hearing Aid.\r\n\r\nOur hearing aid only works and is only suitable for people with mild to moderate hearing loss and does not help with tinutitis\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.\n\nIf you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.\n\nThank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
           "row": 22,
           "col": 62,
           "colSpan": 1,
@@ -1401,9 +1115,9 @@
         },
         {
           "id": "oricle-hearing-aid_r22c64",
-          "type": "message",
+          "type": "info",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nSorry, there are currently no agents available at the moment.\r\n\r\nPlease stay on the line as you wait for an agent to be available.\r\n\r\nThank you for your patience.\n\nIf you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.\n\nThank you for calling Oricle Hearing Aid.\r\n\r\nEach hearing aid package includes the device itself, three additional silicone tips, a charging case, a charging cord, and a cleaning brush.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.\n\nIf you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!\n\nThank you for calling Oricle Hearing Aid.\r\n\r\n\r\nWe appreciate your interest in our products and for considering giving them a try.\r\n\r\n\r\nAt this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.\r\n\r\n\r\nIf you’d like assistance with your purchase, please stay on the line to speak with a representative.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!\n\nThank you for calling Oricle Hearing Aid.\r\n\r\nEach hearing aid package includes the device itself, three additional silicone tips, a charging case, a charging cord, and a cleaning brush.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.\n\nIf you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.\n\nThank you for calling Oricle Hearing Aid.\r\n\r\n\r\nWe appreciate your interest in our products and for considering giving them a try.\r\n\r\n\r\nAt this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.\r\n\r\n\r\nIf you’d like assistance with your purchase, please stay on the line to speak with a representative.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
           "row": 22,
           "col": 64,
           "colSpan": 1,
@@ -1416,46 +1130,6 @@
           "body": "OHA SALES AGENT QUEUE\n80S RINGING TIME",
           "row": 22,
           "col": 66,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r23c12",
-          "type": "repeat",
-          "title": "Thank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.",
-          "body": "Thank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 23,
-          "col": 12,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r23c16",
-          "type": "info",
-          "title": "Thank you for calling Oricle Hearing Aid.",
-          "body": "Thank you for calling Oricle Hearing Aid.\r\n\r\n\r\nWe appreciate your interest in our products and for considering giving them a try.\r\n\r\n\r\nAt this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.\r\n\r\n\r\nIf you’d like assistance with your purchase, please stay on the line to speak with a representative.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 23,
-          "col": 16,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r23c20",
-          "type": "repeat",
-          "title": "Thank you for calling Oricle Hearing Aid.",
-          "body": "Thank you for calling Oricle Hearing Aid.\r\n\r\n\r\nAs a proud US-based company, all of our products are carefully developed and formulated in the United States to ensure the highest quality standards.\r\n\r\nOur devices are manufactured in China, and all orders are shipped directly from the US to provide reliable and timely delivery.\r\n\r\n\r\n\r\nEach product undergoes strict quality testing to ensure excellent performance, so you can feel confident in choosing Oricle Hearing Aid.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 23,
-          "col": 20,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r23c29",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 23,
-          "col": 29,
           "colSpan": 1,
           "options": []
         },
@@ -1481,9 +1155,9 @@
         },
         {
           "id": "oricle-hearing-aid_r23c39",
-          "type": "message",
+          "type": "endpoint",
           "title": "IVR LINE",
-          "body": "IVR LINE",
+          "body": "IVR LINE\n\nIf you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.\n\nThank you for calling Oricle Hearing Aid.\n\nAt this time, our hearing aids do not have Bluetooth connectivity.\n\nThey are designed to provide clear and reliable sound enhancement without the need for Bluetooth pairing or additional device connections.\n\nTo repeat this message or speak to an agent, please stay on the line.\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2.\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 23,
           "col": 39,
           "colSpan": 3,
@@ -1491,32 +1165,12 @@
         },
         {
           "id": "oricle-hearing-aid_r23c43",
-          "type": "message",
+          "type": "endpoint",
           "title": "IVR LINE",
-          "body": "IVR LINE",
+          "body": "IVR LINE\n\nIf you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 23,
           "col": 43,
           "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r23c62",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 23,
-          "col": 62,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r23c64",
-          "type": "info",
-          "title": "Sorry, there are currently no agents available at the moment.",
-          "body": "Sorry, there are currently no agents available at the moment.\r\n\r\nPlease stay on the line as you wait for an agent to be available.\r\n\r\nThank you for your patience.",
-          "row": 23,
-          "col": 64,
-          "colSpan": 1,
           "options": []
         },
         {
@@ -1620,50 +1274,10 @@
           "options": []
         },
         {
-          "id": "oricle-hearing-aid_r24c31",
-          "type": "endpoint",
-          "title": "This line is busy at the moment, please leave a message for a callback request.",
-          "body": "This line is busy at the moment, please leave a message for a callback request.",
-          "row": 24,
-          "col": 31,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r24c35",
-          "type": "menu",
-          "title": "If you would like to speak with an agent, please press 1.",
-          "body": "If you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.",
-          "row": 24,
-          "col": 35,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r24c39",
-          "type": "menu",
-          "title": "If you would like to speak with an agent, please press 1.",
-          "body": "If you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.",
-          "row": 24,
-          "col": 39,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r24c43",
-          "type": "menu",
-          "title": "If you would like to speak with an agent, please press 1.",
-          "body": "If you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.",
-          "row": 24,
-          "col": 43,
-          "colSpan": 3,
-          "options": []
-        },
-        {
           "id": "oricle-hearing-aid_r24c61",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 24,
           "col": 61,
           "colSpan": 1,
@@ -1676,36 +1290,6 @@
           "body": "WAITING EXPERIENCE",
           "row": 24,
           "col": 66,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r25c1",
-          "type": "repeat",
-          "title": "Thank you for calling Oricle Hearing Aid.",
-          "body": "Thank you for calling Oricle Hearing Aid.\r\n\r\nOur hearing aid only works and is only suitable for people with mild to moderate hearing loss and does not help with tinutitis\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 25,
-          "col": 1,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r25c5",
-          "type": "repeat",
-          "title": "Thank you for calling Oricle Hearing Aid.",
-          "body": "Thank you for calling Oricle Hearing Aid.\r\n\r\nEach hearing aid package includes the device itself, three additional silicone tips, a charging case, a charging cord, and a cleaning brush.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 25,
-          "col": 5,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r25c9",
-          "type": "repeat",
-          "title": "Thank you for calling Oricle Hearing Aid.",
-          "body": "Thank you for calling Oricle Hearing Aid.\n\nAt this time, our hearing aids do not have Bluetooth connectivity.\n\nThey are designed to provide clear and reliable sound enhancement without the need for Bluetooth pairing or additional device connections.\n\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 25,
-          "col": 9,
           "colSpan": 1,
           "options": []
         },
@@ -1737,16 +1321,6 @@
           "row": 25,
           "col": 20,
           "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r25c24",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 25,
-          "col": 24,
-          "colSpan": 1,
           "options": []
         },
         {
@@ -1786,16 +1360,6 @@
           "body": "NO OR WRONG INPUT",
           "row": 25,
           "col": 59,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r25c61",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 25,
-          "col": 61,
           "colSpan": 1,
           "options": []
         },
@@ -1870,72 +1434,12 @@
           "options": []
         },
         {
-          "id": "oricle-hearing-aid_r26c12",
-          "type": "menu",
-          "title": "If you would like to speak with an agent, please press 1.",
-          "body": "If you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.",
-          "row": 26,
-          "col": 12,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r26c16",
-          "type": "menu",
-          "title": "If you would like to speak with an agent, please press 1.",
-          "body": "If you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.",
-          "row": 26,
-          "col": 16,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r26c20",
-          "type": "menu",
-          "title": "If you would like to speak with an agent, please press 1.",
-          "body": "If you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2.",
-          "row": 26,
-          "col": 20,
-          "colSpan": 3,
-          "options": []
-        },
-        {
           "id": "oricle-hearing-aid_r26c66",
           "type": "transfer",
           "title": "OHA MASTERS AGENT QUEUE",
           "body": "OHA MASTERS AGENT QUEUE\n30S RINGING TIME",
           "row": 26,
           "col": 66,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r27c2",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 27,
-          "col": 2,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r27c6",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 27,
-          "col": 6,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r27c10",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 27,
-          "col": 10,
           "colSpan": 1,
           "options": []
         },
@@ -2051,9 +1555,9 @@
         },
         {
           "id": "oricle-hearing-aid_r27c55",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nThank you for calling Oricle Hearing Aid.\r\n\r\n\r\nAs a proud US-based company, all of our products are carefully developed and formulated in the United States to ensure the highest quality standards.\r\n\r\nOur devices are manufactured in China, and all orders are shipped directly from the US to provide reliable and timely delivery.\r\n\r\n\r\n\r\nEach product undergoes strict quality testing to ensure excellent performance, so you can feel confident in choosing Oricle Hearing Aid.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!\n\nThank you for calling Oricle Hearing Aid.\n\nAt this time, our hearing aids do not have Bluetooth connectivity.\n\nThey are designed to provide clear and reliable sound enhancement without the need for Bluetooth pairing or additional device connections.\n\nTo repeat this message or speak to an agent, please stay on the line.\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2.\n\nThank you for calling Oricle Hearing Aid.\r\n\r\n\r\nAs a proud US-based company, all of our products are carefully developed and formulated in the United States to ensure the highest quality standards.\r\n\r\nOur devices are manufactured in China, and all orders are shipped directly from the US to provide reliable and timely delivery.\r\n\r\n\r\n\r\nEach product undergoes strict quality testing to ensure excellent performance, so you can feel confident in choosing Oricle Hearing Aid.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
           "row": 27,
           "col": 55,
           "colSpan": 3,
@@ -2071,9 +1575,9 @@
         },
         {
           "id": "oricle-hearing-aid_r27c64",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 27,
           "col": 64,
           "colSpan": 1,
@@ -2110,82 +1614,12 @@
           "options": []
         },
         {
-          "id": "oricle-hearing-aid_r28c47",
-          "type": "repeat",
-          "title": "Thank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.",
-          "body": "Thank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 28,
-          "col": 47,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r28c51",
-          "type": "info",
-          "title": "Thank you for calling Oricle Hearing Aid.",
-          "body": "Thank you for calling Oricle Hearing Aid.\r\n\r\n\r\nWe appreciate your interest in our products and for considering giving them a try.\r\n\r\n\r\nAt this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.\r\n\r\n\r\nIf you’d like assistance with your purchase, please stay on the line to speak with a representative.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 28,
-          "col": 51,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r28c55",
-          "type": "repeat",
-          "title": "Thank you for calling Oricle Hearing Aid.",
-          "body": "Thank you for calling Oricle Hearing Aid.\r\n\r\n\r\nAs a proud US-based company, all of our products are carefully developed and formulated in the United States to ensure the highest quality standards.\r\n\r\nOur devices are manufactured in China, and all orders are shipped directly from the US to provide reliable and timely delivery.\r\n\r\n\r\n\r\nEach product undergoes strict quality testing to ensure excellent performance, so you can feel confident in choosing Oricle Hearing Aid.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 28,
-          "col": 55,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r28c64",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 28,
-          "col": 64,
-          "colSpan": 1,
-          "options": []
-        },
-        {
           "id": "oricle-hearing-aid_r28c66",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nThis line is busy at the moment, please leave a message for a callback request.\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 28,
           "col": 66,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r29c0",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 29,
-          "col": 0,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r29c4",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 29,
-          "col": 4,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r29c8",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 29,
-          "col": 8,
           "colSpan": 1,
           "options": []
         },
@@ -2380,46 +1814,6 @@
           "options": []
         },
         {
-          "id": "oricle-hearing-aid_r29c66",
-          "type": "endpoint",
-          "title": "This line is busy at the moment, please leave a message for a callback request.",
-          "body": "This line is busy at the moment, please leave a message for a callback request.",
-          "row": 29,
-          "col": 66,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r30c36",
-          "type": "repeat",
-          "title": "Thank you for calling Oricle Hearing Aid.",
-          "body": "Thank you for calling Oricle Hearing Aid.\r\n\r\nOur hearing aid only works and is only suitable for people with mild to moderate hearing loss and does not help with tinutitis\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 30,
-          "col": 36,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r30c40",
-          "type": "repeat",
-          "title": "Thank you for calling Oricle Hearing Aid.",
-          "body": "Thank you for calling Oricle Hearing Aid.\r\n\r\nEach hearing aid package includes the device itself, three additional silicone tips, a charging case, a charging cord, and a cleaning brush.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 30,
-          "col": 40,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r30c44",
-          "type": "repeat",
-          "title": "Thank you for calling Oricle Hearing Aid.",
-          "body": "Thank you for calling Oricle Hearing Aid.\n\nAt this time, our hearing aids do not have Bluetooth connectivity.\n\nThey are designed to provide clear and reliable sound enhancement without the need for Bluetooth pairing or additional device connections.\n\nTo repeat this message or speak to an agent, please stay on the line.",
-          "row": 30,
-          "col": 44,
-          "colSpan": 1,
-          "options": []
-        },
-        {
           "id": "oricle-hearing-aid_r30c47",
           "type": "message",
           "title": "IVR LINE",
@@ -2450,16 +1844,6 @@
           "options": []
         },
         {
-          "id": "oricle-hearing-aid_r30c59",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 30,
-          "col": 59,
-          "colSpan": 1,
-          "options": []
-        },
-        {
           "id": "oricle-hearing-aid_r31c12",
           "type": "info",
           "title": "WAITING EXPERIENCE",
@@ -2471,9 +1855,9 @@
         },
         {
           "id": "oricle-hearing-aid_r31c13",
-          "type": "repeat",
+          "type": "message",
           "title": "Audio Message",
-          "body": "Audio Message\n\nThank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
+          "body": "Audio Message",
           "row": 31,
           "col": 13,
           "colSpan": 1,
@@ -2501,9 +1885,9 @@
         },
         {
           "id": "oricle-hearing-aid_r31c17",
-          "type": "info",
+          "type": "message",
           "title": "Audio Message",
-          "body": "Audio Message\n\nThank you for calling Oricle Hearing Aid.\r\n\r\n\r\nWe appreciate your interest in our products and for considering giving them a try.\r\n\r\n\r\nAt this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.\r\n\r\n\r\nIf you’d like assistance with your purchase, please stay on the line to speak with a representative.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
+          "body": "Audio Message",
           "row": 31,
           "col": 17,
           "colSpan": 1,
@@ -2531,9 +1915,9 @@
         },
         {
           "id": "oricle-hearing-aid_r31c21",
-          "type": "repeat",
+          "type": "message",
           "title": "Audio Message",
-          "body": "Audio Message\n\nThank you for calling Oricle Hearing Aid.\r\n\r\n\r\nAs a proud US-based company, all of our products are carefully developed and formulated in the United States to ensure the highest quality standards.\r\n\r\nOur devices are manufactured in China, and all orders are shipped directly from the US to provide reliable and timely delivery.\r\n\r\n\r\n\r\nEach product undergoes strict quality testing to ensure excellent performance, so you can feel confident in choosing Oricle Hearing Aid.\r\n\r\nTo repeat this message or speak to an agent, please stay on the line.",
+          "body": "Audio Message",
           "row": 31,
           "col": 21,
           "colSpan": 1,
@@ -2610,36 +1994,6 @@
           "options": []
         },
         {
-          "id": "oricle-hearing-aid_r31c47",
-          "type": "menu",
-          "title": "If you would like to speak with an agent, please press 1.",
-          "body": "If you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.",
-          "row": 31,
-          "col": 47,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r31c51",
-          "type": "menu",
-          "title": "If you would like to speak with an agent, please press 1.",
-          "body": "If you would like to speak with an agent, please press 1.\r\n\r\nIf you would like to repeat this message, please press 2.",
-          "row": 31,
-          "col": 51,
-          "colSpan": 3,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r31c55",
-          "type": "menu",
-          "title": "If you would like to speak with an agent, please press 1.",
-          "body": "If you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2.",
-          "row": 31,
-          "col": 55,
-          "colSpan": 3,
-          "options": []
-        },
-        {
           "id": "oricle-hearing-aid_r33c12",
           "type": "transfer",
           "title": "OHA MASTERS AGENT QUEUE",
@@ -2651,9 +2005,9 @@
         },
         {
           "id": "oricle-hearing-aid_r33c14",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 33,
           "col": 14,
           "colSpan": 1,
@@ -2671,9 +2025,9 @@
         },
         {
           "id": "oricle-hearing-aid_r33c18",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 33,
           "col": 18,
           "colSpan": 1,
@@ -2691,9 +2045,9 @@
         },
         {
           "id": "oricle-hearing-aid_r33c22",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 33,
           "col": 22,
           "colSpan": 1,
@@ -2701,9 +2055,9 @@
         },
         {
           "id": "oricle-hearing-aid_r33c35",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 33,
           "col": 35,
           "colSpan": 1,
@@ -2711,9 +2065,9 @@
         },
         {
           "id": "oricle-hearing-aid_r33c39",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 33,
           "col": 39,
           "colSpan": 1,
@@ -2721,70 +2075,10 @@
         },
         {
           "id": "oricle-hearing-aid_r33c43",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 33,
-          "col": 43,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r34c14",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 34,
-          "col": 14,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r34c18",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 34,
-          "col": 18,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r34c22",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 34,
-          "col": 22,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r34c35",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 34,
-          "col": 35,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r34c39",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 34,
-          "col": 39,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r34c43",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 34,
           "col": 43,
           "colSpan": 1,
           "options": []
@@ -2881,9 +2175,9 @@
         },
         {
           "id": "oricle-hearing-aid_r35c12",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 35,
           "col": 12,
           "colSpan": 1,
@@ -2891,9 +2185,9 @@
         },
         {
           "id": "oricle-hearing-aid_r35c16",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 35,
           "col": 16,
           "colSpan": 1,
@@ -2901,40 +2195,10 @@
         },
         {
           "id": "oricle-hearing-aid_r35c20",
-          "type": "message",
+          "type": "endpoint",
           "title": "Audio Message",
-          "body": "Audio Message",
+          "body": "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 35,
-          "col": 20,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r36c12",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 36,
-          "col": 12,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r36c16",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 36,
-          "col": 16,
-          "colSpan": 1,
-          "options": []
-        },
-        {
-          "id": "oricle-hearing-aid_r36c20",
-          "type": "endpoint",
-          "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "body": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com. Thank you!",
-          "row": 36,
           "col": 20,
           "colSpan": 1,
           "options": []
@@ -3194,27 +2458,27 @@
           "to": "oricle-hearing-aid_r12c33"
         },
         {
-          "from": "oricle-hearing-aid_r10c0",
+          "from": "oricle-hearing-aid_r9c0",
           "to": "oricle-hearing-aid_r13c0"
         },
         {
-          "from": "oricle-hearing-aid_r10c0",
+          "from": "oricle-hearing-aid_r9c0",
           "to": "oricle-hearing-aid_r13c4"
         },
         {
-          "from": "oricle-hearing-aid_r10c0",
+          "from": "oricle-hearing-aid_r9c0",
           "to": "oricle-hearing-aid_r13c8"
         },
         {
-          "from": "oricle-hearing-aid_r10c0",
+          "from": "oricle-hearing-aid_r9c0",
           "to": "oricle-hearing-aid_r13c12"
         },
         {
-          "from": "oricle-hearing-aid_r10c0",
+          "from": "oricle-hearing-aid_r9c0",
           "to": "oricle-hearing-aid_r13c26"
         },
         {
-          "from": "oricle-hearing-aid_r10c0",
+          "from": "oricle-hearing-aid_r9c0",
           "to": "oricle-hearing-aid_r13c27"
         },
         {
@@ -3314,7 +2578,7 @@
           "to": "oricle-hearing-aid_r17c29"
         },
         {
-          "from": "oricle-hearing-aid_r15c31",
+          "from": "oricle-hearing-aid_r12c31",
           "to": "oricle-hearing-aid_r17c31"
         },
         {
@@ -3346,27 +2610,27 @@
           "to": "oricle-hearing-aid_r18c8"
         },
         {
-          "from": "oricle-hearing-aid_r15c35",
+          "from": "oricle-hearing-aid_r14c35",
           "to": "oricle-hearing-aid_r18c35"
         },
         {
-          "from": "oricle-hearing-aid_r15c35",
+          "from": "oricle-hearing-aid_r14c35",
           "to": "oricle-hearing-aid_r18c39"
         },
         {
-          "from": "oricle-hearing-aid_r15c35",
+          "from": "oricle-hearing-aid_r14c35",
           "to": "oricle-hearing-aid_r18c43"
         },
         {
-          "from": "oricle-hearing-aid_r15c35",
+          "from": "oricle-hearing-aid_r14c35",
           "to": "oricle-hearing-aid_r18c47"
         },
         {
-          "from": "oricle-hearing-aid_r15c35",
+          "from": "oricle-hearing-aid_r14c35",
           "to": "oricle-hearing-aid_r18c61"
         },
         {
-          "from": "oricle-hearing-aid_r15c35",
+          "from": "oricle-hearing-aid_r14c35",
           "to": "oricle-hearing-aid_r18c62"
         },
         {
@@ -3394,23 +2658,23 @@
           "to": "oricle-hearing-aid_r19c68"
         },
         {
-          "from": "oricle-hearing-aid_r15c12",
+          "from": "oricle-hearing-aid_r13c12",
           "to": "oricle-hearing-aid_r20c12"
         },
         {
-          "from": "oricle-hearing-aid_r15c12",
+          "from": "oricle-hearing-aid_r13c12",
           "to": "oricle-hearing-aid_r20c16"
         },
         {
-          "from": "oricle-hearing-aid_r15c12",
+          "from": "oricle-hearing-aid_r13c12",
           "to": "oricle-hearing-aid_r20c20"
         },
         {
-          "from": "oricle-hearing-aid_r15c12",
+          "from": "oricle-hearing-aid_r13c12",
           "to": "oricle-hearing-aid_r20c24"
         },
         {
-          "from": "oricle-hearing-aid_r18c29",
+          "from": "oricle-hearing-aid_r15c29",
           "to": "oricle-hearing-aid_r20c29"
         },
         {
@@ -3442,39 +2706,39 @@
           "to": "oricle-hearing-aid_r21c31"
         },
         {
-          "from": "oricle-hearing-aid_r19c0",
+          "from": "oricle-hearing-aid_r18c0",
           "to": "oricle-hearing-aid_r22c0"
         },
         {
-          "from": "oricle-hearing-aid_r19c0",
+          "from": "oricle-hearing-aid_r18c0",
           "to": "oricle-hearing-aid_r22c1"
         },
         {
-          "from": "oricle-hearing-aid_r19c0",
+          "from": "oricle-hearing-aid_r18c0",
           "to": "oricle-hearing-aid_r22c2"
         },
         {
-          "from": "oricle-hearing-aid_r19c4",
+          "from": "oricle-hearing-aid_r18c4",
           "to": "oricle-hearing-aid_r22c4"
         },
         {
-          "from": "oricle-hearing-aid_r19c4",
+          "from": "oricle-hearing-aid_r18c4",
           "to": "oricle-hearing-aid_r22c5"
         },
         {
-          "from": "oricle-hearing-aid_r19c4",
+          "from": "oricle-hearing-aid_r18c4",
           "to": "oricle-hearing-aid_r22c6"
         },
         {
-          "from": "oricle-hearing-aid_r19c8",
+          "from": "oricle-hearing-aid_r18c8",
           "to": "oricle-hearing-aid_r22c8"
         },
         {
-          "from": "oricle-hearing-aid_r19c8",
+          "from": "oricle-hearing-aid_r18c8",
           "to": "oricle-hearing-aid_r22c9"
         },
         {
-          "from": "oricle-hearing-aid_r19c8",
+          "from": "oricle-hearing-aid_r18c8",
           "to": "oricle-hearing-aid_r22c10"
         },
         {
@@ -3510,7 +2774,7 @@
           "to": "oricle-hearing-aid_r22c64"
         },
         {
-          "from": "oricle-hearing-aid_r20c66",
+          "from": "oricle-hearing-aid_r17c66",
           "to": "oricle-hearing-aid_r22c66"
         },
         {
@@ -3518,15 +2782,15 @@
           "to": "oricle-hearing-aid_r23c31"
         },
         {
-          "from": "oricle-hearing-aid_r21c35",
+          "from": "oricle-hearing-aid_r20c35",
           "to": "oricle-hearing-aid_r23c35"
         },
         {
-          "from": "oricle-hearing-aid_r21c39",
+          "from": "oricle-hearing-aid_r20c39",
           "to": "oricle-hearing-aid_r23c39"
         },
         {
-          "from": "oricle-hearing-aid_r21c43",
+          "from": "oricle-hearing-aid_r20c43",
           "to": "oricle-hearing-aid_r23c43"
         },
         {
@@ -3578,35 +2842,35 @@
           "to": "oricle-hearing-aid_r24c66"
         },
         {
-          "from": "oricle-hearing-aid_r23c12",
+          "from": "oricle-hearing-aid_r22c12",
           "to": "oricle-hearing-aid_r25c12"
         },
         {
-          "from": "oricle-hearing-aid_r23c16",
+          "from": "oricle-hearing-aid_r22c16",
           "to": "oricle-hearing-aid_r25c16"
         },
         {
-          "from": "oricle-hearing-aid_r23c20",
+          "from": "oricle-hearing-aid_r22c20",
           "to": "oricle-hearing-aid_r25c20"
         },
         {
-          "from": "oricle-hearing-aid_r21c47",
+          "from": "oricle-hearing-aid_r18c47",
           "to": "oricle-hearing-aid_r25c47"
         },
         {
-          "from": "oricle-hearing-aid_r21c47",
+          "from": "oricle-hearing-aid_r18c47",
           "to": "oricle-hearing-aid_r25c51"
         },
         {
-          "from": "oricle-hearing-aid_r21c47",
+          "from": "oricle-hearing-aid_r18c47",
           "to": "oricle-hearing-aid_r25c55"
         },
         {
-          "from": "oricle-hearing-aid_r21c47",
+          "from": "oricle-hearing-aid_r18c47",
           "to": "oricle-hearing-aid_r25c59"
         },
         {
-          "from": "oricle-hearing-aid_r23c64",
+          "from": "oricle-hearing-aid_r20c64",
           "to": "oricle-hearing-aid_r25c64"
         },
         {
@@ -3638,39 +2902,39 @@
           "to": "oricle-hearing-aid_r26c66"
         },
         {
-          "from": "oricle-hearing-aid_r24c35",
+          "from": "oricle-hearing-aid_r23c35",
           "to": "oricle-hearing-aid_r27c35"
         },
         {
-          "from": "oricle-hearing-aid_r24c35",
+          "from": "oricle-hearing-aid_r23c35",
           "to": "oricle-hearing-aid_r27c36"
         },
         {
-          "from": "oricle-hearing-aid_r24c35",
+          "from": "oricle-hearing-aid_r23c35",
           "to": "oricle-hearing-aid_r27c37"
         },
         {
-          "from": "oricle-hearing-aid_r24c39",
+          "from": "oricle-hearing-aid_r20c39",
           "to": "oricle-hearing-aid_r27c39"
         },
         {
-          "from": "oricle-hearing-aid_r24c39",
+          "from": "oricle-hearing-aid_r20c39",
           "to": "oricle-hearing-aid_r27c40"
         },
         {
-          "from": "oricle-hearing-aid_r24c39",
+          "from": "oricle-hearing-aid_r20c39",
           "to": "oricle-hearing-aid_r27c41"
         },
         {
-          "from": "oricle-hearing-aid_r24c43",
+          "from": "oricle-hearing-aid_r23c43",
           "to": "oricle-hearing-aid_r27c43"
         },
         {
-          "from": "oricle-hearing-aid_r24c43",
+          "from": "oricle-hearing-aid_r23c43",
           "to": "oricle-hearing-aid_r27c44"
         },
         {
-          "from": "oricle-hearing-aid_r24c43",
+          "from": "oricle-hearing-aid_r23c43",
           "to": "oricle-hearing-aid_r27c45"
         },
         {
@@ -3710,39 +2974,39 @@
           "to": "oricle-hearing-aid_r28c66"
         },
         {
-          "from": "oricle-hearing-aid_r26c12",
+          "from": "oricle-hearing-aid_r25c12",
           "to": "oricle-hearing-aid_r29c12"
         },
         {
-          "from": "oricle-hearing-aid_r26c12",
+          "from": "oricle-hearing-aid_r25c12",
           "to": "oricle-hearing-aid_r29c13"
         },
         {
-          "from": "oricle-hearing-aid_r26c12",
+          "from": "oricle-hearing-aid_r25c12",
           "to": "oricle-hearing-aid_r29c14"
         },
         {
-          "from": "oricle-hearing-aid_r26c16",
+          "from": "oricle-hearing-aid_r25c16",
           "to": "oricle-hearing-aid_r29c16"
         },
         {
-          "from": "oricle-hearing-aid_r26c16",
+          "from": "oricle-hearing-aid_r25c16",
           "to": "oricle-hearing-aid_r29c17"
         },
         {
-          "from": "oricle-hearing-aid_r26c16",
+          "from": "oricle-hearing-aid_r25c16",
           "to": "oricle-hearing-aid_r29c18"
         },
         {
-          "from": "oricle-hearing-aid_r26c20",
+          "from": "oricle-hearing-aid_r25c20",
           "to": "oricle-hearing-aid_r29c20"
         },
         {
-          "from": "oricle-hearing-aid_r26c20",
+          "from": "oricle-hearing-aid_r25c20",
           "to": "oricle-hearing-aid_r29c21"
         },
         {
-          "from": "oricle-hearing-aid_r26c20",
+          "from": "oricle-hearing-aid_r25c20",
           "to": "oricle-hearing-aid_r29c22"
         },
         {
@@ -3762,7 +3026,7 @@
           "to": "oricle-hearing-aid_r29c39"
         },
         {
-          "from": "oricle-hearing-aid_r27c40",
+          "from": "oricle-hearing-aid_r23c39",
           "to": "oricle-hearing-aid_r29c40"
         },
         {
@@ -3786,15 +3050,15 @@
           "to": "oricle-hearing-aid_r29c59"
         },
         {
-          "from": "oricle-hearing-aid_r28c47",
+          "from": "oricle-hearing-aid_r27c47",
           "to": "oricle-hearing-aid_r30c47"
         },
         {
-          "from": "oricle-hearing-aid_r28c51",
+          "from": "oricle-hearing-aid_r27c51",
           "to": "oricle-hearing-aid_r30c51"
         },
         {
-          "from": "oricle-hearing-aid_r28c55",
+          "from": "oricle-hearing-aid_r25c55",
           "to": "oricle-hearing-aid_r30c55"
         },
         {
@@ -3894,39 +3158,39 @@
           "to": "oricle-hearing-aid_r33c43"
         },
         {
-          "from": "oricle-hearing-aid_r31c47",
+          "from": "oricle-hearing-aid_r30c47",
           "to": "oricle-hearing-aid_r34c47"
         },
         {
-          "from": "oricle-hearing-aid_r31c47",
+          "from": "oricle-hearing-aid_r30c47",
           "to": "oricle-hearing-aid_r34c48"
         },
         {
-          "from": "oricle-hearing-aid_r31c47",
+          "from": "oricle-hearing-aid_r30c47",
           "to": "oricle-hearing-aid_r34c49"
         },
         {
-          "from": "oricle-hearing-aid_r31c51",
+          "from": "oricle-hearing-aid_r30c51",
           "to": "oricle-hearing-aid_r34c51"
         },
         {
-          "from": "oricle-hearing-aid_r31c51",
+          "from": "oricle-hearing-aid_r30c51",
           "to": "oricle-hearing-aid_r34c52"
         },
         {
-          "from": "oricle-hearing-aid_r31c51",
+          "from": "oricle-hearing-aid_r30c51",
           "to": "oricle-hearing-aid_r34c53"
         },
         {
-          "from": "oricle-hearing-aid_r31c55",
+          "from": "oricle-hearing-aid_r27c55",
           "to": "oricle-hearing-aid_r34c55"
         },
         {
-          "from": "oricle-hearing-aid_r31c55",
+          "from": "oricle-hearing-aid_r27c55",
           "to": "oricle-hearing-aid_r34c56"
         },
         {
-          "from": "oricle-hearing-aid_r31c55",
+          "from": "oricle-hearing-aid_r27c55",
           "to": "oricle-hearing-aid_r34c57"
         },
         {

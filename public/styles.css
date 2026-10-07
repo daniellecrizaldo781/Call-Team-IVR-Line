@@ -169,6 +169,8 @@ h1{margin:0 0 4px;font-size:26px;color:var(--rose-dk);letter-spacing:.2px}
   background:linear-gradient(100deg,#B48C9C,#9E7491);
   text-transform:uppercase;
 }
+.ivr-node .nd-icon{font-size:14px;flex:0 0 auto}
+.ivr-node .nd-title{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .ivr-node .nd-body{padding:9px 14px;font-size:13px;color:var(--ink);white-space:pre-wrap;max-height:150px;overflow:hidden;position:relative}
 .ivr-node .nd-body.more::after{content:"";position:absolute;left:0;right:0;bottom:0;height:26px;background:linear-gradient(transparent,#fff)}
 .ivr-node.collapsed .nd-children{display:none}
