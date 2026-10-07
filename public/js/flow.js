@@ -145,14 +145,21 @@ function renderFlow(brand) {
       ? `<button class="nd-toggle" data-t="${escapeHtml(id)}" title="Collapse branch" aria-label="Collapse branch">−</button>`
       : (collapsed ? `<button class="nd-toggle" data-t="${escapeHtml(id)}" title="Expand branch" aria-label="Expand branch">+</button>` : "");
     const icon = TYPE_ICON[n.type] || "•";
-    const opts = (n.options && n.options.length)
-      ? `<div class="nd-opt">${n.options.map(o => `<span class="opt-chip">${escapeHtml(o.key)} · ${escapeHtml(o.label)}</span>`).join("")}</div>` : "";
-    let body = escapeHtml(n.body || n.title || "");
-    body = body.length > 700 ? body.slice(0, 700) + "…" : body;
+        const opts = (n.options && n.options.length)
+          ? `<div class="nd-opt">${n.options.map(o => `<span class="opt-chip">${escapeHtml(o.key)} · ${escapeHtml(o.label)}</span>`).join("")}</div>` : "";
+        // if the body is just the title (a bare key label like "KEY 1"), show no subtext
+        const bodyText = (n.body || "").trim();
+        const isBareLabel = bodyText === n.title.trim() || /^KEY\s*\d+$/i.test(bodyText) || /^NO OR WRONG INPUT$/i.test(bodyText);
+        let bodyHtml = "";
+        if (!isBareLabel) {
+          let body = escapeHtml(bodyText);
+          body = body.length > 700 ? body.slice(0, 700) + "…" : body;
+          bodyHtml = `<div class="nd-body">${body}</div>`;
+        }
 
-    el.innerHTML =
-      `<div class="nd-head"><span class="nd-icon">${icon}</span><span class="nd-title">${escapeHtml(n.title)}</span>${toggle}</div>` +
-      `<div class="nd-body">${body}</div>` + opts;
+        el.innerHTML =
+          `<div class="nd-head"><span class="nd-icon">${icon}</span><span class="nd-title">${escapeHtml(n.title)}</span>${toggle}</div>` +
+          bodyHtml + opts;
     inner.appendChild(el);
 
     const tgl = el.querySelector(".nd-toggle");
@@ -184,11 +191,15 @@ function renderFlow(brand) {
   canvas.innerHTML = "";
   canvas.appendChild(inner);
   fitView(maxX, maxY);
+  // center the view on the root node via pan translate
   const rp = pos.get(tree.root);
   if (rp) {
     const rect = canvas.getBoundingClientRect();
-    canvas.scrollLeft = Math.max(0, rp.x * scale - rect.width / 2 + NODE_W / 2);
-    canvas.scrollTop = Math.max(0, rp.y * scale - rect.height / 2 + rp.h / 2);
+    const cx = rect.width / 2 - (rp.x + NODE_W / 2) * scale;
+    const cy = rect.height / 2 - (rp.y + rp.h / 2) * scale;
+    inner.dataset.panX = Math.min(0, cx);
+    inner.dataset.panY = Math.min(0, cy);
+    applyTransform();
   }
 }
 
@@ -216,7 +227,9 @@ function fitView(w, h) {
 function applyTransform() {
   const inner = document.querySelector(".flow-inner");
   if (!inner) return;
-  inner.style.transform = `scale(${scale})`;
+  const px = inner.dataset.panX || "0" | 0;
+  const py = inner.dataset.panY || "0" | 0;
+  inner.style.transform = `translate(${px}px, ${py}px) scale(${scale})`;
   inner.style.transformOrigin = "0 0";
 }
 function initFlowControls() {
@@ -227,34 +240,46 @@ function initFlowControls() {
     applyTransform();
   }, { passive: false });
 
-  let dragging = false, startX = 0, startY = 0, stLeft = 0, stTop = 0;
+  let dragging = false, startX = 0, startY = 0, panX = 0, panY = 0, moved = false;
+  let panDX = 0, panDY = 0;
   canvas.addEventListener("mousedown", (e) => {
-    if (e.target.closest(".ivr-node, .nd-toggle, button")) return;
-    dragging = true;
+    // allow dragging from anywhere, except from the collapse toggle button
+    if (e.target.closest(".nd-toggle, button, a")) return;
+    dragging = true; moved = false;
     canvas.classList.add("dragging");
     startX = e.clientX; startY = e.clientY;
-    stLeft = canvas.scrollLeft; stTop = canvas.scrollTop;
+    const inner = canvas.querySelector(".flow-inner");
+    panDX = inner ? inner.dataset.panX || "0" | 0 : 0;
+    panDY = inner ? inner.dataset.panY || "0" | 0 : 0;
   });
   canvas.addEventListener("mousemove", (e) => {
     if (!dragging) return;
-    canvas.scrollLeft = stLeft - (e.clientX - startX);
-    canvas.scrollTop = stTop - (e.clientY - startY);
+    const dx = e.clientX - startX, dy = e.clientY - startY;
+    if (Math.abs(dx) + Math.abs(dy) > 3) moved = true; // it's a drag, not a click
+    panDrag(panDX + dx, panDY + dy);
   });
   window.addEventListener("mouseup", () => {
     dragging = false;
     canvas.classList.remove("dragging");
   });
-  let t0 = null, t0scroll = null;
+  // pan by translating the inner content (smooth up/down/left/right)
+  function panDrag(dx, dy) {
+    const inner = canvas.querySelector(".flow-inner");
+    if (!inner) return;
+    inner.dataset.panX = dx; inner.dataset.panY = dy;
+    inner.style.transform = `translate(${dx}px, ${dy}px) scale(${scale})`;
+  }
+  let t0 = null, t0pan = null;
   canvas.addEventListener("touchstart", (e) => {
     if (e.touches.length !== 1) return;
+    const inner = canvas.querySelector(".flow-inner");
     t0 = { x: e.touches[0].clientX, y: e.touches[0].clientY };
-    t0scroll = { l: canvas.scrollLeft, t: canvas.scrollTop };
+    t0pan = { x: inner ? (inner.dataset.panX || "0" | 0) : 0, y: inner ? (inner.dataset.panY || "0" | 0) : 0 };
   }, { passive: true });
   canvas.addEventListener("touchmove", (e) => {
     if (!t0 || e.touches.length !== 1) return;
     const dx = e.touches[0].clientX - t0.x, dy = e.touches[0].clientY - t0.y;
-    canvas.scrollLeft = t0scroll.l - dx;
-    canvas.scrollTop = t0scroll.t - dy;
+    panDrag(t0pan.x + dx, t0pan.y + dy);
   }, { passive: true });
   canvas.addEventListener("touchend", () => { t0 = null; });
 }

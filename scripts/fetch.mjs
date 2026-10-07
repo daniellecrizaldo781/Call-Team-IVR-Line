@@ -52,7 +52,7 @@ export function collectCells(wb) {
 export function buildNodes(cards, arrows) {
   const sorted = [...cards].sort((a, b) => a.r - b.r || a.c - b.c);
   const nodes = [];
-  const overlaps = (n, card) => !(n.col1 < card.c0 || card.col1 < n.col0);
+  const overlaps = (n, card) => !(n.col1 < card.c0 || card.c1 < n.col0);
   const cardSpan = card => card.m ? [card.m.c0, card.m.c1] : [card.c, card.c];
   // an arrow blocks a vertical merge only if it sits in the SAME column span
   const arrowInSpan = (row, c0, c1) => arrows.some(a => a.r === row && a.c >= c0 && a.c <= c1);
