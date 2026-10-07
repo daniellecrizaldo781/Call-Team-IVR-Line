@@ -213,13 +213,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("navToggle").addEventListener("click", () => toggleNav());
 
   // refresh
-  document.getElementById("refreshBtn").addEventListener("click", () => manualRefresh());
-  document.getElementById("errRetry").addEventListener("click", () => loadData());
-  // tools
-  document.getElementById("expandAllBtn").addEventListener("click", () => setAllBranches(false));
-  document.getElementById("collapseAllBtn").addEventListener("click", () => setAllBranches(true));
-  document.getElementById("printBtn").addEventListener("click", () => printFlow());
-  document.getElementById("copyBtn").addEventListener("click", () => copyFlow());
+    document.getElementById("refreshBtn").addEventListener("click", () => manualRefresh());
+    document.getElementById("errRetry").addEventListener("click", () => loadData());
+    // fullscreen
+    document.getElementById("fullscreenBtn").addEventListener("click", () => toggleFullscreen());
 
   // start
   loadData();

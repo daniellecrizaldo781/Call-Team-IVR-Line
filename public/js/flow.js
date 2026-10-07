@@ -14,8 +14,6 @@ function escapeHtml(s) {
 }
 
 // ── build a tree from the graph, starting at the main root ─────────────────
-// The sheet is a forest; we render the largest coherent flow (the one rooted at
-// "Call Comes In"). Children are ordered by their sheet column (left→right).
 function buildTree(brand) {
   const byId = new Map(brand.nodes.map(n => [n.id, n]));
   const children = new Map();
@@ -23,7 +21,6 @@ function buildTree(brand) {
     if (!children.has(e.from)) children.set(e.from, []);
     children.get(e.from).push(e.to);
   }
-  // pick the root with the most descendants (the main flow)
   const memo = new Map();
   function size(id) {
     if (memo.has(id)) return memo.get(id);
@@ -38,86 +35,78 @@ function buildTree(brand) {
     if (s > best) { best = s; root = r; }
   }
   if (!root && brand.nodes.length) root = brand.nodes[0].id;
-
-  // order children by column
   const orderedChildren = id => (children.get(id) || []).slice()
     .sort((a, b) => (byId.get(a)?.col ?? 0) - (byId.get(b)?.col ?? 0));
-
   return { byId, children, orderedChildren, root };
 }
 
-// ── layout: tidy top-down tree (Reingold–Tilford style) ────────────────────
-// Each node gets (x, y). Leaves are spaced horizontally; parents center over
-// their children. y = depth * rowHeight.
+// ── node height from content ───────────────────────────────────────────────
+function nodeHeight(n) {
+  const body = n.body || n.title || "";
+  const lines = body.split("\n").length;
+  const bodyH = Math.min(170, 40 + lines * 15);
+  const optsH = n.options && n.options.length ? 30 : 0;
+  return 40 + bodyH + optsH; // head + body + options
+}
+
+// ── layout: tidy top-down tree ──────────────────────────────────────────────
 function layoutTree(tree, brand) {
   const { byId, orderedChildren } = tree;
-  const NODE_W = 250, NODE_H = 96, H_GAP = 34, V_GAP = 46, PAD = 30;
+  const NODE_W = 250, H_GAP = 34, V_GAP = 46, PAD = 30;
   const pos = new Map(); // id -> {x, y, w, h}
   const depth = new Map();
 
-  // compute subtree leaf count for horizontal spacing
-  const leafCount = new Map();
-  function leaves(id) {
-    const ch = orderedChildren(id);
-    if (!ch.length) { leafCount.set(id, 1); return 1; }
-    let s = 0;
-    for (const c of ch) s += leaves(c);
-    leafCount.set(id, s);
-    return s;
-  }
-  leaves(tree.root);
-
-  // assign x via a cursor that walks leaves left→right
   let cursor = 0;
   function assignX(id) {
     const ch = orderedChildren(id);
     if (!ch.length) {
-      pos.set(id, { x: cursor, y: 0, w: NODE_W, h: NODE_H });
+      pos.set(id, { x: cursor, y: 0, w: NODE_W, h: nodeHeight(byId.get(id)) });
       cursor += NODE_W + H_GAP;
       return;
     }
     for (const c of ch) assignX(c);
-    // parent centered over children
     const xs = ch.map(c => pos.get(c).x);
     const minX = Math.min(...xs), maxX = Math.max(...xs);
-    pos.set(id, { x: (minX + maxX) / 2, y: 0, w: NODE_W, h: NODE_H });
+    pos.set(id, { x: (minX + maxX) / 2, y: 0, w: NODE_W, h: nodeHeight(byId.get(id)) });
   }
   assignX(tree.root);
 
-  // assign y by depth (BFS)
   const q = [tree.root];
   depth.set(tree.root, 0);
   while (q.length) {
     const id = q.shift();
     const d = depth.get(id);
-    for (const c of orderedChildren(id)) {
-      depth.set(c, d + 1);
-      q.push(c);
-    }
+    for (const c of orderedChildren(id)) { depth.set(c, d + 1); q.push(c); }
   }
-  for (const [id, p] of pos) {
-    p.y = depth.get(id) * (NODE_H + V_GAP);
+  const depthH = new Map();
+  for (const id of pos.keys()) {
+    const d = depth.get(id);
+    depthH.set(d, Math.max(depthH.get(d) || 0, pos.get(id).h));
   }
-  // normalize x to >= PAD
+  const depthY = new Map();
+  let acc = 0;
+  const maxDepth = Math.max(...depth.values());
+  for (let d = 0; d <= maxDepth; d++) { depthY.set(d, acc); acc += (depthH.get(d) || 0) + V_GAP; }
+  for (const [id, p] of pos) { p.y = depthY.get(depth.get(id)); }
+
   let minX = Infinity;
   for (const p of pos.values()) minX = Math.min(minX, p.x);
   for (const p of pos.values()) p.x += PAD - minX;
 
-  return { pos, NODE_W, NODE_H, H_GAP, V_GAP, PAD };
+  return { pos, NODE_W, V_GAP, PAD };
 }
 
 // ── render ──────────────────────────────────────────────────────────────────
 function renderFlow(brand) {
   const canvas = document.getElementById("flowCanvas");
   const tree = buildTree(brand);
-  const { pos, NODE_W, NODE_H, V_GAP, PAD } = layoutTree(tree, brand);
+  const { pos, NODE_W, PAD } = layoutTree(tree, brand);
   const { byId, orderedChildren } = tree;
 
-  // compute canvas size
   let maxX = PAD, maxY = PAD;
   for (const p of pos.values()) {
     maxX = Math.max(maxX, p.x + NODE_W);
-    maxY = Math.max(maxY, p.y + NODE_H);
+    maxY = Math.max(maxY, p.y + p.h);
   }
   maxX += PAD; maxY += PAD;
 
@@ -126,7 +115,6 @@ function renderFlow(brand) {
   inner.style.width = maxX + "px";
   inner.style.height = maxY + "px";
 
-  // SVG connectors
   const svgNs = "http://www.w3.org/2000/svg";
   const svg = document.createElementNS(svgNs, "svg");
   svg.setAttribute("class", "flow-svg");
@@ -135,7 +123,6 @@ function renderFlow(brand) {
   svg.style.zIndex = "0";
   inner.appendChild(svg);
 
-  // place nodes
   const placed = new Set();
   const place = (id) => {
     if (placed.has(id)) return;
@@ -151,6 +138,7 @@ function renderFlow(brand) {
     el.style.left = p.x + "px";
     el.style.top = p.y + "px";
     el.style.width = NODE_W + "px";
+    el.style.height = p.h + "px";
     el.style.zIndex = "1";
 
     const toggle = hasKids
@@ -171,7 +159,6 @@ function renderFlow(brand) {
     if (tgl) tgl.addEventListener("click", (e) => { e.stopPropagation(); toggleBranch(id); });
   };
 
-  // BFS place (respect collapse)
   const q = [tree.root];
   while (q.length) {
     const id = q.shift();
@@ -180,12 +167,11 @@ function renderFlow(brand) {
     for (const c of orderedChildren(id)) q.push(c);
   }
 
-  // draw connectors between placed parents & children
   const draw = (fromId, toId) => {
     const pf = pos.get(fromId), cf = pos.get(toId);
     if (!pf || !cf) return;
     const path = document.createElementNS(svgNs, "path");
-    const x1 = pf.x + NODE_W / 2, y1 = pf.y + NODE_H;
+    const x1 = pf.x + NODE_W / 2, y1 = pf.y + pf.h;
     const x2 = cf.x + NODE_W / 2, y2 = cf.y;
     const midY = (y1 + y2) / 2;
     path.setAttribute("d", `M ${x1} ${y1} C ${x1} ${midY}, ${x2} ${midY}, ${x2} ${y2}`);
@@ -198,30 +184,18 @@ function renderFlow(brand) {
   canvas.innerHTML = "";
   canvas.appendChild(inner);
   fitView(maxX, maxY);
+  const rp = pos.get(tree.root);
+  if (rp) {
+    const rect = canvas.getBoundingClientRect();
+    canvas.scrollLeft = Math.max(0, rp.x * scale - rect.width / 2 + NODE_W / 2);
+    canvas.scrollTop = Math.max(0, rp.y * scale - rect.height / 2 + rp.h / 2);
+  }
 }
 
-/* ── collapse / expand ───────────────────────────────────────────────────── */
+/* ── collapse / expand (per-branch toggle only) ───────────────────────────── */
 function toggleBranch(id) {
   if (collapsedSet.has(id)) collapsedSet.delete(id);
   else collapsedSet.add(id);
-  rerender();
-}
-function setAllBranches(collapse) {
-  if (!App.currentBrand) return;
-  const brand = App.data.full.find(b => b.slug === App.currentBrand);
-  if (!brand) return;
-  if (collapse) {
-    const tree = buildTree(brand);
-    const { orderedChildren } = tree;
-    const q = [tree.root];
-    while (q.length) {
-      const id = q.shift();
-      if (orderedChildren(id).length) collapsedSet.add(id);
-      for (const c of orderedChildren(id)) q.push(c);
-    }
-  } else {
-    collapsedSet.clear();
-  }
   rerender();
 }
 function rerender() {
@@ -230,7 +204,7 @@ function rerender() {
   if (brand) renderFlow(brand);
 }
 
-/* ── pan / zoom ───────────────────────────────────────────────────────────── */
+/* ── pan / zoom / fullscreen ──────────────────────────────────────────────── */
 let scale = 1;
 function fitView(w, h) {
   const cv = document.getElementById("flowCanvas");
@@ -285,51 +259,27 @@ function initFlowControls() {
   canvas.addEventListener("touchend", () => { t0 = null; });
 }
 
-/* ── print / copy ─────────────────────────────────────────────────────────── */
-function printFlow() {
-  if (!App.currentBrand) return;
-  const brand = App.data.full.find(b => b.slug === App.currentBrand);
-  if (!brand) return;
-  const w = window.open("", "_blank");
-  const nodes = brand.nodes.map(n =>
-    `<div style="margin:8px 0;border:1px solid #ddd;border-left:4px solid #E0457B;border-radius:6px;padding:8px 12px">
-       <b>${escapeHtml(n.title)}</b><div style="white-space:pre-wrap;font-size:13px">${escapeHtml(n.body || "")}</div>
-     </div>`).join("");
-  w.document.write(`<!doctype html><html><head><title>${escapeHtml(brand.brand)} — IVR</title><style>body{font-family:sans-serif;color:#333;padding:20px;max-width:760px;margin:auto}</style></head><body>
-    <h1>${escapeHtml(brand.brand)} — Call Team IVR Hotline</h1>
-    <p>Nodes: ${brand.nodeCount} · Connections: ${brand.edgeCount}</p>
-    ${nodes}
-  </body></html>`);
-  w.document.close();
-  w.focus();
-  w.print();
+function toggleFullscreen() {
+  const wrap = document.getElementById("flowWrap");
+  const btn = document.getElementById("fullscreenBtn");
+  if (!document.fullscreenElement) {
+    if (wrap.requestFullscreen) wrap.requestFullscreen();
+    else if (wrap.webkitRequestFullscreen) wrap.webkitRequestFullscreen();
+    if (btn) btn.textContent = "Exit Fullscreen";
+  } else {
+    if (document.exitFullscreen) document.exitFullscreen();
+    else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+    if (btn) btn.textContent = "Fullscreen";
+  }
 }
-
-function copyFlow() {
-  if (!App.currentBrand) return;
-  const brand = App.data.full.find(b => b.slug === App.currentBrand);
-  if (!brand) return;
-  const lines = brand.nodes.map(n =>
-    `• ${n.title}${n.options && n.options.length ? "  [Press " + n.options.map(o => o.key + ": " + o.label).join(" | ") + "]" : ""}\n  ${(n.body || "").replace(/\n/g, "\n  ")}`
-  );
-  const text = `${brand.brand} — Call Team IVR Hotline\n\n${lines.join("\n")}`;
-  const done = () => setStatus("ok", "IVR copied to clipboard.");
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
-  } else fallbackCopy(text, done);
-}
-function fallbackCopy(text, done) {
-  const ta = document.createElement("textarea");
-  ta.value = text; document.body.appendChild(ta);
-  ta.select(); try { document.execCommand("copy"); done(); } catch {}
-  document.body.removeChild(ta);
-}
+document.addEventListener("fullscreenchange", () => {
+  const btn = document.getElementById("fullscreenBtn");
+  if (btn) btn.textContent = document.fullscreenElement ? "Exit Fullscreen" : "Fullscreen";
+});
 
 document.addEventListener("DOMContentLoaded", initFlowControls);
 
 // expose for app.js
 window.renderFlow = renderFlow;
-window.setAllBranches = setAllBranches;
 window.toggleBranch = toggleBranch;
-window.printFlow = printFlow;
-window.copyFlow = copyFlow;
+window.toggleFullscreen = toggleFullscreen;
