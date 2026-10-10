@@ -51,6 +51,7 @@ function extractOptions(node) {
 function buildEdges(nodes, arrows) {
   const colCenter = n => (n.col0 + n.col1) / 2;
   const contains = (n, c) => c >= n.col0 && c <= n.col1;
+  const overlaps = (a, b) => a.col0 <= b.col1 && b.col0 <= a.col1;
   const edges = [];
   for (const ar of arrows) {
     let parent = null, pk = null, cn = null, ck = null;
@@ -65,6 +66,25 @@ function buildEdges(nodes, arrows) {
       }
     }
     if (parent && cn && parent.id !== cn.id) edges.push([parent.id, cn.id]);
+  }
+  // Fill gaps: connect orphaned non-root nodes to nearest column-overlapping ancestor above
+  const edgeSet = new Set(edges.map(e => e.join(">")));
+  const childIds = new Set(edges.map(e => e[1]));
+  for (const n of nodes) {
+    if (childIds.has(n.id)) continue;
+    // Node has no parent — find closest ancestor above with column overlap
+    let best = null;
+    for (const cand of nodes) {
+      if (cand.endR < n.r && overlaps(cand, n) && cand.id !== n.id) {
+        if (best === null || cand.endR > best.endR || (cand.endR === best.endR && Math.abs(colCenter(cand) - colCenter(n)) < Math.abs(colCenter(best) - colCenter(n)))) {
+          best = cand;
+        }
+      }
+    }
+    if (best) {
+      const k = best.id + ">" + n.id;
+      if (!edgeSet.has(k)) { edgeSet.add(k); edges.push([best.id, n.id]); }
+    }
   }
   const seen = new Set();
   return edges.filter(e => { const k = e.join(">"); if (seen.has(k)) return false; seen.add(k); return true; });

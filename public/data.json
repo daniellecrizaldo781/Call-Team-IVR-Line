@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T05:00:19.603Z",
+  "generatedAt": "2026-10-10T05:20:21.080Z",
   "sourceSheet": "",
   "brandCount": 1,
   "brands": [
@@ -7,7 +7,7 @@
       "brand": "Oricle Hearing Aid",
       "slug": "oricle-hearing-aid",
       "nodeCount": 227,
-      "edgeCount": 223
+      "edgeCount": 225
     }
   ],
   "full": [
@@ -15,12 +15,10 @@
       "brand": "Oricle Hearing Aid",
       "slug": "oricle-hearing-aid",
       "nodeCount": 227,
-      "edgeCount": 223,
+      "edgeCount": 225,
       "roots": [
         "oricle-hearing-aid_r1c12",
-        "oricle-hearing-aid_r9c35",
-        "oricle-hearing-aid_r16c12",
-        "oricle-hearing-aid_r21c47"
+        "oricle-hearing-aid_r9c35"
       ],
       "nodes": [
         {
@@ -3642,6 +3640,14 @@
         {
           "from": "oricle-hearing-aid_r39c55",
           "to": "oricle-hearing-aid_r41c55"
+        },
+        {
+          "from": "oricle-hearing-aid_r14c12",
+          "to": "oricle-hearing-aid_r16c12"
+        },
+        {
+          "from": "oricle-hearing-aid_r19c47",
+          "to": "oricle-hearing-aid_r21c47"
         }
       ]
     }
