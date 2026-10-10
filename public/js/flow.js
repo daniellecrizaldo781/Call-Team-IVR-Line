@@ -51,7 +51,7 @@ function nodeHeight(n) {
     return 40 + optsH; // head + options
   }
   const lines = bodyText.split("\n").length;
-  const bodyH = Math.min(170, 40 + lines * 15);
+  const bodyH = Math.min(400, 40 + lines * 15);
   const optsH = n.options && n.options.length ? 30 : 0;
   return 40 + bodyH + optsH; // head + body + options
 }
@@ -160,7 +160,7 @@ function renderFlow(brand) {
         const isBareLabel = !bodyText || bodyText === n.title.trim() || /^KEY\s*\d+$/i.test(bodyText) || /^NO OR WRONG INPUT$/i.test(bodyText);
         let bodyHtml = "";
         if (!isBareLabel) {
-          let body = escapeHtml(bodyText);
+          let body = escapeHtml(bodyText).replace(/[Pp]ress\s+(\d+)/g, '<span class="press-highlight">Press $1</span>');
           bodyHtml = `<div class="nd-body">${body}</div>`;
         }
 
