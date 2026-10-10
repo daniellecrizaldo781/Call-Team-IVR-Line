@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-10T09:51:32.771Z",
+  "generatedAt": "2026-10-10T10:45:56.759Z",
   "sourceSheet": "Canva design (CANVA_DESIGN_DATA secret)",
   "brandCount": 1,
   "brands": [
     {
       "brand": "Oricle Hearing Aid",
       "slug": "oricle-hearing-aid",
-      "nodeCount": 227,
-      "edgeCount": 225
+      "nodeCount": 228,
+      "edgeCount": 226
     }
   ],
   "full": [
     {
       "brand": "Oricle Hearing Aid",
       "slug": "oricle-hearing-aid",
-      "nodeCount": 227,
-      "edgeCount": 225,
+      "nodeCount": 228,
+      "edgeCount": 226,
       "roots": [
         "oricle-hearing-aid_r1c12",
         "oricle-hearing-aid_r9c35"
@@ -27,6 +27,16 @@
           "title": "Call Comes In",
           "body": "Call Comes In",
           "row": 1,
+          "col": 12,
+          "colSpan": 1,
+          "options": []
+        },
+        {
+          "id": "oricle-hearing-aid_r2c12",
+          "type": "message",
+          "title": "ORICLE HEARING AID IVR",
+          "body": "ORICLE HEARING AID IVR",
+          "row": 2,
           "col": 12,
           "colSpan": 1,
           "options": []
@@ -4121,6 +4131,10 @@
         {
           "from": "oricle-hearing-aid_r39c55",
           "to": "oricle-hearing-aid_r41c55"
+        },
+        {
+          "from": "oricle-hearing-aid_r1c12",
+          "to": "oricle-hearing-aid_r2c12"
         },
         {
           "from": "oricle-hearing-aid_r14c12",
