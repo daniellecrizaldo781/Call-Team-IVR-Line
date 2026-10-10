@@ -261,11 +261,10 @@ function resolveCardBody(idx, r, c, title, cardText) {
   }
 
   // ── IVR LINE ──
+  // r16c12 has wrong body text from sheet (KEY 1 INQUIRY body). Return null so
+  // the body card below (r17c12) provides the correct text after buildNodes merge.
   if (t === "ivr line" || t.toLowerCase().includes("ivr line")) {
-    const b = findBlock(idx, "IVR LINE", "US-based");
-    if (b?.body) return b.body;
-    const b2 = findBlock(idx, "IVR LINE", "tinutitis");
-    if (b2?.body) return b2.body;
+    if (r === 16 && c === 12) return null;
     return null;
   }
 
@@ -324,6 +323,12 @@ export function parseCanvaText(rawText) {
     // parser misattributed to KEY 1 / Audio Message / WAITING cards.
     // The correct body for these positions is the "tinutitis" message.
     if (existingBody && existingBody.includes("For subscription cancellation")) {
+      existingBody = null;
+    }
+    // Filter out IVR LINE at r16c12 which has KEY 1 (INQUIRY) body misattributed
+    // by the sheet parser. The correct body comes from the card below (r17c12).
+    const t_lower = title.toLowerCase().trim();
+    if ((t_lower === "ivr line" || t_lower.includes("ivr line")) && r === 16 && c === 12) {
       existingBody = null;
     }
 

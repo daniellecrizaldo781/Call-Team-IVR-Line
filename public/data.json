@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T10:45:56.759Z",
+  "generatedAt": "2026-10-10T11:44:43.076Z",
   "sourceSheet": "Canva design (CANVA_DESIGN_DATA secret)",
   "brandCount": 1,
   "brands": [
@@ -657,30 +657,22 @@
           "id": "oricle-hearing-aid_r16c12",
           "type": "greeting",
           "title": "IVR LINE",
-          "body": "IVR LINE\n\nThank you for Calling Oricle Hearing\n\nTo learn if our hearing aid works for your type of hearing loss, Press 1.\n\nTo learn about what’s included in the package, Press 2.\n\nTo learn about Bluetooth connectivity, Press 3.\n\nFor shipping and store location, Press 4.\n\nFor other brand or product questions, press 5\n\nThank you for Calling Oricle\n\nTo learn where our company is located and where your product is shipped from, Press 1 \n\nTo learn about our physical store, Press 2 \n\n To learn where our product is made, Press 3",
+          "body": "IVR LINE\n\nThank you for Calling Oricle\n\nTo learn where our company is located and where your product is shipped from, Press 1 \n\nTo learn about our physical store, Press 2 \n\n To learn where our product is made, Press 3",
           "row": 16,
           "col": 12,
           "colSpan": 13,
           "options": [
             {
               "key": "1",
-              "label": "To learn if our hearing aid works for your type of hearing loss"
+              "label": "To learn where our company is located and where your product is shipped from"
             },
             {
               "key": "2",
-              "label": "To learn about what’s included in the package"
+              "label": "To learn about our physical store"
             },
             {
               "key": "3",
-              "label": "To learn about Bluetooth connectivity"
-            },
-            {
-              "key": "4",
-              "label": "For shipping and store location"
-            },
-            {
-              "key": "5",
-              "label": "For other brand or product questions"
+              "label": "To learn where our product is made"
             }
           ]
         },
