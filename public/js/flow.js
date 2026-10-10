@@ -42,8 +42,15 @@ function buildTree(brand) {
 
 // ── node height from content ───────────────────────────────────────────────
 function nodeHeight(n) {
-  const body = n.body || n.title || "";
-  const lines = body.split("\n").length;
+  const bodyText = (n.body || "").trim();
+  // If the body is just the title (bare label like "KEY 3") or empty, no body area
+  const isBareLabel = !bodyText || bodyText === (n.title || "").trim() || /^KEY\s*\d+$/i.test(bodyText);
+  if (isBareLabel) {
+    // Just the header + options (if any)
+    const optsH = n.options && n.options.length ? 30 : 0;
+    return 40 + optsH; // head + options
+  }
+  const lines = bodyText.split("\n").length;
   const bodyH = Math.min(170, 40 + lines * 15);
   const optsH = n.options && n.options.length ? 30 : 0;
   return 40 + bodyH + optsH; // head + body + options
@@ -154,7 +161,6 @@ function renderFlow(brand) {
         let bodyHtml = "";
         if (!isBareLabel) {
           let body = escapeHtml(bodyText);
-          body = body.length > 700 ? body.slice(0, 700) + "…" : body;
           bodyHtml = `<div class="nd-body">${body}</div>`;
         }
 
@@ -246,8 +252,10 @@ function initFlowControls() {
   canvas.addEventListener("mousedown", (e) => {
     // allow dragging from anywhere, except from the collapse toggle button
     if (e.target.closest(".nd-toggle, button, a")) return;
+    e.preventDefault(); // prevent text highlighting during drag
     dragging = true; moved = false;
     canvas.classList.add("dragging");
+    canvas.classList.add("no-select");
     startX = e.clientX; startY = e.clientY;
     const inner = canvas.querySelector(".flow-inner");
     panDX = inner ? +(inner.dataset.panX || 0) : 0;
@@ -262,6 +270,7 @@ function initFlowControls() {
   window.addEventListener("mouseup", () => {
     dragging = false;
     canvas.classList.remove("dragging");
+    canvas.classList.remove("no-select");
   });
   // pan by translating the inner content (smooth up/down/left/right)
   function panDrag(dx, dy) {
@@ -284,7 +293,7 @@ function initFlowControls() {
   }, { passive: true });
   canvas.addEventListener("touchend", () => { t0 = null; });
 
-  // Keyboard arrow-key panning (easy drag up/down/left/right without scroll)
+  // Keyboard arrow-key panning (easy drag up down left right without scroll)
   const PAN_STEP = 60;
   function panBy(dx, dy) {
     const inner = canvas.querySelector(".flow-inner");
@@ -303,12 +312,10 @@ function initFlowControls() {
       case "ArrowDown":  e.preventDefault(); panBy(0, -PAN_STEP); break;
       case "ArrowLeft":  e.preventDefault(); panBy(PAN_STEP, 0);  break;
       case "ArrowRight": e.preventDefault(); panBy(-PAN_STEP, 0); break;
-      case " ":        // space = reset pan
-        if (e.target.closest("#flowCanvas")) {
-          e.preventDefault();
-          const inner = canvas.querySelector(".flow-inner");
-          if (inner) { inner.dataset.panX = 0; inner.dataset.panY = 0; applyTransform(); }
-        }
+      case " ":        // space = reset pan to center
+        e.preventDefault();
+        const inner = canvas.querySelector(".flow-inner");
+        if (inner) { inner.dataset.panX = 0; inner.dataset.panY = 0; applyTransform(); }
         break;
     }
   });
