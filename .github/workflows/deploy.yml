@@ -35,8 +35,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch & parse Google Sheet → data.json
+      - name: Fetch & parse source → data.json
         env:
+          CANVA_DESIGN_DATA: ${{ secrets.CANVA_DESIGN_DATA }}
           GOOGLE_SHEETS_ID: ${{ secrets.GOOGLE_SHEETS_ID }}
         run: npm run build
 

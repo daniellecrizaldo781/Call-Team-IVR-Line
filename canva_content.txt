@@ -1,0 +1,531 @@
+CALL COMES IN
+
+ORICLE HEARING AID IVR
+
+BUSINESS HOURS
+
+Monday - Sunday
+
+5AM - 9PM PST
+
+STANDARD IVR
+
+Thank you for calling Oricle Hearing Aids. For quality assurance, this call may be recorded. Please listen carefully to the following options.
+
+To learn about Oricle Hearing and our hearing loss solutions, Press 1
+For product assistance or troubleshooting, Press 2
+For monthly subscription cancellation, Press 3.
+To place an order over the phone, Press 4
+To inquire about an existing order, press 5
+For other questions or concerns, press 6
+To repeat this message, Press 7.
+
+KEY 1 (INQUIRY)
+
+Thank you for Calling Oricle Hearing
+
+To learn if our hearing aid works for your type of hearing loss, Press 1.
+To learn about what's included in the package, Press 2.
+To learn about Bluetooth connectivity, Press 3.
+For shipping and store location, Press 4.
+For other brand or product questions, press 5
+
+KEY 1
+
+Thank you for calling Oricle Hearing Aid.
+Our hearing aid only works and is only suitable for people with mild to moderate hearing loss and does not help with tinutitis
+To repeat this message or speak to an agent, please stay on the line.
+
+AUDIO MESSAGE
+
+If you would like to speak with an agent, please press 1.
+If you would like to repeat this message, please press 2.
+
+STANDARD IVR
+
+WAITING
+EXPERIENCE
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING
+TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+AUDIO MESSAGE
+
+KEY 2
+
+Thank you for calling Oricle Hearing Aid.
+Our hearing aid only works and is only suitable for people with mild to moderate hearing loss and does not help with tinutitis
+To repeat this message or speak to an agent, please stay on the line.
+
+AUDIO MESSAGE
+
+NO INPUT
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING
+TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+AUDIO MESSAGE
+
+KEY 1
+
+KEY 2
+
+"Thank you for calling Oricle Hearing Aid.
+Each hearing aid package includes the device itself, three additional silicone tips, a charging case, a charging cord, and a cleaning brush.
+To repeat this message or speak to an agent, please stay on the line.
+
+AUDIO MESSAGE
+
+If you would like to speak with an agent, please press 1.
+If you would like to repeat this message, please press 2.
+
+STANDARD IVR
+
+WAITING
+EXPERIENCE
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING
+TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+AUDIO MESSAGE
+
+KEY 2
+
+"Thank you for calling Oricle Hearing Aid.
+Each hearing aid package includes the device itself, three additional silicone tips, a charging case, a charging cord, and a cleaning brush.
+To repeat this message or speak to an agent, please stay on the line.
+
+AUDIO MESSAGE
+
+NO INPUT
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING
+TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+AUDIO MESSAGE
+
+KEY 3
+
+Thank you for calling Oricle Hearing Aid.
+At this time, our hearing aids do not have Bluetooth connectivity.
+They are designed to provide clear and reliable sound enhancement without the need for Bluetooth pairing or additional device connections.
+To repeat this message or speak to an agent, please stay on the line.
+
+AUDIO MESSAGE
+
+If you would like to speak with an agent, please press 1.
+If you would like to repeat this message, please press 2.
+
+STANDARD IVR
+
+WAITING
+EXPERIENCE
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING
+TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+KEY 2
+
+Thank you for calling Oricle Hearing Aid.
+At this time, our hearing aids do not have Bluetooth connectivity.
+They are designed to provide clear and reliable sound enhancement without the need for Bluetooth pairing or additional device connections.
+To repeat this message or speak to an agent, please stay on the line.
+
+AUDIO MESSAGE
+
+NO INPUT
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING
+TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+AUDIO MESSAGE
+
+KEY 4
+
+Thank you for Calling Oricle
+
+To learn where our company is located and where your product is shipped from, Press 1
+To learn about our physical store, Press 2
+To learn where our product is made, Press 3
+
+STANDARD IVR
+
+KEY 1
+
+Thank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.
+
+To repeat this message or speak to an agent, please stay on the line.
+
+AUDIO MESSAGE
+
+If you would like to speak with an agent, please press 1.
+If you would like to repeat this message, please press 2.
+
+STANDARD IVR
+
+WAITING
+EXPERIENCE
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING
+TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+KEY 2
+
+Thank you for your interest. We are a US-based
+company located in the United States, and our
+products are shipped from our fulfillment
+centers in Tampa, Florida and California.
+
+To repeat this message or speak to an agent, please stay on the line.
+
+AUDIO MESSAGE
+
+NO INPUT
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING
+TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+AUDIO MESSAGE
+
+KEY 2
+
+"Thank you for calling Oricle Hearing Aid.
+We appreciate your interest in our products and for considering giving them a try.
+At this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.
+If you'd like assistance with your purchase, please stay on the line to speak with a representative.
+To repeat this message or speak to an agent, please stay on the line.
+
+AUDIO MESSAGE
+
+If you would like to speak with an agent, please press 1.
+If you would like to repeat this message, please press 2.
+
+STANDARD IVR
+
+WAITING
+EXPERIENCE
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING
+TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+KEY 2
+
+"Thank you for calling Oricle Hearing Aid.
+We appreciate your interest in our products and for considering giving them a try.
+At this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.
+If you'd like assistance with your purchase, please stay on the line to speak with a representative.
+To repeat this message or speak to an agent, please stay on the line.
+
+AUDIO MESSAGE
+
+NO INPUT
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING
+TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+AUDIO MESSAGE
+
+KEY 2
+
+"Thank you for calling Oricle Hearing Aid.
+We appreciate your interest in our products and for considering giving them a try.
+At this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.
+If you'd like assistance with your purchase, please stay on the line to speak with a representative.
+To repeat this message or speak to an agent, please stay on the line.
+
+STANDARD IVR
+
+If you would like to speak with an agent, please press 1.
+If you would like to repeat this message, please press 2.
+
+WAITING
+EXPERIENCE
+
+KEY 2
+
+AUDIO MESSAGE
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING TIME
+
+"Thank you for calling Oricle Hearing Aid.
+We appreciate your interest in our products and for considering giving them a try.
+At this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.
+If you'd like assistance with your purchase, please stay on the line to speak with a representative.
+To repeat this message or speak to an agent, please stay on the line.
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+NO INPUT
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING TIME
+
+AUDIO MESSAGE
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+AUDIO MESSAGE
+
+KEY 2
+
+"Thank you for calling Oricle Hearing Aid.
+We appreciate your interest in our products and for considering giving them a try.
+At this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.
+If you'd like assistance with your purchase, please stay on the line to speak with a representative.
+To repeat this message or speak to an agent, please stay on the line.
+
+AUDIO MESSAGE
+
+STANDARD IVR
+
+If you would like to speak with an agent, please press 1.
+If you would like to repeat this message, please press 2.
+
+WAITING
+EXPERIENCE
+
+KEY 2
+
+AUDIO MESSAGE
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING TIME
+
+"Thank you for calling Oricle Hearing Aid.
+We appreciate your interest in our products and for considering giving them a try.
+At this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.
+If you'd like assistance with your purchase, please stay on the line to speak with a representative.
+To repeat this message or speak to an agent, please stay on the line.
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+NO INPUT
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING TIME
+
+AUDIO MESSAGE
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+AUDIO MESSAGE
+
+NO INPUT
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING TIME
+
+AUDIO MESSAGE
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+KEY 5
+
+WAITING
+EXPERIENCE
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+KEY 2 (AUDIOLOGIST CONSULTATION)
+
+At Oricle Hearing, we're committed to helping you get the most out of your hearing aids. That's why we're offering you a complimentary one-on-one consultation with one of our hearing specialists at absolutely no cost to you. This personalized service is normally valued at $100.
+Our hearing specialists can assist with product setup, comfort, sound quality, troubleshooting, and any hearing-related questions you may have.
+To schedule your free consultation, please have your order number, email address, and contact information ready. We are now connecting you with an agent to assist you with booking an appointment. Thank you
+
+WAITING
+EXPERIENCE
+
+OHA MASTERS AGENTS QUEUE
+
+200S RINGING TIME
+
+Sorry, there are currently no agents available at the moment.
+Please stay on the line as you wait for an agent to be available.
+Thank you for your patience.
+
+AUDIO MESSAGE
+
+OHA MASTERS AGENTS QUEUE
+
+120S RINGING TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+KEY 3 (SUBSCRIPTION CANCELLATION)
+
+Thank you for calling Oricle Hearing!
+
+For subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.
+All subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.
+Please include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.
+
+Thank you for your understanding.
+
+KEY 4 (SALES)
+
+WAITING
+EXPERIENCE
+
+OHA SALES AGENTS QUEUE
+
+80S RINGING TIME
+
+Sorry, there are currently no agents available at the moment.
+Please stay on the line as you wait for an agent to be available.
+Thank you for your patience.
+
+OHA SALES AGENTS QUEUE
+
+30S RINGING TIME
+
+WAITING
+EXPERIENCE
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+KEY 5 (RETURN)
+
+WAITING
+EXPERIENCE
+
+OHA SALES AGENTS QUEUE
+
+120S RINGING TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+KEY 6 (OTHER CONCERNS)
+
+WAITING
+EXPERIENCE
+
+OHA SALES AGENTS QUEUE
+
+120S RINGING TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+support @ o r i c l e h e a r i n g dot com. Thank you!
+
+KEY 7 (REPEAT ENTIRE IVR)
+
+NO INPUT
+
+OHA MASTERS
+
+AGENTS QUEUE
+
+30S RINGING TIME
+
+Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is
+support @ o r i c l e h e a r i n g dot com. Thank you!

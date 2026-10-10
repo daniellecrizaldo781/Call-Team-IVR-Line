@@ -1,0 +1,4195 @@
+{
+  "nodes": [
+    {
+      "r": 1,
+      "c": 12,
+      "span": 1,
+      "title": "Call Comes In",
+      "texts": [
+        "Call Comes In"
+      ]
+    },
+    {
+      "r": 3,
+      "c": 12,
+      "span": 1,
+      "title": "BUSINESS HOURS",
+      "texts": [
+        "BUSINESS HOURS"
+      ]
+    },
+    {
+      "r": 4,
+      "c": 12,
+      "span": 1,
+      "title": "Monday - Sunday",
+      "texts": [
+        "Monday - Sunday\n5AM - 9PM PST"
+      ]
+    },
+    {
+      "r": 6,
+      "c": 8,
+      "span": 9,
+      "title": "STANDARD IVR",
+      "texts": [
+        "STANDARD IVR"
+      ]
+    },
+    {
+      "r": 7,
+      "c": 8,
+      "span": 9,
+      "title": "Thank you for calling Oricle Hearing Aids. For quality assurance, this call may be recorded. Please listen carefully to the following options.",
+      "texts": [
+        "Thank you for calling Oricle Hearing Aids. For quality assurance, this call may be recorded. Please listen carefully to the following options.\n\nTo learn about Oricle Hearing and our hearing loss solutions, Press 1\n\nFor product assistance or troubleshooting, Press 2\n\nFor monthly subscription cancellation,  Press 3.\n\nTo place an order over the phone, Press 4\n\nTo inquire about an existing order, press 5\n\nFor other questions or concerns, press 6\n\nTo repeat this message, Press 7."
+      ]
+    },
+    {
+      "r": 9,
+      "c": 29,
+      "span": 1,
+      "title": "Key 2 (Audiologist Consultation)",
+      "texts": [
+        "Key 2 (Audiologist Consultation)"
+      ]
+    },
+    {
+      "r": 9,
+      "c": 30,
+      "span": 1,
+      "title": "Key 3 (Subscription Cancellation)",
+      "texts": [
+        "Key 3 (Subscription Cancellation)"
+      ]
+    },
+    {
+      "r": 9,
+      "c": 31,
+      "span": 1,
+      "title": "Key 4 (Sales)",
+      "texts": [
+        "Key 4 (Sales)"
+      ]
+    },
+    {
+      "r": 9,
+      "c": 32,
+      "span": 1,
+      "title": "Key 5 (Return)",
+      "texts": [
+        "Key 5 (Return)"
+      ]
+    },
+    {
+      "r": 9,
+      "c": 33,
+      "span": 1,
+      "title": "Key 6(Other Concerns)",
+      "texts": [
+        "Key 6(Other Concerns)"
+      ]
+    },
+    {
+      "r": 9,
+      "c": 35,
+      "span": 34,
+      "title": "Key 7 (Repeat Message)",
+      "texts": [
+        "Key 7 (Repeat Message)"
+      ]
+    },
+    {
+      "r": 10,
+      "c": 0,
+      "span": 28,
+      "title": "KEY 1 (INQUIRY)",
+      "texts": [
+        "KEY 1 (INQUIRY)"
+      ]
+    },
+    {
+      "r": 11,
+      "c": 0,
+      "span": 28,
+      "title": "Thank you for Calling Oricle Hearing",
+      "texts": [
+        "Thank you for Calling Oricle Hearing\n\nTo learn if our hearing aid works for your type of hearing loss, Press 1.\n\nTo learn about what’s included in the package, Press 2.\n\nTo learn about Bluetooth connectivity, Press 3.\n\nFor shipping and store location, Press 4.\n\nFor other brand or product questions, press 5"
+      ]
+    },
+    {
+      "r": 11,
+      "c": 29,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 11,
+      "c": 30,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 11,
+      "c": 31,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 11,
+      "c": 32,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 11,
+      "c": 33,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 11,
+      "c": 43,
+      "span": 9,
+      "title": "STANDARD IVR",
+      "texts": [
+        "STANDARD IVR"
+      ]
+    },
+    {
+      "r": 12,
+      "c": 29,
+      "span": 1,
+      "title": "At Oricle Hearing, we're committed to helping you get the most out of your hearing aids. That's why we're offering you a complimentary one-on-one consultation with one of our hearing specialists at absolutely no cost to you. This personalized service is normally valued at $100.",
+      "texts": [
+        "At Oricle Hearing, we're committed to helping you get the most out of your hearing aids. That's why we're offering you a complimentary one-on-one consultation with one of our hearing specialists at absolutely no cost to you. This personalized service is normally valued at $100.\n\nOur hearing specialists can assist with product setup, comfort, sound quality, troubleshooting, and any hearing-related questions you may have.\n\nTo schedule your free consultation, please have your order number, email address, and contact information ready. We are now connecting you with an agent to assist you with booking an appointment. Thank you"
+      ]
+    },
+    {
+      "r": 12,
+      "c": 43,
+      "span": 9,
+      "title": "Thank you for calling Oricle Hearing Aids. For quality assurance, this call may be recorded. Please listen carefully to the following options.",
+      "texts": [
+        "Thank you for calling Oricle Hearing Aids. For quality assurance, this call may be recorded. Please listen carefully to the following options.\n\nTo learn about Oricle Hearing and our hearing loss solutions, Press 1\n\nFor product assistance or troubleshooting, Press 2\n\nFor monthly subscription cancellation,  Press 3.\n\nTo place an order over the phone, Press 4\n\nTo inquire about an existing order, press 5\n\nFor other questions or concerns, press 6\n\nTo repeat this message, Press 7."
+      ]
+    },
+    {
+      "r": 13,
+      "c": 30,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 13,
+      "c": 31,
+      "span": 1,
+      "title": "OHA SALES AGENT QUEUE",
+      "texts": [
+        "OHA SALES AGENT QUEUE\n80S RINGING TIME"
+      ]
+    },
+    {
+      "r": 13,
+      "c": 32,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n120S RINGING TIME"
+      ]
+    },
+    {
+      "r": 13,
+      "c": 33,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n120S RINGING TIME"
+      ]
+    },
+    {
+      "r": 14,
+      "c": 0,
+      "span": 3,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1\n\nThank you for calling Oricle Hearing! \n\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.  \n\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\n\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\n\nThank you for your understanding."
+      ]
+    },
+    {
+      "r": 14,
+      "c": 4,
+      "span": 3,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2\n\nThank you for calling Oricle Hearing! \n\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.  \n\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\n\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\n\nThank you for your understanding."
+      ]
+    },
+    {
+      "r": 14,
+      "c": 8,
+      "span": 3,
+      "title": "KEY 3",
+      "texts": [
+        "KEY 3"
+      ]
+    },
+    {
+      "r": 14,
+      "c": 12,
+      "span": 13,
+      "title": "KEY 4",
+      "texts": [
+        "KEY 4"
+      ]
+    },
+    {
+      "r": 14,
+      "c": 26,
+      "span": 1,
+      "title": "KEY 5",
+      "texts": [
+        "KEY 5"
+      ]
+    },
+    {
+      "r": 14,
+      "c": 27,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT\n\nThank you for calling Oricle Hearing! \n\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.  \n\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\n\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\n\nThank you for your understanding."
+      ]
+    },
+    {
+      "r": 14,
+      "c": 29,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE\n\nThank you for calling Oricle Hearing! \n\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.  \n\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\n\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\n\nThank you for your understanding."
+      ]
+    },
+    {
+      "r": 14,
+      "c": 30,
+      "span": 1,
+      "title": "Thank you for calling Oricle Hearing!",
+      "texts": [
+        "Thank you for calling Oricle Hearing! \n\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.  \n\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\n\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\n\nThank you for your understanding."
+      ]
+    },
+    {
+      "r": 14,
+      "c": 64,
+      "span": 1,
+      "title": "Key 2 (Audiologist Consultation)",
+      "texts": [
+        "Key 2 (Audiologist Consultation)"
+      ]
+    },
+    {
+      "r": 14,
+      "c": 65,
+      "span": 1,
+      "title": "Key 3 (Subscription Cancellation)",
+      "texts": [
+        "Key 3 (Subscription Cancellation)"
+      ]
+    },
+    {
+      "r": 14,
+      "c": 66,
+      "span": 1,
+      "title": "Key 4 (Sales)",
+      "texts": [
+        "Key 4 (Sales)"
+      ]
+    },
+    {
+      "r": 14,
+      "c": 67,
+      "span": 1,
+      "title": "Key 5 (Return)",
+      "texts": [
+        "Key 5 (Return)"
+      ]
+    },
+    {
+      "r": 14,
+      "c": 68,
+      "span": 1,
+      "title": "Key 6(Other Concerns)",
+      "texts": [
+        "Key 6(Other Concerns)"
+      ]
+    },
+    {
+      "r": 15,
+      "c": 31,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 15,
+      "c": 32,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 15,
+      "c": 33,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 15,
+      "c": 35,
+      "span": 28,
+      "title": "KEY 1 (INQUIRY)",
+      "texts": [
+        "KEY 1 (INQUIRY)"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 0,
+      "span": 3,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 4,
+      "span": 3,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 8,
+      "span": 3,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nThank you for Calling Oricle Hearing\n\nTo learn if our hearing aid works for your type of hearing loss, Press 1.\n\nTo learn about what’s included in the package, Press 2.\n\nTo learn about Bluetooth connectivity, Press 3.\n\nFor shipping and store location, Press 4.\n\nFor other brand or product questions, press 5"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 12,
+      "span": 13,
+      "title": "IVR LINE",
+      "texts": [
+        "IVR LINE\n\nThank you for Calling Oricle Hearing\n\nTo learn if our hearing aid works for your type of hearing loss, Press 1.\n\nTo learn about what’s included in the package, Press 2.\n\nTo learn about Bluetooth connectivity, Press 3.\n\nFor shipping and store location, Press 4.\n\nFor other brand or product questions, press 5"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 26,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE\n\nThank you for Calling Oricle Hearing\n\nTo learn if our hearing aid works for your type of hearing loss, Press 1.\n\nTo learn about what’s included in the package, Press 2.\n\nTo learn about Bluetooth connectivity, Press 3.\n\nFor shipping and store location, Press 4.\n\nFor other brand or product questions, press 5"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 27,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 29,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n200S RINGING TIME"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 31,
+      "span": 1,
+      "title": "Sorry, there are currently no agents available at the moment.",
+      "texts": [
+        "Sorry, there are currently no agents available at the moment.\n\nPlease stay on the line as you wait for an agent to be available.\n\nThank you for your patience."
+      ]
+    },
+    {
+      "r": 16,
+      "c": 32,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 33,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 35,
+      "span": 28,
+      "title": "Thank you for Calling Oricle Hearing",
+      "texts": [
+        "Thank you for Calling Oricle Hearing\n\nTo learn if our hearing aid works for your type of hearing loss, Press 1.\n\nTo learn about what’s included in the package, Press 2.\n\nTo learn about Bluetooth connectivity, Press 3.\n\nFor shipping and store location, Press 4.\n\nFor other brand or product questions, press 5"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 64,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 65,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 66,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 67,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 16,
+      "c": 68,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 17,
+      "c": 0,
+      "span": 3,
+      "title": "Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "Thank you for calling Oricle Hearing Aid.\n\nOur hearing aid only works and is only suitable for people with mild to moderate hearing loss and does not help with tinutitis\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 17,
+      "c": 4,
+      "span": 3,
+      "title": "\"Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "\"Thank you for calling Oricle Hearing Aid.\n\nEach hearing aid package includes the device itself, three additional silicone tips, a charging case, a charging cord, and a cleaning brush.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 17,
+      "c": 8,
+      "span": 3,
+      "title": "Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "Thank you for calling Oricle Hearing Aid.\n\nAt this time, our hearing aids do not have Bluetooth connectivity.\n\nThey are designed to provide clear and reliable sound enhancement without the need for Bluetooth pairing or additional device connections.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 17,
+      "c": 12,
+      "span": 13,
+      "title": "Thank you for Calling Oricle",
+      "texts": [
+        "Thank you for Calling Oricle \n\nTo learn where our company is located and where your product is shipped from, Press 1 \n\nTo learn about our physical store, Press 2 \n\n To learn where our product is made, Press 3"
+      ]
+    },
+    {
+      "r": 17,
+      "c": 64,
+      "span": 1,
+      "title": "At Oricle Hearing, we're committed to helping you get the most out of your hearing aids. That's why we're offering you a complimentary one-on-one consultation with one of our hearing specialists at absolutely no cost to you. This personalized service is normally valued at $100.",
+      "texts": [
+        "At Oricle Hearing, we're committed to helping you get the most out of your hearing aids. That's why we're offering you a complimentary one-on-one consultation with one of our hearing specialists at absolutely no cost to you. This personalized service is normally valued at $100.\n\nOur hearing specialists can assist with product setup, comfort, sound quality, troubleshooting, and any hearing-related questions you may have.\n\nTo schedule your free consultation, please have your order number, email address, and contact information ready. We are now connecting you with an agent to assist you with booking an appointment. Thank you"
+      ]
+    },
+    {
+      "r": 18,
+      "c": 26,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 18,
+      "c": 27,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 18,
+      "c": 29,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 18,
+      "c": 31,
+      "span": 1,
+      "title": "OHA SALES AGENT QUEUE",
+      "texts": [
+        "OHA SALES AGENT QUEUE\n80S RINGING TIME"
+      ]
+    },
+    {
+      "r": 18,
+      "c": 65,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 18,
+      "c": 66,
+      "span": 1,
+      "title": "OHA SALES AGENT QUEUE",
+      "texts": [
+        "OHA SALES AGENT QUEUE\n80S RINGING TIME"
+      ]
+    },
+    {
+      "r": 18,
+      "c": 67,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n120S RINGING TIME"
+      ]
+    },
+    {
+      "r": 18,
+      "c": 68,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n120S RINGING TIME"
+      ]
+    },
+    {
+      "r": 19,
+      "c": 0,
+      "span": 3,
+      "title": "IVR LINE",
+      "texts": [
+        "IVR LINE\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 19,
+      "c": 4,
+      "span": 3,
+      "title": "IVR LINE",
+      "texts": [
+        "IVR LINE\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 19,
+      "c": 8,
+      "span": 3,
+      "title": "IVR LINE",
+      "texts": [
+        "IVR LINE\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 19,
+      "c": 27,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 19,
+      "c": 29,
+      "span": 1,
+      "title": "Sorry, there are currently no agents available at the moment.",
+      "texts": [
+        "Sorry, there are currently no agents available at the moment.\n\nPlease stay on the line as you wait for an agent to be available.\n\nThank you for your patience."
+      ]
+    },
+    {
+      "r": 19,
+      "c": 35,
+      "span": 3,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1\n\nThank you for calling Oricle Hearing! \n\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.  \n\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\n\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\n\nThank you for your understanding."
+      ]
+    },
+    {
+      "r": 19,
+      "c": 39,
+      "span": 3,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2\n\nThank you for calling Oricle Hearing! \n\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.  \n\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\n\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\n\nThank you for your understanding."
+      ]
+    },
+    {
+      "r": 19,
+      "c": 43,
+      "span": 3,
+      "title": "KEY 3",
+      "texts": [
+        "KEY 3"
+      ]
+    },
+    {
+      "r": 19,
+      "c": 47,
+      "span": 13,
+      "title": "KEY 4",
+      "texts": [
+        "KEY 4"
+      ]
+    },
+    {
+      "r": 19,
+      "c": 61,
+      "span": 1,
+      "title": "KEY 5",
+      "texts": [
+        "KEY 5"
+      ]
+    },
+    {
+      "r": 19,
+      "c": 62,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT\n\nThank you for calling Oricle Hearing! \n\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.  \n\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\n\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\n\nThank you for your understanding."
+      ]
+    },
+    {
+      "r": 19,
+      "c": 64,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE\n\nThank you for calling Oricle Hearing! \n\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.  \n\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\n\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\n\nThank you for your understanding."
+      ]
+    },
+    {
+      "r": 19,
+      "c": 65,
+      "span": 1,
+      "title": "Thank you for calling Oricle Hearing!",
+      "texts": [
+        "Thank you for calling Oricle Hearing! \n\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.  \n\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\n\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\n\nThank you for your understanding."
+      ]
+    },
+    {
+      "r": 20,
+      "c": 0,
+      "span": 3,
+      "title": "If you would like to speak with an agent, please press 1.",
+      "texts": [
+        "If you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 20,
+      "c": 4,
+      "span": 3,
+      "title": "If you would like to speak with an agent, please press 1.",
+      "texts": [
+        "If you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 20,
+      "c": 8,
+      "span": 3,
+      "title": "If you would like to speak with an agent, please press 1.",
+      "texts": [
+        "If you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 20,
+      "c": 26,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 20,
+      "c": 31,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 20,
+      "c": 66,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 20,
+      "c": 67,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 20,
+      "c": 68,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 12,
+      "span": 3,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 16,
+      "span": 3,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 20,
+      "span": 3,
+      "title": "KEY 3",
+      "texts": [
+        "KEY 3"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 24,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 26,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 29,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n120S RINGING TIME"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 35,
+      "span": 3,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 39,
+      "span": 3,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 43,
+      "span": 3,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 47,
+      "span": 13,
+      "title": "IVR LINE",
+      "texts": [
+        "IVR LINE\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 61,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 62,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 64,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n200S RINGING TIME"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 66,
+      "span": 1,
+      "title": "Sorry, there are currently no agents available at the moment.",
+      "texts": [
+        "Sorry, there are currently no agents available at the moment.\n\nPlease stay on the line as you wait for an agent to be available.\n\nThank you for your patience."
+      ]
+    },
+    {
+      "r": 21,
+      "c": 67,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 21,
+      "c": 68,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 22,
+      "c": 31,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 22,
+      "c": 35,
+      "span": 3,
+      "title": "Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "Thank you for calling Oricle Hearing Aid.\n\nOur hearing aid only works and is only suitable for people with mild to moderate hearing loss and does not help with tinutitis\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 22,
+      "c": 39,
+      "span": 3,
+      "title": "\"Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "\"Thank you for calling Oricle Hearing Aid.\n\nEach hearing aid package includes the device itself, three additional silicone tips, a charging case, a charging cord, and a cleaning brush.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 22,
+      "c": 43,
+      "span": 3,
+      "title": "Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "Thank you for calling Oricle Hearing Aid.\n\nAt this time, our hearing aids do not have Bluetooth connectivity.\n\nThey are designed to provide clear and reliable sound enhancement without the need for Bluetooth pairing or additional device connections.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 22,
+      "c": 47,
+      "span": 13,
+      "title": "Thank you for Calling Oricle",
+      "texts": [
+        "Thank you for Calling Oricle \n\nTo learn where our company is located and where your product is shipped from, Press 1 \n\nTo learn about our physical store, Press 2 \n\n To learn where our product is made, Press 3"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 0,
+      "span": 1,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 1,
+      "span": 1,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 2,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 4,
+      "span": 1,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 5,
+      "span": 1,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 6,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 8,
+      "span": 1,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 9,
+      "span": 1,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 10,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 12,
+      "span": 3,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 16,
+      "span": 3,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 20,
+      "span": 3,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 24,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 29,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 61,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 62,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 64,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 23,
+      "c": 66,
+      "span": 1,
+      "title": "OHA SALES AGENT QUEUE",
+      "texts": [
+        "OHA SALES AGENT QUEUE\n80S RINGING TIME"
+      ]
+    },
+    {
+      "r": 24,
+      "c": 12,
+      "span": 3,
+      "title": "Thank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.",
+      "texts": [
+        "Thank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 24,
+      "c": 16,
+      "span": 3,
+      "title": "\"Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "\"Thank you for calling Oricle Hearing Aid.\n\nWe appreciate your interest in our products and for considering giving them a try.\n\nAt this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.\n\nIf you’d like assistance with your purchase, please stay on the line to speak with a representative.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 24,
+      "c": 20,
+      "span": 3,
+      "title": "\"Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "\"Thank you for calling Oricle Hearing Aid.\n\nAs a proud US-based company, all of our products are carefully developed and formulated in the United States to ensure the highest quality standards.\n\nOur devices are manufactured in China, and all orders are shipped directly from the US to provide reliable and timely delivery.\n\nEach product undergoes strict quality testing to ensure excellent performance, so you can feel confident in choosing Oricle Hearing Aid.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 24,
+      "c": 29,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 24,
+      "c": 31,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 24,
+      "c": 35,
+      "span": 3,
+      "title": "IVR LINE",
+      "texts": [
+        "IVR LINE\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 24,
+      "c": 39,
+      "span": 3,
+      "title": "IVR LINE",
+      "texts": [
+        "IVR LINE\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 24,
+      "c": 43,
+      "span": 3,
+      "title": "IVR LINE",
+      "texts": [
+        "IVR LINE\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 24,
+      "c": 62,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 24,
+      "c": 64,
+      "span": 1,
+      "title": "Sorry, there are currently no agents available at the moment.",
+      "texts": [
+        "Sorry, there are currently no agents available at the moment.\n\nPlease stay on the line as you wait for an agent to be available.\n\nThank you for your patience."
+      ]
+    },
+    {
+      "r": 25,
+      "c": 0,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 25,
+      "c": 1,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nThis line is busy at the moment, please leave a message for a callback request."
+      ]
+    },
+    {
+      "r": 25,
+      "c": 2,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 25,
+      "c": 4,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE\n\nThis line is busy at the moment, please leave a message for a callback request."
+      ]
+    },
+    {
+      "r": 25,
+      "c": 5,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 25,
+      "c": 6,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 25,
+      "c": 8,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 25,
+      "c": 9,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 25,
+      "c": 10,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 25,
+      "c": 24,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 25,
+      "c": 31,
+      "span": 1,
+      "title": "This line is busy at the moment, please leave a message for a callback request.",
+      "texts": [
+        "This line is busy at the moment, please leave a message for a callback request."
+      ]
+    },
+    {
+      "r": 25,
+      "c": 35,
+      "span": 3,
+      "title": "If you would like to speak with an agent, please press 1.",
+      "texts": [
+        "If you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 25,
+      "c": 39,
+      "span": 3,
+      "title": "If you would like to speak with an agent, please press 1.",
+      "texts": [
+        "If you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 25,
+      "c": 43,
+      "span": 3,
+      "title": "If you would like to speak with an agent, please press 1.",
+      "texts": [
+        "If you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 25,
+      "c": 61,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 25,
+      "c": 66,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 26,
+      "c": 1,
+      "span": 1,
+      "title": "Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "Thank you for calling Oricle Hearing Aid.\n\nOur hearing aid only works and is only suitable for people with mild to moderate hearing loss and does not help with tinutitis\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 26,
+      "c": 5,
+      "span": 1,
+      "title": "\"Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "\"Thank you for calling Oricle Hearing Aid.\n\nEach hearing aid package includes the device itself, three additional silicone tips, a charging case, a charging cord, and a cleaning brush.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 26,
+      "c": 9,
+      "span": 1,
+      "title": "Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "Thank you for calling Oricle Hearing Aid.\n\nAt this time, our hearing aids do not have Bluetooth connectivity.\n\nThey are designed to provide clear and reliable sound enhancement without the need for Bluetooth pairing or additional device connections.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 26,
+      "c": 12,
+      "span": 3,
+      "title": "IVR LINE",
+      "texts": [
+        "IVR LINE\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 26,
+      "c": 16,
+      "span": 3,
+      "title": "IVR LINE",
+      "texts": [
+        "IVR LINE\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 26,
+      "c": 20,
+      "span": 3,
+      "title": "IVR LINE",
+      "texts": [
+        "IVR LINE\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 26,
+      "c": 24,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 26,
+      "c": 47,
+      "span": 3,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 26,
+      "c": 51,
+      "span": 3,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 26,
+      "c": 55,
+      "span": 3,
+      "title": "KEY 3",
+      "texts": [
+        "KEY 3"
+      ]
+    },
+    {
+      "r": 26,
+      "c": 59,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 26,
+      "c": 61,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 26,
+      "c": 64,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n120S RINGING TIME"
+      ]
+    },
+    {
+      "r": 27,
+      "c": 0,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 27,
+      "c": 2,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 27,
+      "c": 4,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 27,
+      "c": 6,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 27,
+      "c": 8,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 27,
+      "c": 10,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 27,
+      "c": 12,
+      "span": 3,
+      "title": "If you would like to speak with an agent, please press 1.",
+      "texts": [
+        "If you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 27,
+      "c": 16,
+      "span": 3,
+      "title": "If you would like to speak with an agent, please press 1.",
+      "texts": [
+        "If you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 27,
+      "c": 20,
+      "span": 3,
+      "title": "If you would like to speak with an agent, please press 1.",
+      "texts": [
+        "If you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 27,
+      "c": 66,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 2,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 6,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 10,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 35,
+      "span": 1,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 36,
+      "span": 1,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 37,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 39,
+      "span": 1,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 40,
+      "span": 1,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 41,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 43,
+      "span": 1,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 44,
+      "span": 1,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 45,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 47,
+      "span": 3,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 51,
+      "span": 3,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 55,
+      "span": 3,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 59,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 28,
+      "c": 64,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 29,
+      "c": 0,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 29,
+      "c": 4,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 29,
+      "c": 8,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 29,
+      "c": 47,
+      "span": 3,
+      "title": "Thank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.",
+      "texts": [
+        "Thank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 29,
+      "c": 51,
+      "span": 3,
+      "title": "\"Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "\"Thank you for calling Oricle Hearing Aid.\n\nWe appreciate your interest in our products and for considering giving them a try.\n\nAt this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.\n\nIf you’d like assistance with your purchase, please stay on the line to speak with a representative.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 29,
+      "c": 55,
+      "span": 3,
+      "title": "\"Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "\"Thank you for calling Oricle Hearing Aid.\n\nAs a proud US-based company, all of our products are carefully developed and formulated in the United States to ensure the highest quality standards.\n\nOur devices are manufactured in China, and all orders are shipped directly from the US to provide reliable and timely delivery.\n\nEach product undergoes strict quality testing to ensure excellent performance, so you can feel confident in choosing Oricle Hearing Aid.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 29,
+      "c": 64,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 29,
+      "c": 66,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 0,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 4,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 8,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 12,
+      "span": 1,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 13,
+      "span": 1,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 14,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 16,
+      "span": 1,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 17,
+      "span": 1,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 18,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 20,
+      "span": 1,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 21,
+      "span": 1,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 22,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 35,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 36,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nThis line is busy at the moment, please leave a message for a callback request."
+      ]
+    },
+    {
+      "r": 30,
+      "c": 37,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 39,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE\n\nThis line is busy at the moment, please leave a message for a callback request."
+      ]
+    },
+    {
+      "r": 30,
+      "c": 40,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nThis line is busy at the moment, please leave a message for a callback request."
+      ]
+    },
+    {
+      "r": 30,
+      "c": 41,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 43,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE\n\nThis line is busy at the moment, please leave a message for a callback request."
+      ]
+    },
+    {
+      "r": 30,
+      "c": 44,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nThis line is busy at the moment, please leave a message for a callback request."
+      ]
+    },
+    {
+      "r": 30,
+      "c": 45,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 30,
+      "c": 59,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nThis line is busy at the moment, please leave a message for a callback request."
+      ]
+    },
+    {
+      "r": 30,
+      "c": 66,
+      "span": 1,
+      "title": "This line is busy at the moment, please leave a message for a callback request.",
+      "texts": [
+        "This line is busy at the moment, please leave a message for a callback request."
+      ]
+    },
+    {
+      "r": 31,
+      "c": 36,
+      "span": 1,
+      "title": "Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "Thank you for calling Oricle Hearing Aid.\n\nOur hearing aid only works and is only suitable for people with mild to moderate hearing loss and does not help with tinutitis\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 31,
+      "c": 40,
+      "span": 1,
+      "title": "\"Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "\"Thank you for calling Oricle Hearing Aid.\n\nEach hearing aid package includes the device itself, three additional silicone tips, a charging case, a charging cord, and a cleaning brush.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 31,
+      "c": 44,
+      "span": 1,
+      "title": "Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "Thank you for calling Oricle Hearing Aid.\n\nAt this time, our hearing aids do not have Bluetooth connectivity.\n\nThey are designed to provide clear and reliable sound enhancement without the need for Bluetooth pairing or additional device connections.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 31,
+      "c": 47,
+      "span": 3,
+      "title": "IVR LINE",
+      "texts": [
+        "IVR LINE\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 31,
+      "c": 51,
+      "span": 3,
+      "title": "IVR LINE",
+      "texts": [
+        "IVR LINE\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 31,
+      "c": 55,
+      "span": 3,
+      "title": "IVR LINE",
+      "texts": [
+        "IVR LINE\n\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 31,
+      "c": 59,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 32,
+      "c": 12,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 32,
+      "c": 13,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 32,
+      "c": 14,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 32,
+      "c": 16,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 32,
+      "c": 17,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 32,
+      "c": 18,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 32,
+      "c": 20,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 32,
+      "c": 21,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 32,
+      "c": 22,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 32,
+      "c": 35,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 32,
+      "c": 37,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 32,
+      "c": 39,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 32,
+      "c": 41,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 32,
+      "c": 43,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 32,
+      "c": 45,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message\n\nIf you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 32,
+      "c": 47,
+      "span": 3,
+      "title": "If you would like to speak with an agent, please press 1.",
+      "texts": [
+        "If you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 32,
+      "c": 51,
+      "span": 3,
+      "title": "If you would like to speak with an agent, please press 1.",
+      "texts": [
+        "If you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 32,
+      "c": 55,
+      "span": 3,
+      "title": "If you would like to speak with an agent, please press 1.",
+      "texts": [
+        "If you would like to speak with an agent, please press 1.\n\nIf you would like to repeat this message, please press 2."
+      ]
+    },
+    {
+      "r": 33,
+      "c": 13,
+      "span": 1,
+      "title": "Thank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.",
+      "texts": [
+        "Thank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 33,
+      "c": 17,
+      "span": 1,
+      "title": "\"Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "\"Thank you for calling Oricle Hearing Aid.\n\nWe appreciate your interest in our products and for considering giving them a try.\n\nAt this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.\n\nIf you’d like assistance with your purchase, please stay on the line to speak with a representative.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 33,
+      "c": 21,
+      "span": 1,
+      "title": "\"Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "\"Thank you for calling Oricle Hearing Aid.\n\nAs a proud US-based company, all of our products are carefully developed and formulated in the United States to ensure the highest quality standards.\n\nOur devices are manufactured in China, and all orders are shipped directly from the US to provide reliable and timely delivery.\n\nEach product undergoes strict quality testing to ensure excellent performance, so you can feel confident in choosing Oricle Hearing Aid.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 33,
+      "c": 37,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 33,
+      "c": 41,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 33,
+      "c": 45,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 34,
+      "c": 12,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 34,
+      "c": 14,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 34,
+      "c": 16,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 34,
+      "c": 18,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 34,
+      "c": 20,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 34,
+      "c": 22,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 34,
+      "c": 35,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 34,
+      "c": 39,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 34,
+      "c": 43,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 14,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 18,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 22,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 35,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 39,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 43,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 47,
+      "span": 1,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 48,
+      "span": 1,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 49,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 51,
+      "span": 1,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 52,
+      "span": 1,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 53,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 55,
+      "span": 1,
+      "title": "KEY 1",
+      "texts": [
+        "KEY 1"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 56,
+      "span": 1,
+      "title": "KEY 2",
+      "texts": [
+        "KEY 2"
+      ]
+    },
+    {
+      "r": 35,
+      "c": 57,
+      "span": 1,
+      "title": "NO OR WRONG INPUT",
+      "texts": [
+        "NO OR WRONG INPUT"
+      ]
+    },
+    {
+      "r": 36,
+      "c": 12,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 36,
+      "c": 16,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 36,
+      "c": 20,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 37,
+      "c": 12,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 37,
+      "c": 16,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 37,
+      "c": 20,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 37,
+      "c": 47,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 37,
+      "c": 48,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 37,
+      "c": 49,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 37,
+      "c": 51,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 37,
+      "c": 52,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 37,
+      "c": 53,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 37,
+      "c": 55,
+      "span": 1,
+      "title": "WAITING EXPERIENCE",
+      "texts": [
+        "WAITING EXPERIENCE"
+      ]
+    },
+    {
+      "r": 37,
+      "c": 56,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 37,
+      "c": 57,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 38,
+      "c": 48,
+      "span": 1,
+      "title": "Thank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.",
+      "texts": [
+        "Thank you for your interest. We are a US-based company located in the United States, and our products are shipped from our fulfillment centers in Tampa, Florida and California.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 38,
+      "c": 52,
+      "span": 1,
+      "title": "\"Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "\"Thank you for calling Oricle Hearing Aid.\n\nWe appreciate your interest in our products and for considering giving them a try.\n\nAt this time, we do not have any physical store locations. Our hearing aids are available exclusively through our website or by placing an order over the phone.\n\nIf you’d like assistance with your purchase, please stay on the line to speak with a representative.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 38,
+      "c": 56,
+      "span": 1,
+      "title": "\"Thank you for calling Oricle Hearing Aid.",
+      "texts": [
+        "\"Thank you for calling Oricle Hearing Aid.\n\nAs a proud US-based company, all of our products are carefully developed and formulated in the United States to ensure the highest quality standards.\n\nOur devices are manufactured in China, and all orders are shipped directly from the US to provide reliable and timely delivery.\n\nEach product undergoes strict quality testing to ensure excellent performance, so you can feel confident in choosing Oricle Hearing Aid.\n\nTo repeat this message or speak to an agent, please stay on the line."
+      ]
+    },
+    {
+      "r": 39,
+      "c": 47,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 39,
+      "c": 49,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 39,
+      "c": 51,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 39,
+      "c": 53,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 39,
+      "c": 55,
+      "span": 1,
+      "title": "OHA MASTERS AGENT QUEUE",
+      "texts": [
+        "OHA MASTERS AGENT QUEUE\n30S RINGING TIME"
+      ]
+    },
+    {
+      "r": 39,
+      "c": 57,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 40,
+      "c": 49,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 40,
+      "c": 53,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 40,
+      "c": 57,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 41,
+      "c": 47,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 41,
+      "c": 51,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 41,
+      "c": 55,
+      "span": 1,
+      "title": "Audio Message",
+      "texts": [
+        "Audio Message"
+      ]
+    },
+    {
+      "r": 42,
+      "c": 47,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 42,
+      "c": 51,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    },
+    {
+      "r": 42,
+      "c": 55,
+      "span": 1,
+      "title": "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!",
+      "texts": [
+        "Hello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is support @ o r i c l e h e a r i n g dot com.  Thank you!"
+      ]
+    }
+  ],
+  "arrows": [
+    {
+      "r": 2,
+      "c": 12
+    },
+    {
+      "r": 5,
+      "c": 12
+    },
+    {
+      "r": 8,
+      "c": 29
+    },
+    {
+      "r": 8,
+      "c": 30
+    },
+    {
+      "r": 8,
+      "c": 31
+    },
+    {
+      "r": 8,
+      "c": 32
+    },
+    {
+      "r": 8,
+      "c": 33
+    },
+    {
+      "r": 9,
+      "c": 0
+    },
+    {
+      "r": 10,
+      "c": 29
+    },
+    {
+      "r": 10,
+      "c": 30
+    },
+    {
+      "r": 10,
+      "c": 31
+    },
+    {
+      "r": 10,
+      "c": 32
+    },
+    {
+      "r": 10,
+      "c": 33
+    },
+    {
+      "r": 10,
+      "c": 47
+    },
+    {
+      "r": 12,
+      "c": 30
+    },
+    {
+      "r": 12,
+      "c": 31
+    },
+    {
+      "r": 12,
+      "c": 32
+    },
+    {
+      "r": 12,
+      "c": 33
+    },
+    {
+      "r": 13,
+      "c": 0
+    },
+    {
+      "r": 13,
+      "c": 4
+    },
+    {
+      "r": 13,
+      "c": 8
+    },
+    {
+      "r": 13,
+      "c": 12
+    },
+    {
+      "r": 13,
+      "c": 26
+    },
+    {
+      "r": 13,
+      "c": 27
+    },
+    {
+      "r": 13,
+      "c": 29
+    },
+    {
+      "r": 13,
+      "c": 64
+    },
+    {
+      "r": 13,
+      "c": 65
+    },
+    {
+      "r": 13,
+      "c": 66
+    },
+    {
+      "r": 13,
+      "c": 67
+    },
+    {
+      "r": 13,
+      "c": 68
+    },
+    {
+      "r": 14,
+      "c": 31
+    },
+    {
+      "r": 14,
+      "c": 32
+    },
+    {
+      "r": 14,
+      "c": 33
+    },
+    {
+      "r": 14,
+      "c": 35
+    },
+    {
+      "r": 15,
+      "c": 0
+    },
+    {
+      "r": 15,
+      "c": 4
+    },
+    {
+      "r": 15,
+      "c": 8
+    },
+    {
+      "r": 15,
+      "c": 26
+    },
+    {
+      "r": 15,
+      "c": 27
+    },
+    {
+      "r": 15,
+      "c": 29
+    },
+    {
+      "r": 15,
+      "c": 64
+    },
+    {
+      "r": 15,
+      "c": 65
+    },
+    {
+      "r": 15,
+      "c": 66
+    },
+    {
+      "r": 15,
+      "c": 67
+    },
+    {
+      "r": 15,
+      "c": 68
+    },
+    {
+      "r": 17,
+      "c": 26
+    },
+    {
+      "r": 17,
+      "c": 27
+    },
+    {
+      "r": 17,
+      "c": 29
+    },
+    {
+      "r": 17,
+      "c": 31
+    },
+    {
+      "r": 17,
+      "c": 65
+    },
+    {
+      "r": 17,
+      "c": 66
+    },
+    {
+      "r": 17,
+      "c": 67
+    },
+    {
+      "r": 17,
+      "c": 68
+    },
+    {
+      "r": 18,
+      "c": 0
+    },
+    {
+      "r": 18,
+      "c": 4
+    },
+    {
+      "r": 18,
+      "c": 8
+    },
+    {
+      "r": 18,
+      "c": 35
+    },
+    {
+      "r": 18,
+      "c": 39
+    },
+    {
+      "r": 18,
+      "c": 43
+    },
+    {
+      "r": 18,
+      "c": 47
+    },
+    {
+      "r": 18,
+      "c": 61
+    },
+    {
+      "r": 18,
+      "c": 62
+    },
+    {
+      "r": 18,
+      "c": 64
+    },
+    {
+      "r": 19,
+      "c": 26
+    },
+    {
+      "r": 19,
+      "c": 31
+    },
+    {
+      "r": 19,
+      "c": 66
+    },
+    {
+      "r": 19,
+      "c": 67
+    },
+    {
+      "r": 19,
+      "c": 68
+    },
+    {
+      "r": 20,
+      "c": 12
+    },
+    {
+      "r": 20,
+      "c": 16
+    },
+    {
+      "r": 20,
+      "c": 20
+    },
+    {
+      "r": 20,
+      "c": 24
+    },
+    {
+      "r": 20,
+      "c": 29
+    },
+    {
+      "r": 20,
+      "c": 35
+    },
+    {
+      "r": 20,
+      "c": 39
+    },
+    {
+      "r": 20,
+      "c": 43
+    },
+    {
+      "r": 20,
+      "c": 61
+    },
+    {
+      "r": 20,
+      "c": 62
+    },
+    {
+      "r": 20,
+      "c": 64
+    },
+    {
+      "r": 21,
+      "c": 31
+    },
+    {
+      "r": 22,
+      "c": 0
+    },
+    {
+      "r": 22,
+      "c": 1
+    },
+    {
+      "r": 22,
+      "c": 2
+    },
+    {
+      "r": 22,
+      "c": 4
+    },
+    {
+      "r": 22,
+      "c": 5
+    },
+    {
+      "r": 22,
+      "c": 6
+    },
+    {
+      "r": 22,
+      "c": 8
+    },
+    {
+      "r": 22,
+      "c": 9
+    },
+    {
+      "r": 22,
+      "c": 10
+    },
+    {
+      "r": 22,
+      "c": 12
+    },
+    {
+      "r": 22,
+      "c": 16
+    },
+    {
+      "r": 22,
+      "c": 20
+    },
+    {
+      "r": 22,
+      "c": 24
+    },
+    {
+      "r": 22,
+      "c": 29
+    },
+    {
+      "r": 22,
+      "c": 61
+    },
+    {
+      "r": 22,
+      "c": 62
+    },
+    {
+      "r": 22,
+      "c": 64
+    },
+    {
+      "r": 22,
+      "c": 66
+    },
+    {
+      "r": 23,
+      "c": 31
+    },
+    {
+      "r": 23,
+      "c": 35
+    },
+    {
+      "r": 23,
+      "c": 39
+    },
+    {
+      "r": 23,
+      "c": 43
+    },
+    {
+      "r": 24,
+      "c": 0
+    },
+    {
+      "r": 24,
+      "c": 1
+    },
+    {
+      "r": 24,
+      "c": 2
+    },
+    {
+      "r": 24,
+      "c": 4
+    },
+    {
+      "r": 24,
+      "c": 5
+    },
+    {
+      "r": 24,
+      "c": 6
+    },
+    {
+      "r": 24,
+      "c": 8
+    },
+    {
+      "r": 24,
+      "c": 9
+    },
+    {
+      "r": 24,
+      "c": 10
+    },
+    {
+      "r": 24,
+      "c": 24
+    },
+    {
+      "r": 24,
+      "c": 61
+    },
+    {
+      "r": 24,
+      "c": 66
+    },
+    {
+      "r": 25,
+      "c": 12
+    },
+    {
+      "r": 25,
+      "c": 16
+    },
+    {
+      "r": 25,
+      "c": 20
+    },
+    {
+      "r": 25,
+      "c": 47
+    },
+    {
+      "r": 25,
+      "c": 51
+    },
+    {
+      "r": 25,
+      "c": 55
+    },
+    {
+      "r": 25,
+      "c": 59
+    },
+    {
+      "r": 25,
+      "c": 64
+    },
+    {
+      "r": 26,
+      "c": 0
+    },
+    {
+      "r": 26,
+      "c": 2
+    },
+    {
+      "r": 26,
+      "c": 4
+    },
+    {
+      "r": 26,
+      "c": 6
+    },
+    {
+      "r": 26,
+      "c": 8
+    },
+    {
+      "r": 26,
+      "c": 10
+    },
+    {
+      "r": 26,
+      "c": 66
+    },
+    {
+      "r": 27,
+      "c": 35
+    },
+    {
+      "r": 27,
+      "c": 36
+    },
+    {
+      "r": 27,
+      "c": 37
+    },
+    {
+      "r": 27,
+      "c": 39
+    },
+    {
+      "r": 27,
+      "c": 40
+    },
+    {
+      "r": 27,
+      "c": 41
+    },
+    {
+      "r": 27,
+      "c": 43
+    },
+    {
+      "r": 27,
+      "c": 44
+    },
+    {
+      "r": 27,
+      "c": 45
+    },
+    {
+      "r": 27,
+      "c": 47
+    },
+    {
+      "r": 27,
+      "c": 51
+    },
+    {
+      "r": 27,
+      "c": 55
+    },
+    {
+      "r": 27,
+      "c": 59
+    },
+    {
+      "r": 27,
+      "c": 64
+    },
+    {
+      "r": 28,
+      "c": 0
+    },
+    {
+      "r": 28,
+      "c": 4
+    },
+    {
+      "r": 28,
+      "c": 8
+    },
+    {
+      "r": 28,
+      "c": 66
+    },
+    {
+      "r": 29,
+      "c": 12
+    },
+    {
+      "r": 29,
+      "c": 13
+    },
+    {
+      "r": 29,
+      "c": 14
+    },
+    {
+      "r": 29,
+      "c": 16
+    },
+    {
+      "r": 29,
+      "c": 17
+    },
+    {
+      "r": 29,
+      "c": 18
+    },
+    {
+      "r": 29,
+      "c": 20
+    },
+    {
+      "r": 29,
+      "c": 21
+    },
+    {
+      "r": 29,
+      "c": 22
+    },
+    {
+      "r": 29,
+      "c": 35
+    },
+    {
+      "r": 29,
+      "c": 36
+    },
+    {
+      "r": 29,
+      "c": 37
+    },
+    {
+      "r": 29,
+      "c": 39
+    },
+    {
+      "r": 29,
+      "c": 40
+    },
+    {
+      "r": 29,
+      "c": 41
+    },
+    {
+      "r": 29,
+      "c": 43
+    },
+    {
+      "r": 29,
+      "c": 44
+    },
+    {
+      "r": 29,
+      "c": 45
+    },
+    {
+      "r": 29,
+      "c": 59
+    },
+    {
+      "r": 30,
+      "c": 47
+    },
+    {
+      "r": 30,
+      "c": 51
+    },
+    {
+      "r": 30,
+      "c": 55
+    },
+    {
+      "r": 31,
+      "c": 12
+    },
+    {
+      "r": 31,
+      "c": 13
+    },
+    {
+      "r": 31,
+      "c": 14
+    },
+    {
+      "r": 31,
+      "c": 16
+    },
+    {
+      "r": 31,
+      "c": 17
+    },
+    {
+      "r": 31,
+      "c": 18
+    },
+    {
+      "r": 31,
+      "c": 20
+    },
+    {
+      "r": 31,
+      "c": 21
+    },
+    {
+      "r": 31,
+      "c": 22
+    },
+    {
+      "r": 31,
+      "c": 35
+    },
+    {
+      "r": 31,
+      "c": 37
+    },
+    {
+      "r": 31,
+      "c": 39
+    },
+    {
+      "r": 31,
+      "c": 41
+    },
+    {
+      "r": 31,
+      "c": 43
+    },
+    {
+      "r": 31,
+      "c": 45
+    },
+    {
+      "r": 33,
+      "c": 12
+    },
+    {
+      "r": 33,
+      "c": 14
+    },
+    {
+      "r": 33,
+      "c": 16
+    },
+    {
+      "r": 33,
+      "c": 18
+    },
+    {
+      "r": 33,
+      "c": 20
+    },
+    {
+      "r": 33,
+      "c": 22
+    },
+    {
+      "r": 33,
+      "c": 35
+    },
+    {
+      "r": 33,
+      "c": 39
+    },
+    {
+      "r": 33,
+      "c": 43
+    },
+    {
+      "r": 34,
+      "c": 47
+    },
+    {
+      "r": 34,
+      "c": 48
+    },
+    {
+      "r": 34,
+      "c": 49
+    },
+    {
+      "r": 34,
+      "c": 51
+    },
+    {
+      "r": 34,
+      "c": 52
+    },
+    {
+      "r": 34,
+      "c": 53
+    },
+    {
+      "r": 34,
+      "c": 55
+    },
+    {
+      "r": 34,
+      "c": 56
+    },
+    {
+      "r": 34,
+      "c": 57
+    },
+    {
+      "r": 35,
+      "c": 12
+    },
+    {
+      "r": 35,
+      "c": 16
+    },
+    {
+      "r": 35,
+      "c": 20
+    },
+    {
+      "r": 36,
+      "c": 47
+    },
+    {
+      "r": 36,
+      "c": 48
+    },
+    {
+      "r": 36,
+      "c": 49
+    },
+    {
+      "r": 36,
+      "c": 51
+    },
+    {
+      "r": 36,
+      "c": 52
+    },
+    {
+      "r": 36,
+      "c": 53
+    },
+    {
+      "r": 36,
+      "c": 55
+    },
+    {
+      "r": 36,
+      "c": 56
+    },
+    {
+      "r": 36,
+      "c": 57
+    },
+    {
+      "r": 38,
+      "c": 47
+    },
+    {
+      "r": 38,
+      "c": 49
+    },
+    {
+      "r": 38,
+      "c": 51
+    },
+    {
+      "r": 38,
+      "c": 53
+    },
+    {
+      "r": 38,
+      "c": 55
+    },
+    {
+      "r": 38,
+      "c": 57
+    },
+    {
+      "r": 40,
+      "c": 47
+    },
+    {
+      "r": 40,
+      "c": 51
+    },
+    {
+      "r": 40,
+      "c": 55
+    }
+  ],
+  "merges": [
+    {
+      "r0": 6,
+      "c0": 8,
+      "r1": 6,
+      "c1": 16
+    },
+    {
+      "r0": 7,
+      "c0": 8,
+      "r1": 7,
+      "c1": 16
+    },
+    {
+      "r0": 9,
+      "c0": 35,
+      "r1": 9,
+      "c1": 68
+    },
+    {
+      "r0": 10,
+      "c0": 0,
+      "r1": 10,
+      "c1": 27
+    },
+    {
+      "r0": 11,
+      "c0": 0,
+      "r1": 11,
+      "c1": 27
+    },
+    {
+      "r0": 11,
+      "c0": 43,
+      "r1": 11,
+      "c1": 51
+    },
+    {
+      "r0": 12,
+      "c0": 43,
+      "r1": 12,
+      "c1": 51
+    },
+    {
+      "r0": 14,
+      "c0": 0,
+      "r1": 14,
+      "c1": 2
+    },
+    {
+      "r0": 14,
+      "c0": 4,
+      "r1": 14,
+      "c1": 6
+    },
+    {
+      "r0": 14,
+      "c0": 8,
+      "r1": 14,
+      "c1": 10
+    },
+    {
+      "r0": 14,
+      "c0": 12,
+      "r1": 14,
+      "c1": 24
+    },
+    {
+      "r0": 15,
+      "c0": 35,
+      "r1": 15,
+      "c1": 62
+    },
+    {
+      "r0": 16,
+      "c0": 0,
+      "r1": 16,
+      "c1": 2
+    },
+    {
+      "r0": 16,
+      "c0": 4,
+      "r1": 16,
+      "c1": 6
+    },
+    {
+      "r0": 16,
+      "c0": 8,
+      "r1": 16,
+      "c1": 10
+    },
+    {
+      "r0": 16,
+      "c0": 12,
+      "r1": 16,
+      "c1": 24
+    },
+    {
+      "r0": 16,
+      "c0": 35,
+      "r1": 16,
+      "c1": 62
+    },
+    {
+      "r0": 17,
+      "c0": 0,
+      "r1": 17,
+      "c1": 2
+    },
+    {
+      "r0": 17,
+      "c0": 4,
+      "r1": 17,
+      "c1": 6
+    },
+    {
+      "r0": 17,
+      "c0": 8,
+      "r1": 17,
+      "c1": 10
+    },
+    {
+      "r0": 17,
+      "c0": 12,
+      "r1": 17,
+      "c1": 24
+    },
+    {
+      "r0": 19,
+      "c0": 0,
+      "r1": 19,
+      "c1": 2
+    },
+    {
+      "r0": 19,
+      "c0": 4,
+      "r1": 19,
+      "c1": 6
+    },
+    {
+      "r0": 19,
+      "c0": 8,
+      "r1": 19,
+      "c1": 10
+    },
+    {
+      "r0": 19,
+      "c0": 35,
+      "r1": 19,
+      "c1": 37
+    },
+    {
+      "r0": 19,
+      "c0": 39,
+      "r1": 19,
+      "c1": 41
+    },
+    {
+      "r0": 19,
+      "c0": 43,
+      "r1": 19,
+      "c1": 45
+    },
+    {
+      "r0": 19,
+      "c0": 47,
+      "r1": 19,
+      "c1": 59
+    },
+    {
+      "r0": 20,
+      "c0": 0,
+      "r1": 20,
+      "c1": 2
+    },
+    {
+      "r0": 20,
+      "c0": 4,
+      "r1": 20,
+      "c1": 6
+    },
+    {
+      "r0": 20,
+      "c0": 8,
+      "r1": 20,
+      "c1": 10
+    },
+    {
+      "r0": 21,
+      "c0": 12,
+      "r1": 21,
+      "c1": 14
+    },
+    {
+      "r0": 21,
+      "c0": 16,
+      "r1": 21,
+      "c1": 18
+    },
+    {
+      "r0": 21,
+      "c0": 20,
+      "r1": 21,
+      "c1": 22
+    },
+    {
+      "r0": 21,
+      "c0": 35,
+      "r1": 21,
+      "c1": 37
+    },
+    {
+      "r0": 21,
+      "c0": 39,
+      "r1": 21,
+      "c1": 41
+    },
+    {
+      "r0": 21,
+      "c0": 43,
+      "r1": 21,
+      "c1": 45
+    },
+    {
+      "r0": 21,
+      "c0": 47,
+      "r1": 21,
+      "c1": 59
+    },
+    {
+      "r0": 22,
+      "c0": 35,
+      "r1": 22,
+      "c1": 37
+    },
+    {
+      "r0": 22,
+      "c0": 39,
+      "r1": 22,
+      "c1": 41
+    },
+    {
+      "r0": 22,
+      "c0": 43,
+      "r1": 22,
+      "c1": 45
+    },
+    {
+      "r0": 22,
+      "c0": 47,
+      "r1": 22,
+      "c1": 59
+    },
+    {
+      "r0": 23,
+      "c0": 12,
+      "r1": 23,
+      "c1": 14
+    },
+    {
+      "r0": 23,
+      "c0": 16,
+      "r1": 23,
+      "c1": 18
+    },
+    {
+      "r0": 23,
+      "c0": 20,
+      "r1": 23,
+      "c1": 22
+    },
+    {
+      "r0": 24,
+      "c0": 12,
+      "r1": 24,
+      "c1": 14
+    },
+    {
+      "r0": 24,
+      "c0": 16,
+      "r1": 24,
+      "c1": 18
+    },
+    {
+      "r0": 24,
+      "c0": 20,
+      "r1": 24,
+      "c1": 22
+    },
+    {
+      "r0": 24,
+      "c0": 35,
+      "r1": 24,
+      "c1": 37
+    },
+    {
+      "r0": 24,
+      "c0": 39,
+      "r1": 24,
+      "c1": 41
+    },
+    {
+      "r0": 24,
+      "c0": 43,
+      "r1": 24,
+      "c1": 45
+    },
+    {
+      "r0": 25,
+      "c0": 35,
+      "r1": 25,
+      "c1": 37
+    },
+    {
+      "r0": 25,
+      "c0": 39,
+      "r1": 25,
+      "c1": 41
+    },
+    {
+      "r0": 25,
+      "c0": 43,
+      "r1": 25,
+      "c1": 45
+    },
+    {
+      "r0": 26,
+      "c0": 12,
+      "r1": 26,
+      "c1": 14
+    },
+    {
+      "r0": 26,
+      "c0": 16,
+      "r1": 26,
+      "c1": 18
+    },
+    {
+      "r0": 26,
+      "c0": 20,
+      "r1": 26,
+      "c1": 22
+    },
+    {
+      "r0": 26,
+      "c0": 47,
+      "r1": 26,
+      "c1": 49
+    },
+    {
+      "r0": 26,
+      "c0": 51,
+      "r1": 26,
+      "c1": 53
+    },
+    {
+      "r0": 26,
+      "c0": 55,
+      "r1": 26,
+      "c1": 57
+    },
+    {
+      "r0": 27,
+      "c0": 12,
+      "r1": 27,
+      "c1": 14
+    },
+    {
+      "r0": 27,
+      "c0": 16,
+      "r1": 27,
+      "c1": 18
+    },
+    {
+      "r0": 27,
+      "c0": 20,
+      "r1": 27,
+      "c1": 22
+    },
+    {
+      "r0": 28,
+      "c0": 47,
+      "r1": 28,
+      "c1": 49
+    },
+    {
+      "r0": 28,
+      "c0": 51,
+      "r1": 28,
+      "c1": 53
+    },
+    {
+      "r0": 28,
+      "c0": 55,
+      "r1": 28,
+      "c1": 57
+    },
+    {
+      "r0": 29,
+      "c0": 47,
+      "r1": 29,
+      "c1": 49
+    },
+    {
+      "r0": 29,
+      "c0": 51,
+      "r1": 29,
+      "c1": 53
+    },
+    {
+      "r0": 29,
+      "c0": 55,
+      "r1": 29,
+      "c1": 57
+    },
+    {
+      "r0": 31,
+      "c0": 47,
+      "r1": 31,
+      "c1": 49
+    },
+    {
+      "r0": 31,
+      "c0": 51,
+      "r1": 31,
+      "c1": 53
+    },
+    {
+      "r0": 31,
+      "c0": 55,
+      "r1": 31,
+      "c1": 57
+    },
+    {
+      "r0": 32,
+      "c0": 47,
+      "r1": 32,
+      "c1": 49
+    },
+    {
+      "r0": 32,
+      "c0": 51,
+      "r1": 32,
+      "c1": 53
+    },
+    {
+      "r0": 32,
+      "c0": 55,
+      "r1": 32,
+      "c1": 57
+    }
+  ],
+  "maxCols": 70
+}
