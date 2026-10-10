@@ -30,15 +30,17 @@ function inferType(node) {
 function extractOptions(node) {
   const opts = [];
   const seen = new Set();
-  const re = /(?:press|push)\s+#?(\d+)[\s.)-]*([:\-]\s*)?([^\n.]{2,70})/gi;
+  // In the sheet, descriptions come BEFORE the press number:
+  // e.g. "To learn about hearing loss solutions, Press 1"
+  // Capture: (description) Press (number)
+  const re = /(.+?)\s*,?\s*(?:press|push)\s+#?(\d+)\b/gi;
   let m;
   while ((m = re.exec(node.text)) !== null) {
-    if (/\bpress\s+\d+\s*$/.test(m[0])) continue;
-    if (seen.has(m[1])) continue;
-    seen.add(m[1]);
-    let label = (m[3] || "").trim().replace(/[.,;]+$/, "");
-    if (!label) label = `Press ${m[1]}`;
-    opts.push({ key: m[1], label });
+    if (seen.has(m[2])) continue;
+    seen.add(m[2]);
+    let label = (m[1] || "").trim().replace(/[.,;]+$/, "");
+    if (!label) label = `Press ${m[2]}`;
+    opts.push({ key: m[2], label });
   }
   const hm = /^key\s*#?(\d+)\s*\(?(.{1,45}?)\)?[:\-]?\s*$/i.exec((node.texts?.[0] || "").trim());
   if (hm && opts.length === 0) opts.push({ key: hm[1], label: (hm[2] || "").trim() || "Option " + hm[1] });

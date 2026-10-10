@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T02:41:10.517Z",
+  "generatedAt": "2026-10-10T05:00:19.603Z",
   "sourceSheet": "",
   "brandCount": 1,
   "brands": [
@@ -54,11 +54,31 @@
           "options": [
             {
               "key": "1",
-              "label": "For product assistance or troubleshooting, Press 2"
+              "label": "To learn about Oricle Hearing and our hearing loss solutions"
+            },
+            {
+              "key": "2",
+              "label": "For product assistance or troubleshooting"
             },
             {
               "key": "3",
-              "label": "To place an order over the phone, Press 4"
+              "label": "For monthly subscription cancellation"
+            },
+            {
+              "key": "4",
+              "label": "To place an order over the phone"
+            },
+            {
+              "key": "5",
+              "label": "To inquire about an existing order"
+            },
+            {
+              "key": "6",
+              "label": "For other questions or concerns"
+            },
+            {
+              "key": "7",
+              "label": "To repeat this message"
             }
           ]
         },
@@ -163,11 +183,23 @@
           "options": [
             {
               "key": "1",
-              "label": "To learn about what’s included in the package, Press 2"
+              "label": "To learn if our hearing aid works for your type of hearing loss"
+            },
+            {
+              "key": "2",
+              "label": "To learn about what’s included in the package"
             },
             {
               "key": "3",
-              "label": "For shipping and store location, Press 4"
+              "label": "To learn about Bluetooth connectivity"
+            },
+            {
+              "key": "4",
+              "label": "For shipping and store location"
+            },
+            {
+              "key": "5",
+              "label": "For other brand or product questions"
             }
           ]
         },
@@ -232,11 +264,31 @@
           "options": [
             {
               "key": "1",
-              "label": "For product assistance or troubleshooting, Press 2"
+              "label": "To learn about Oricle Hearing and our hearing loss solutions"
+            },
+            {
+              "key": "2",
+              "label": "For product assistance or troubleshooting"
             },
             {
               "key": "3",
-              "label": "To place an order over the phone, Press 4"
+              "label": "For monthly subscription cancellation"
+            },
+            {
+              "key": "4",
+              "label": "To place an order over the phone"
+            },
+            {
+              "key": "5",
+              "label": "To inquire about an existing order"
+            },
+            {
+              "key": "6",
+              "label": "For other questions or concerns"
+            },
+            {
+              "key": "7",
+              "label": "To repeat this message"
             }
           ]
         },
@@ -466,11 +518,23 @@
           "options": [
             {
               "key": "1",
-              "label": "To learn about what’s included in the package, Press 2"
+              "label": "To learn if our hearing aid works for your type of hearing loss"
+            },
+            {
+              "key": "2",
+              "label": "To learn about what’s included in the package"
             },
             {
               "key": "3",
-              "label": "For shipping and store location, Press 4"
+              "label": "To learn about Bluetooth connectivity"
+            },
+            {
+              "key": "4",
+              "label": "For shipping and store location"
+            },
+            {
+              "key": "5",
+              "label": "For other brand or product questions"
             }
           ]
         },
@@ -505,15 +569,23 @@
           "options": [
             {
               "key": "1",
-              "label": "To learn about what’s included in the package, Press 2"
+              "label": "To learn if our hearing aid works for your type of hearing loss"
+            },
+            {
+              "key": "2",
+              "label": "To learn about what’s included in the package"
             },
             {
               "key": "3",
-              "label": "For shipping and store location, Press 4"
+              "label": "To learn about Bluetooth connectivity"
+            },
+            {
+              "key": "4",
+              "label": "For shipping and store location"
             },
             {
               "key": "5",
-              "label": "Thank you for calling Oricle Hearing Aid"
+              "label": "For other brand or product questions"
             }
           ]
         },
@@ -528,15 +600,23 @@
           "options": [
             {
               "key": "1",
-              "label": "To learn about what’s included in the package, Press 2"
+              "label": "To learn if our hearing aid works for your type of hearing loss"
+            },
+            {
+              "key": "2",
+              "label": "To learn about what’s included in the package"
             },
             {
               "key": "3",
-              "label": "For shipping and store location, Press 4"
+              "label": "To learn about Bluetooth connectivity"
+            },
+            {
+              "key": "4",
+              "label": "For shipping and store location"
             },
             {
               "key": "5",
-              "label": "Thank you for Calling Oricle"
+              "label": "For other brand or product questions"
             }
           ]
         },
@@ -551,11 +631,23 @@
           "options": [
             {
               "key": "1",
-              "label": "To learn about what’s included in the package, Press 2"
+              "label": "To learn if our hearing aid works for your type of hearing loss"
+            },
+            {
+              "key": "2",
+              "label": "To learn about what’s included in the package"
             },
             {
               "key": "3",
-              "label": "For shipping and store location, Press 4"
+              "label": "To learn about Bluetooth connectivity"
+            },
+            {
+              "key": "4",
+              "label": "For shipping and store location"
+            },
+            {
+              "key": "5",
+              "label": "For other brand or product questions"
             }
           ]
         },
@@ -717,7 +809,16 @@
           "row": 19,
           "col": 0,
           "colSpan": 3,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r19c4",
@@ -727,7 +828,16 @@
           "row": 19,
           "col": 4,
           "colSpan": 3,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r19c8",
@@ -737,7 +847,16 @@
           "row": 19,
           "col": 8,
           "colSpan": 3,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r19c35",
@@ -950,7 +1069,15 @@
           "options": [
             {
               "key": "1",
-              "label": "To learn about our physical store, Press 2"
+              "label": "To learn where our company is located and where your product is shipped from"
+            },
+            {
+              "key": "2",
+              "label": "To learn about our physical store"
+            },
+            {
+              "key": "3",
+              "label": "To learn where our product is made"
             }
           ]
         },
@@ -1192,7 +1319,16 @@
           "row": 24,
           "col": 35,
           "colSpan": 3,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r24c39",
@@ -1202,7 +1338,16 @@
           "row": 24,
           "col": 39,
           "colSpan": 3,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r24c43",
@@ -1212,7 +1357,16 @@
           "row": 24,
           "col": 43,
           "colSpan": 3,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r25c0",
@@ -1262,7 +1416,16 @@
           "row": 25,
           "col": 5,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r25c6",
@@ -1282,7 +1445,16 @@
           "row": 25,
           "col": 8,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r25c9",
@@ -1292,7 +1464,16 @@
           "row": 25,
           "col": 9,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r25c10",
@@ -1312,7 +1493,16 @@
           "row": 25,
           "col": 24,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r25c61",
@@ -1342,7 +1532,16 @@
           "row": 26,
           "col": 12,
           "colSpan": 3,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r26c16",
@@ -1352,7 +1551,16 @@
           "row": 26,
           "col": 16,
           "colSpan": 3,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r26c20",
@@ -1362,7 +1570,16 @@
           "row": 26,
           "col": 20,
           "colSpan": 3,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r26c47",
@@ -1432,7 +1649,16 @@
           "row": 27,
           "col": 2,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r27c4",
@@ -1452,7 +1678,16 @@
           "row": 27,
           "col": 6,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r27c8",
@@ -1472,7 +1707,16 @@
           "row": 27,
           "col": 10,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r27c66",
@@ -1862,7 +2106,16 @@
           "row": 31,
           "col": 47,
           "colSpan": 3,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r31c51",
@@ -1872,7 +2125,16 @@
           "row": 31,
           "col": 51,
           "colSpan": 3,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r31c55",
@@ -1882,7 +2144,16 @@
           "row": 31,
           "col": 55,
           "colSpan": 3,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r32c12",
@@ -1932,7 +2203,16 @@
           "row": 32,
           "col": 17,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r32c18",
@@ -1952,7 +2232,16 @@
           "row": 32,
           "col": 20,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r32c21",
@@ -1962,7 +2251,16 @@
           "row": 32,
           "col": 21,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r32c22",
@@ -1992,7 +2290,16 @@
           "row": 32,
           "col": 37,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r32c39",
@@ -2012,7 +2319,16 @@
           "row": 32,
           "col": 41,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r32c43",
@@ -2032,7 +2348,16 @@
           "row": 32,
           "col": 45,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "1",
+              "label": "If you would like to speak with an agent, please"
+            },
+            {
+              "key": "2",
+              "label": "If you would like to repeat this message, please"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r34c12",
