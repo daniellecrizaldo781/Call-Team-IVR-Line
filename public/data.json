@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T09:18:49.018Z",
+  "generatedAt": "2026-10-10T09:51:32.771Z",
   "sourceSheet": "Canva design (CANVA_DESIGN_DATA secret)",
   "brandCount": 1,
   "brands": [
@@ -82,23 +82,33 @@
         },
         {
           "id": "oricle-hearing-aid_r9c29",
-          "type": "endpoint",
+          "type": "option",
           "title": "Key 2 (Audiologist Consultation)",
-          "body": "Key 2 (Audiologist Consultation)\n\nAt Oricle Hearing, we're committed to helping you get the most out of your hearing aids. That's why we're offering you a complimentary one-on-one consultation with one of our hearing specialists at absolutely no cost to you. This personalized service is normally valued at $100.\nOur hearing specialists can assist with product setup, comfort, sound quality, troubleshooting, and any hearing-related questions you may have.\nTo schedule your free consultation, please have your order number, email address, and contact information ready. We are now connecting you with an agent to assist you with booking an appointment. Thank you",
+          "body": "Key 2 (Audiologist Consultation)",
           "row": 9,
           "col": 29,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "2",
+              "label": "Audiologist Consultation"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r9c30",
           "type": "option",
           "title": "Key 3 (Subscription Cancellation)",
-          "body": "Key 3 (Subscription Cancellation)\n\nThank you for calling Oricle Hearing!",
+          "body": "Key 3 (Subscription Cancellation)",
           "row": 9,
           "col": 30,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "3",
+              "label": "Subscription Cancellation"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r9c31",
@@ -164,7 +174,7 @@
           "id": "oricle-hearing-aid_r10c0",
           "type": "greeting",
           "title": "KEY 1 (INQUIRY)",
-          "body": "KEY 1 (INQUIRY)\n\nThank you for Calling Oricle Hearing\n\nThank you for Calling Oricle Hearing\n\nTo learn if our hearing aid works for your type of hearing loss, Press 1.\n\nTo learn about what’s included in the package, Press 2.\n\nTo learn about Bluetooth connectivity, Press 3.\n\nFor shipping and store location, Press 4.\n\nFor other brand or product questions, press 5",
+          "body": "KEY 1 (INQUIRY)\n\nThank you for Calling Oricle Hearing\n\nTo learn if our hearing aid works for your type of hearing loss, Press 1.\n\nTo learn about what’s included in the package, Press 2.\n\nTo learn about Bluetooth connectivity, Press 3.\n\nFor shipping and store location, Press 4.\n\nFor other brand or product questions, press 5",
           "row": 10,
           "col": 0,
           "colSpan": 28,
@@ -291,9 +301,9 @@
         },
         {
           "id": "oricle-hearing-aid_r13c30",
-          "type": "endpoint",
+          "type": "greeting",
           "title": "Audio Message",
-          "body": "Audio Message\n\nIf you would like to speak with an agent, please press 1.\nIf you would like to repeat this message, please press 2.\n\nThank you for calling Oricle Hearing!\n\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.  \n\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\n\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\n\nThank you for your understanding.",
+          "body": "Audio Message\n\nIf you would like to speak with an agent, please press 1.\nIf you would like to repeat this message, please press 2.\n\nThank you for calling Oricle Hearing!",
           "row": 13,
           "col": 30,
           "colSpan": 1,
@@ -415,23 +425,33 @@
         },
         {
           "id": "oricle-hearing-aid_r14c64",
-          "type": "endpoint",
+          "type": "option",
           "title": "Key 2 (Audiologist Consultation)",
-          "body": "Key 2 (Audiologist Consultation)\n\nAt Oricle Hearing, we're committed to helping you get the most out of your hearing aids. That's why we're offering you a complimentary one-on-one consultation with one of our hearing specialists at absolutely no cost to you. This personalized service is normally valued at $100.\nOur hearing specialists can assist with product setup, comfort, sound quality, troubleshooting, and any hearing-related questions you may have.\nTo schedule your free consultation, please have your order number, email address, and contact information ready. We are now connecting you with an agent to assist you with booking an appointment. Thank you",
+          "body": "Key 2 (Audiologist Consultation)",
           "row": 14,
           "col": 64,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "2",
+              "label": "Audiologist Consultation"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r14c65",
           "type": "option",
           "title": "Key 3 (Subscription Cancellation)",
-          "body": "Key 3 (Subscription Cancellation)\n\nThank you for calling Oricle Hearing!",
+          "body": "Key 3 (Subscription Cancellation)",
           "row": 14,
           "col": 65,
           "colSpan": 1,
-          "options": []
+          "options": [
+            {
+              "key": "3",
+              "label": "Subscription Cancellation"
+            }
+          ]
         },
         {
           "id": "oricle-hearing-aid_r14c66",
@@ -539,7 +559,7 @@
           "id": "oricle-hearing-aid_r15c35",
           "type": "greeting",
           "title": "KEY 1 (INQUIRY)",
-          "body": "KEY 1 (INQUIRY)\n\nThank you for Calling Oricle Hearing\n\nThank you for Calling Oricle Hearing\n\nTo learn if our hearing aid works for your type of hearing loss, Press 1.\n\nTo learn about what’s included in the package, Press 2.\n\nTo learn about Bluetooth connectivity, Press 3.\n\nFor shipping and store location, Press 4.\n\nFor other brand or product questions, press 5",
+          "body": "KEY 1 (INQUIRY)\n\nThank you for Calling Oricle Hearing\n\nTo learn if our hearing aid works for your type of hearing loss, Press 1.\n\nTo learn about what’s included in the package, Press 2.\n\nTo learn about Bluetooth connectivity, Press 3.\n\nFor shipping and store location, Press 4.\n\nFor other brand or product questions, press 5",
           "row": 15,
           "col": 35,
           "colSpan": 28,
@@ -803,9 +823,9 @@
         },
         {
           "id": "oricle-hearing-aid_r18c65",
-          "type": "endpoint",
+          "type": "greeting",
           "title": "Audio Message",
-          "body": "Audio Message\n\nIf you would like to speak with an agent, please press 1.\nIf you would like to repeat this message, please press 2.\n\nThank you for calling Oricle Hearing!\n\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.  \n\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\n\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\n\nThank you for your understanding.",
+          "body": "Audio Message\n\nIf you would like to speak with an agent, please press 1.\nIf you would like to repeat this message, please press 2.\n\nThank you for calling Oricle Hearing!",
           "row": 18,
           "col": 65,
           "colSpan": 1,

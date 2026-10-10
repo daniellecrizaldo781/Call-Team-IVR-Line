@@ -56,7 +56,8 @@ function tokenize(rawText) {
     const firstLine = lines[0].trim().toUpperCase();
 
     // If this block is just a KEY header (key 1, key 2, etc. with no body)
-    const isKeyHeader = /^KEY\s+\d+(\s+\(.*\))?$/.test(firstLine);
+    // Note: "KEY 1 (INQUIRY)" is NOT merged — its body is a separate card
+    const isKeyHeader = /^KEY\s+\d+$/.test(firstLine);
     const hasOnlyTitle = lines.length === 1;
 
     if (isKeyHeader && hasOnlyTitle && i + 1 < rawBlocks.length) {
@@ -150,6 +151,16 @@ const SALES_QUEUE = "OHA SALES\nAGENTS QUEUE\n\n80S Ringing Time\n\nSorry, there
 function resolveCardBody(idx, r, c, title, cardText) {
   const t = title.toLowerCase().trim();
   const ct = (cardText || "").toLowerCase();
+
+  // ── Body continuation cards (greeting/body text, not headers) ──
+  // These are cells that contain only body text (e.g. "Thank you for calling...")
+  // and are merged with their parent header card by buildNodes. They should
+  // not override the existing body or pull from Canva.
+  if (t.startsWith("thank you for calling") || t.startsWith("thank you for your") ||
+      t.startsWith("to learn if our hearing") || t.startsWith("to learn about") ||
+      t.startsWith("to repeat") || t.startsWith("for shipping") ||
+      t.startsWith("at oricle hearing") || t.startsWith("our hearing aid") ||
+      t.startsWith("to repeat this message")) return null;
 
   // ── System messages (use templates, not Canva) ──
   if (t === "audio message" || t === "audio message (1)" || t === "audio message (2)") return AUDIO_MSG;
@@ -307,7 +318,14 @@ export function parseCanvaText(rawText) {
     const lines = fullText.split("\n").filter(l => l.trim().length > 0);
     const firstLine = lines[0].trim();
     const hasBody = lines.length > 1;
-    const existingBody = hasBody ? lines.slice(1).join("\n\n").trim() : null;
+    let existingBody = hasBody ? lines.slice(1).join("\n\n").trim() : null;
+
+    // Filter out wrong "subscription cancellation" body text that the sheet
+    // parser misattributed to KEY 1 / Audio Message / WAITING cards.
+    // The correct body for these positions is the "tinutitis" message.
+    if (existingBody && existingBody.includes("For subscription cancellation")) {
+      existingBody = null;
+    }
 
     // Resolve new body text from Canva
     const newBody = resolveCardBody(idx, r, c, title, fullText);
