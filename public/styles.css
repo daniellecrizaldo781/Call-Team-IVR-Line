@@ -154,8 +154,8 @@ h1{margin:0 0 4px;font-size:26px;color:var(--rose-dk);letter-spacing:.2px}
 .flow-canvas.no-select,.flow-canvas.no-select *{
   -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
 }
-.flow-canvas.dragging{cursor:grabbing}
-.flow-inner{position:relative;transform-origin:0 0}
+.flow-canvas.dragging{cursor:grabbing;overflow:hidden}
+.flow-inner{position:relative;transform-origin:0 0;will-change:transform}
 .flow-hint{color:var(--muted);font-size:12px;text-align:center;padding:8px;background:#fff}
 
 /* nodes */
