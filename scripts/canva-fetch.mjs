@@ -175,7 +175,9 @@ function resolveCardBody(idx, r, c, title, cardText) {
   if (t.toLowerCase().includes("oha sales")) return SALES_QUEUE;
 
   // ── Business Hours ──
-  if (t === "business hours") return "Monday - Sunday\n\n5AM - 9PM PST";
+  // Do NOT resolve body here — the body card below (r4c12 "Monday - Sunday")
+  // provides the business hours text after buildNodes merges the two cards.
+  if (t === "business hours") return null;
 
   // ── Call Comes In (no body) ──
   if (t === "call comes in") return null;
