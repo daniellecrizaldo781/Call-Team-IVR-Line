@@ -261,6 +261,10 @@ function initFlowControls() {
     panDX = inner ? +(inner.dataset.panX || 0) : 0;
     panDY = inner ? +(inner.dataset.panY || 0) : 0;
   });
+  // Prevent text selection during drag (covers edge cases e.preventDefault misses)
+  document.addEventListener("selectstart", (e) => {
+    if (dragging) e.preventDefault();
+  }, true);
   canvas.addEventListener("mousemove", (e) => {
     if (!dragging) return;
     const dx = e.clientX - startX, dy = e.clientY - startY;
