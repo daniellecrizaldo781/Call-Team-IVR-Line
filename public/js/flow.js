@@ -227,8 +227,8 @@ function fitView(w, h) {
 function applyTransform() {
   const inner = document.querySelector(".flow-inner");
   if (!inner) return;
-  const px = inner.dataset.panX || "0" | 0;
-  const py = inner.dataset.panY || "0" | 0;
+  const px = +(inner.dataset.panX || 0);
+  const py = +(inner.dataset.panY || 0);
   inner.style.transform = `translate(${px}px, ${py}px) scale(${scale})`;
   inner.style.transformOrigin = "0 0";
 }
@@ -249,8 +249,8 @@ function initFlowControls() {
     canvas.classList.add("dragging");
     startX = e.clientX; startY = e.clientY;
     const inner = canvas.querySelector(".flow-inner");
-    panDX = inner ? inner.dataset.panX || "0" | 0 : 0;
-    panDY = inner ? inner.dataset.panY || "0" | 0 : 0;
+    panDX = inner ? +(inner.dataset.panX || 0) : 0;
+    panDY = inner ? +(inner.dataset.panY || 0) : 0;
   });
   canvas.addEventListener("mousemove", (e) => {
     if (!dragging) return;
@@ -274,7 +274,7 @@ function initFlowControls() {
     if (e.touches.length !== 1) return;
     const inner = canvas.querySelector(".flow-inner");
     t0 = { x: e.touches[0].clientX, y: e.touches[0].clientY };
-    t0pan = { x: inner ? (inner.dataset.panX || "0" | 0) : 0, y: inner ? (inner.dataset.panY || "0" | 0) : 0 };
+    t0pan = { x: inner ? +(inner.dataset.panX || 0) : 0, y: inner ? +(inner.dataset.panY || 0) : 0 };
   }, { passive: true });
   canvas.addEventListener("touchmove", (e) => {
     if (!t0 || e.touches.length !== 1) return;
@@ -282,6 +282,35 @@ function initFlowControls() {
     panDrag(t0pan.x + dx, t0pan.y + dy);
   }, { passive: true });
   canvas.addEventListener("touchend", () => { t0 = null; });
+
+  // Keyboard arrow-key panning (easy drag up/down/left/right without scroll)
+  const PAN_STEP = 60;
+  function panBy(dx, dy) {
+    const inner = canvas.querySelector(".flow-inner");
+    if (!inner) return;
+    const curX = +(inner.dataset.panX || 0);
+    const curY = +(inner.dataset.panY || 0);
+    inner.dataset.panX = curX + dx;
+    inner.dataset.panY = curY + dy;
+    applyTransform();
+  }
+  document.addEventListener("keydown", (e) => {
+    if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
+    if (e.target.closest("button, a")) return;
+    switch (e.key) {
+      case "ArrowUp":    e.preventDefault(); panBy(0, PAN_STEP);  break;
+      case "ArrowDown":  e.preventDefault(); panBy(0, -PAN_STEP); break;
+      case "ArrowLeft":  e.preventDefault(); panBy(PAN_STEP, 0);  break;
+      case "ArrowRight": e.preventDefault(); panBy(-PAN_STEP, 0); break;
+      case " ":        // space = reset pan
+        if (e.target.closest("#flowCanvas")) {
+          e.preventDefault();
+          const inner = canvas.querySelector(".flow-inner");
+          if (inner) { inner.dataset.panX = 0; inner.dataset.panY = 0; applyTransform(); }
+        }
+        break;
+    }
+  });
 }
 
 function toggleFullscreen() {

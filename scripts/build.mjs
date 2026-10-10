@@ -3,8 +3,7 @@
 // Run in GitHub Actions every 15 min. No credentials needed (link-shared sheet).
 import fs from "fs";
 import path from "path";
-import XLSX from "xlsx";
-import { fetchBucket, collectCells, buildNodes } from "./fetch.mjs";
+import { fetchTabData, buildNodes } from "./fetch.mjs";
 
 const OUT = process.env.OUTPUT_FILE || path.resolve("public/data.json");
 const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "tab";
@@ -91,9 +90,8 @@ function buildTabModel(name, cards, arrows) {
   };
 }
 
-export function buildModel(buf) {
-  const wb = XLSX.read(buf, { type: "buffer" });
-  const tabs = collectCells(wb);
+export async function buildModel() {
+  const tabs = await fetchTabData();
   const brands = Object.entries(tabs)
     .filter(([, t]) => t.cards.length > 0)
     .map(([name, t]) => buildTabModel(name, t.cards, t.arrows));
@@ -103,8 +101,7 @@ export function buildModel(buf) {
 
 export async function build() {
   console.log("Fetching Google Sheet…");
-  const buf = await fetchBucket();
-  const brands = buildModel(buf);
+  const brands = await buildModel();
   const data = {
     generatedAt: new Date().toISOString(),
     sourceSheet: process.env.GOOGLE_SHEETS_ID || "",
