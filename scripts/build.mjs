@@ -1,6 +1,13 @@
 // scripts/build.mjs
-// Entry: fetch sheet -> parse -> emit public/data.json (graph data model).
-// Run in GitHub Actions every 15 min. No credentials needed (link-shared sheet).
+// Entry: fetch source -> parse -> emit public/data.json (graph data model).
+//
+// Data source:
+//   - If CANVA_DESIGN_DATA env var is set, use Canva design text (parsed
+//     via canva-fetch.mjs into the same card/arrow structure).
+//   - Otherwise, fetch the Google Sheet via HTML export (fallback).
+//
+// Run in GitHub Actions every 15 min. No credentials needed (link-shared
+// sheet or repo secret for Canva data).
 import fs from "fs";
 import path from "path";
 import { fetchTabData, buildNodes } from "./fetch.mjs";
@@ -9,7 +16,7 @@ const OUT = process.env.OUTPUT_FILE || path.resolve("public/data.json");
 const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "tab";
 
 // ── type inference ───────────────────────────────────────────────────────────
-function inferType(node) {
+export function inferType(node) {
   const t = node.text || "";
   const head = (node.texts?.[0] || "").trim();
   if (/(no or wrong input|no\/wrong|invalid|unrecognized|timeout|default)/i.test(head)) return "fallback";
@@ -27,7 +34,7 @@ function inferType(node) {
 }
 
 // ── options: "Press N ..." / "KEY N (label)" ────────────────────────────────
-function extractOptions(node) {
+export function extractOptions(node) {
   const opts = [];
   const seen = new Set();
   // In the sheet, descriptions come BEFORE the press number:
@@ -48,7 +55,7 @@ function extractOptions(node) {
 }
 
 // ── build edges (parent,child) from arrow geometry ──────────────────────────
-function buildEdges(nodes, arrows) {
+export function buildEdges(nodes, arrows) {
   const colCenter = n => (n.col0 + n.col1) / 2;
   const contains = (n, c) => c >= n.col0 && c <= n.col1;
   const overlaps = (a, b) => a.col0 <= b.col1 && b.col0 <= a.col1;
@@ -113,6 +120,17 @@ function buildTabModel(name, cards, arrows) {
 }
 
 export async function buildModel() {
+  // Check if Canva data is available (from repo secret)
+  if (process.env.CANVA_DESIGN_DATA) {
+    console.log("Using Canva design data as source…");
+    const { parseCanvaText } = await import("./canva-fetch.mjs");
+    const { cards, arrows, merges } = parseCanvaText(process.env.CANVA_DESIGN_DATA);
+    if (cards.length === 0) throw new Error("Canva parser produced no cards");
+    return [buildTabModel("Oricle Hearing Aid", cards, arrows)];
+  }
+
+  // Default: fetch Google Sheet
+  console.log("Fetching Google Sheet…");
   const tabs = await fetchTabData();
   const brands = Object.entries(tabs)
     .filter(([, t]) => t.cards.length > 0)
@@ -122,11 +140,10 @@ export async function buildModel() {
 }
 
 export async function build() {
-  console.log("Fetching Google Sheet…");
   const brands = await buildModel();
   const data = {
     generatedAt: new Date().toISOString(),
-    sourceSheet: process.env.GOOGLE_SHEETS_ID || "",
+    sourceSheet: process.env.CANVA_DESIGN_DATA ? "Canva design (CANVA_DESIGN_DATA secret)" : (process.env.GOOGLE_SHEETS_ID || ""),
     brandCount: brands.length,
     brands: brands.map(b => ({ brand: b.brand, slug: b.slug, nodeCount: b.nodeCount, edgeCount: b.edgeCount })),
     full: brands,
