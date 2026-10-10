@@ -147,9 +147,10 @@ function renderFlow(brand) {
     const icon = TYPE_ICON[n.type] || "•";
         const opts = (n.options && n.options.length)
           ? `<div class="nd-opt">${n.options.map(o => `<span class="opt-chip">${escapeHtml(o.key)} · ${escapeHtml(o.label)}</span>`).join("")}</div>` : "";
-        // if the body is just the title (a bare key label like "KEY 1"), show no subtext
+        // if the body is just the title (a bare key label like "KEY 1" or "Key 4 (Sales)"),
+        // show no body subtext — the white chip area is removed
         const bodyText = (n.body || "").trim();
-        const isBareLabel = bodyText === n.title.trim() || /^KEY\s*\d+$/i.test(bodyText) || /^NO OR WRONG INPUT$/i.test(bodyText);
+        const isBareLabel = !bodyText || bodyText === n.title.trim() || /^KEY\s*\d+$/i.test(bodyText) || /^NO OR WRONG INPUT$/i.test(bodyText);
         let bodyHtml = "";
         if (!isBareLabel) {
           let body = escapeHtml(bodyText);
