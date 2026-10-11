@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T11:58:10.302Z",
+  "generatedAt": "2026-10-11T04:56:41.000Z",
   "sourceSheet": "Canva design (CANVA_DESIGN_DATA secret)",
   "brandCount": 1,
   "brands": [
@@ -92,78 +92,53 @@
         },
         {
           "id": "oricle-hearing-aid_r9c29",
-          "type": "option",
+          "type": "endpoint",
           "title": "Key 2 (Audiologist Consultation)",
-          "body": "Key 2 (Audiologist Consultation)",
+          "body": "Key 2 (Audiologist Consultation)\n\nAt Oricle Hearing, we're committed to helping you get the most out of your hearing aids. That's why we're offering you a complimentary one-on-one consultation with one of our hearing specialists at absolutely no cost to you. This personalized service is normally valued at $100.\nOur hearing specialists can assist with product setup, comfort, sound quality, troubleshooting, and any hearing-related questions you may have.\nTo schedule your free consultation, please have your order number, email address, and contact information ready. We are now connecting you with an agent to assist you with booking an appointment. Thank you",
           "row": 9,
           "col": 29,
           "colSpan": 1,
-          "options": [
-            {
-              "key": "2",
-              "label": "Audiologist Consultation"
-            }
-          ]
+          "options": []
         },
         {
           "id": "oricle-hearing-aid_r9c30",
           "type": "option",
           "title": "Key 3 (Subscription Cancellation)",
-          "body": "Key 3 (Subscription Cancellation)",
+          "body": "Key 3 (Subscription Cancellation)\n\nThank you for calling Oricle Hearing!",
           "row": 9,
           "col": 30,
           "colSpan": 1,
-          "options": [
-            {
-              "key": "3",
-              "label": "Subscription Cancellation"
-            }
-          ]
+          "options": []
         },
         {
           "id": "oricle-hearing-aid_r9c31",
-          "type": "option",
+          "type": "info",
           "title": "Key 4 (Sales)",
-          "body": "Key 4 (Sales)",
+          "body": "Key 4 (Sales)\n\nWAITING\nEXPERIENCE\nOHA SALES AGENTS QUEUE\n80S RINGING TIME\nSorry, there are currently no agents available at the moment.\nPlease stay on the line as you wait for an agent to be available.\nThank you for your patience.\nOHA SALES AGENTS QUEUE\n30S RINGING TIME\nWAITING\nEXPERIENCE\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is\nsupport @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 9,
           "col": 31,
           "colSpan": 1,
-          "options": [
-            {
-              "key": "4",
-              "label": "Sales"
-            }
-          ]
+          "options": []
         },
         {
           "id": "oricle-hearing-aid_r9c32",
-          "type": "option",
+          "type": "transfer",
           "title": "Key 5 (Return)",
-          "body": "Key 5 (Return)",
+          "body": "Key 5 (Return)\n\nWAITING\nEXPERIENCE\nOHA SALES AGENTS QUEUE\n120S RINGING TIME\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is\nsupport @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 9,
           "col": 32,
           "colSpan": 1,
-          "options": [
-            {
-              "key": "5",
-              "label": "Return"
-            }
-          ]
+          "options": []
         },
         {
           "id": "oricle-hearing-aid_r9c33",
-          "type": "option",
+          "type": "transfer",
           "title": "Key 6(Other Concerns)",
-          "body": "Key 6(Other Concerns)",
+          "body": "Key 6(Other Concerns)\n\nWAITING\nEXPERIENCE\nOHA SALES AGENTS QUEUE\n120S RINGING TIME\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is\nsupport @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 9,
           "col": 33,
           "colSpan": 1,
-          "options": [
-            {
-              "key": "6",
-              "label": "Other Concerns"
-            }
-          ]
+          "options": []
         },
         {
           "id": "oricle-hearing-aid_r9c35",
@@ -435,78 +410,53 @@
         },
         {
           "id": "oricle-hearing-aid_r14c64",
-          "type": "option",
+          "type": "endpoint",
           "title": "Key 2 (Audiologist Consultation)",
-          "body": "Key 2 (Audiologist Consultation)",
+          "body": "Key 2 (Audiologist Consultation)\n\nAt Oricle Hearing, we're committed to helping you get the most out of your hearing aids. That's why we're offering you a complimentary one-on-one consultation with one of our hearing specialists at absolutely no cost to you. This personalized service is normally valued at $100.\nOur hearing specialists can assist with product setup, comfort, sound quality, troubleshooting, and any hearing-related questions you may have.\nTo schedule your free consultation, please have your order number, email address, and contact information ready. We are now connecting you with an agent to assist you with booking an appointment. Thank you",
           "row": 14,
           "col": 64,
           "colSpan": 1,
-          "options": [
-            {
-              "key": "2",
-              "label": "Audiologist Consultation"
-            }
-          ]
+          "options": []
         },
         {
           "id": "oricle-hearing-aid_r14c65",
           "type": "option",
           "title": "Key 3 (Subscription Cancellation)",
-          "body": "Key 3 (Subscription Cancellation)",
+          "body": "Key 3 (Subscription Cancellation)\n\nThank you for calling Oricle Hearing!",
           "row": 14,
           "col": 65,
           "colSpan": 1,
-          "options": [
-            {
-              "key": "3",
-              "label": "Subscription Cancellation"
-            }
-          ]
+          "options": []
         },
         {
           "id": "oricle-hearing-aid_r14c66",
-          "type": "option",
+          "type": "info",
           "title": "Key 4 (Sales)",
-          "body": "Key 4 (Sales)",
+          "body": "Key 4 (Sales)\n\nWAITING\nEXPERIENCE\nOHA SALES AGENTS QUEUE\n80S RINGING TIME\nSorry, there are currently no agents available at the moment.\nPlease stay on the line as you wait for an agent to be available.\nThank you for your patience.\nOHA SALES AGENTS QUEUE\n30S RINGING TIME\nWAITING\nEXPERIENCE\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is\nsupport @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 14,
           "col": 66,
           "colSpan": 1,
-          "options": [
-            {
-              "key": "4",
-              "label": "Sales"
-            }
-          ]
+          "options": []
         },
         {
           "id": "oricle-hearing-aid_r14c67",
-          "type": "option",
+          "type": "transfer",
           "title": "Key 5 (Return)",
-          "body": "Key 5 (Return)",
+          "body": "Key 5 (Return)\n\nWAITING\nEXPERIENCE\nOHA SALES AGENTS QUEUE\n120S RINGING TIME\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is\nsupport @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 14,
           "col": 67,
           "colSpan": 1,
-          "options": [
-            {
-              "key": "5",
-              "label": "Return"
-            }
-          ]
+          "options": []
         },
         {
           "id": "oricle-hearing-aid_r14c68",
-          "type": "option",
+          "type": "transfer",
           "title": "Key 6(Other Concerns)",
-          "body": "Key 6(Other Concerns)",
+          "body": "Key 6(Other Concerns)\n\nWAITING\nEXPERIENCE\nOHA SALES AGENTS QUEUE\n120S RINGING TIME\nHello, unfortunately, all agents are busy assisting other customers. Please email support@oriclehearing.com to resolve your issue most promptly, that is\nsupport @ o r i c l e h e a r i n g dot com. Thank you!",
           "row": 14,
           "col": 68,
           "colSpan": 1,
-          "options": [
-            {
-              "key": "6",
-              "label": "Other Concerns"
-            }
-          ]
+          "options": []
         },
         {
           "id": "oricle-hearing-aid_r15c31",

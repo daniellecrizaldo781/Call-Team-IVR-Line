@@ -56,8 +56,9 @@ function tokenize(rawText) {
     const firstLine = lines[0].trim().toUpperCase();
 
     // If this block is just a KEY header (key 1, key 2, etc. with no body)
-    // Note: "KEY 1 (INQUIRY)" is NOT merged — its body is a separate card
-    const isKeyHeader = /^KEY\s+\d+$/.test(firstLine);
+    // KEY 1 (INQUIRY) is NOT merged — its body is a separate card
+    // KEY 2-7 (descriptions) ARE merged with their body block
+    const isKeyHeader = /^KEY\s+\d+(\s|\(|$)/.test(firstLine) && !/INQUIRY/.test(firstLine);
     const hasOnlyTitle = lines.length === 1;
 
     if (isKeyHeader && hasOnlyTitle && i + 1 < rawBlocks.length) {
@@ -66,16 +67,20 @@ function tokenize(rawText) {
       const nextFirst = nextLines[0].trim().toUpperCase();
 
       // Check if next block is a body text (not another header/system block)
+      // KEY 2-7 (descriptions) can have bodies starting with "WAITING EXPERIENCE"
+      // — only skip if next block is a standalone header (title-only)
       const isBody = !/^KEY\s+\d+/.test(nextFirst)
         && !nextFirst.startsWith("AUDIO MESSAGE")
         && !nextFirst.startsWith("NO INPUT")
-        && !nextFirst.startsWith("WAITING")
         && !nextFirst.startsWith("OHA ")
         && !nextFirst.startsWith("BUSINESS HOURS")
         && !nextFirst.startsWith("STANDARD IVR")
         && !nextFirst.startsWith("IVR LINE")
+        && !nextFirst.startsWith("ORICLE HEARING")
+        && !nextFirst.startsWith("CALL COMES IN")
+        && !(nextFirst.startsWith("WAITING") && nextLines.length <= 2) // standalone WAITING EXPERIENCE header
         && !/^["'].*press.*$/.test(nextFirst.toLowerCase()) // Options like 'Press 1 for...'
-        && !/^[\d\s,.]+press/.test(nextFirst.toLowerCase()); // Options like 'Press 1 for...'
+        && !/^\d\s*[\t,]?\s*press/i.test(nextFirst.toLowerCase());
 
       if (isBody) {
         merged.push(`${block}\n\n${nextBlock}`);
@@ -148,7 +153,7 @@ const SALES_QUEUE = "OHA SALES\nAGENTS QUEUE\n\n80S Ringing Time\n\nSorry, there
  * specific position.  Returns the body text string, or null if the card
  * is a title-only card (no body).
  */
-function resolveCardBody(idx, r, c, title, cardText) {
+function resolveCardBody(idx, blocks, r, c, title, cardText) {
   const t = title.toLowerCase().trim();
   const ct = (cardText || "").toLowerCase();
 
@@ -192,23 +197,27 @@ function resolveCardBody(idx, r, c, title, cardText) {
   }
 
   // ── KEY nodes under STANDARD IVR (top-level keys) ──
+  // Canva text uses full titles like "KEY 2 (AUDIOLOGIST CONSULTATION)".
+  // Use title + body needle to disambiguate between multiple KEY blocks.
   if (t.includes("key 2") && t.includes("audiologist")) {
-    return findBlock(idx, "KEY 2 (Audiologist Consultation)", "At Oricle Hearing")?.body || null;
+    return findBlock(idx, "KEY 2 (AUDIOLOGIST CONSULTATION)", "At Oricle Hearing")?.body || null;
   }
   if (t.includes("key 3") && t.includes("subscription")) {
-    return findBlock(idx, "KEY 3 (Subscription Cancellation)", "cancellation")?.body || null;
+    return findBlock(idx, "KEY 3 (SUBSCRIPTION CANCELLATION)", "cancellation")?.body || null;
   }
+  // KEY 4-6 bodies span multiple Canva blocks (Waiting Experience, OHA Queues, etc.)
+  // Collect all blocks after the KEY header until the next KEY/system header.
   if (t.includes("key 4") && t.includes("sales")) {
-    return findBlock(idx, "KEY 4 (Sales)", "OHA Sales")?.body || null;
+    return collectMultiBlockBody(idx, blocks, "KEY 4 (SALES)");
   }
   if (t.includes("key 5") && t.includes("return")) {
-    return findBlock(idx, "KEY 5 (Return)", "Waiting Experience")?.body || null;
+    return collectMultiBlockBody(idx, blocks, "KEY 5 (RETURN)");
   }
   if (t.includes("key 6") && t.includes("other")) {
-    return findBlock(idx, "KEY 6 (Other Concerns)", "Waiting Experience")?.body || null;
+    return collectMultiBlockBody(idx, blocks, "KEY 6 (OTHER CONCERNS)");
   }
   if (t.includes("key 7") && t.includes("repeat")) {
-    return findBlock(idx, "KEY 7 (Repeat Entire IVR)")?.body || null;
+    return findBlock(idx, "KEY 7 (REPEAT ENTIRE IVR)")?.body || null;
   }
 
   // ── KEY 1 (INQUIRY) ──
@@ -286,7 +295,44 @@ function resolveCardBody(idx, r, c, title, cardText) {
   return null;
 }
 
-// ─── Export ───────────────────────────────────────────────────────────────────
+// ── Helpers ────────────────────────────────────────────────────────────────────
+
+/** Collect body text from multiple Canva blocks following a KEY header.
+ * Some KEY nodes (KEY 4, 5, 6) have bodies that span multiple blocks
+ * because the body starts with "WAITING EXPERIENCE" which tokenize()
+ * treats as a standalone header. This collects all blocks after the
+ * KEY header title block until the next KEY/system header. */
+function collectMultiBlockBody(idx, blocks, title) {
+  const key = title.toLowerCase();
+  const candidates = idx.get(key) || [];
+  // Find the block that is just the title (no body)
+  const headerBlock = candidates.find(b => !b.body || b.body === b.full);
+  if (!headerBlock) return null;
+  const startIdx = blocks.indexOf(headerBlock.full);
+  if (startIdx < 0) return null;
+
+  const collected = [];
+  for (let i = startIdx + 1; i < blocks.length; i++) {
+    const blk = blocks[i];
+    const { title: blkTitle, full } = splitBlock(blk);
+    const firstUpper = blkTitle.toUpperCase();
+    // Stop at next KEY header or system message block
+    if (/^KEY\s+\d+/i.test(firstUpper) ||
+        firstUpper.startsWith("AUDIO MESSAGE") ||
+        firstUpper.startsWith("NO INPUT") ||
+        firstUpper === "STANDARD IVR" ||
+        firstUpper === "IVR LINE" ||
+        firstUpper === "BUSINESS HOURS" ||
+        firstUpper === "CALL COMES IN" ||
+        firstUpper === "ORICLE HEARING AID IVR") {
+      break;
+    }
+    collected.push(full);
+  }
+  return collected.length > 0 ? collected.join("\n") : null;
+}
+
+
 
 /**
  * Parse the Canva design text and return { cards, arrows, grid, maxCols, merges }.
@@ -335,7 +381,7 @@ export function parseCanvaText(rawText) {
     }
 
     // Resolve new body text from Canva
-    const newBody = resolveCardBody(idx, r, c, title, fullText);
+    const newBody = resolveCardBody(idx, blocks, r, c, title, fullText);
 
     // Use Canva body if available, otherwise keep existing
     const bodyText = newBody || existingBody || null;
