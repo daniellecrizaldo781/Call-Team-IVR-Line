@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T05:09:55.900Z",
+  "generatedAt": "2026-10-11T06:23:34.454Z",
   "sourceSheet": "Canva design (CANVA_DESIGN_DATA secret)",
   "brandCount": 1,
   "brands": [
@@ -33,9 +33,9 @@
         },
         {
           "id": "oricle-hearing-aid_r2c12",
-          "type": "message",
+          "type": "endpoint",
           "title": "ORICLE HEARING AID IVR",
-          "body": "ORICLE HEARING AID IVR",
+          "body": "ORICLE HEARING AID IVR\n\nThank you for calling Oricle Hearing Aids.\n\nFor support, email support@oriclehearing.com",
           "row": 2,
           "col": 12,
           "colSpan": 1,

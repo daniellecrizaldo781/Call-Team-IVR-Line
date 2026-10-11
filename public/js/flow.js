@@ -47,19 +47,19 @@ function nodeHeight(n) {
   const isBareLabel = !bodyText || bodyText === (n.title || "").trim() || /^KEY\s*\d+$/i.test(bodyText);
   if (isBareLabel) {
     // Just the header + options (if any)
-    const optsH = n.options && n.options.length ? 30 : 0;
-    return 40 + optsH; // head + options
+    const optsH = n.options && n.options.length ? 40 : 0;
+    return 48 + optsH; // head + options
   }
   const lines = bodyText.split("\n").length;
-  const bodyH = Math.min(400, 40 + lines * 15);
-  const optsH = n.options && n.options.length ? 30 : 0;
-  return 40 + bodyH + optsH; // head + body + options
+  const bodyH = Math.min(600, 50 + lines * 19);
+  const optsH = n.options && n.options.length ? 40 : 0;
+  return 48 + bodyH + optsH; // head + body + options
 }
 
 // ── layout: tidy top-down tree ──────────────────────────────────────────────
 function layoutTree(tree, brand) {
   const { byId, orderedChildren } = tree;
-  const NODE_W = 250, H_GAP = 34, V_GAP = 46, PAD = 30;
+  const NODE_W = 320, H_GAP = 34, V_GAP = 52, PAD = 30;
   const pos = new Map(); // id -> {x, y, w, h}
   const depth = new Map();
 

@@ -14,10 +14,10 @@
   --sh:0 6px 22px rgba(224,69,123,.12);
   --radius:16px;
   --font:'Segoe UI',system-ui,-apple-system,sans-serif;
-  --node-w:248px;
-  --node-gap:26px;
-  --row-h:34px;
-  --col-w:44px;
+  --node-w:320px;
+  --node-gap:34px;
+  --row-h:38px;
+  --col-w:48px;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -25,8 +25,8 @@ body{
   font-family:var(--font);
   background:var(--bg);
   color:var(--ink);
-  font-size:15px;
-  line-height:1.5;
+  font-size:17px;
+  line-height:1.6;
   -webkit-font-smoothing:antialiased;
 }
 
@@ -167,14 +167,14 @@ h1{margin:0 0 4px;font-size:26px;color:var(--rose-dk);letter-spacing:.2px}
 }
 .ivr-node:hover{border-color:var(--rose);box-shadow:0 6px 18px rgba(224,69,123,.15)}
 .ivr-node .nd-head{
-  padding:9px 14px;font-size:12px;font-weight:700;letter-spacing:.4px;
+  padding:10px 16px;font-size:15px;font-weight:700;letter-spacing:.4px;
   color:#fff;display:flex;align-items:center;gap:8px;
   background:linear-gradient(100deg,#B48C9C,#9E7491);
   text-transform:uppercase;
 }
-.ivr-node .nd-icon{font-size:14px;flex:0 0 auto}
+.ivr-node .nd-icon{font-size:16px;flex:0 0 auto}
 .ivr-node .nd-title{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.ivr-node .nd-body{padding:9px 14px;font-size:13px;color:var(--ink);white-space:pre-wrap;max-height:400px;overflow:hidden;position:relative}
+.ivr-node .nd-body{padding:10px 16px;font-size:16px;color:var(--ink);white-space:pre-wrap;max-height:500px;overflow:hidden;position:relative}
 .ivr-node .nd-body .press-highlight{font-weight:700;color:var(--rose)}
 .ivr-node .nd-body.more::after{content:"";position:absolute;left:0;right:0;bottom:0;height:26px;background:linear-gradient(transparent,#fff)}
 .ivr-node.collapsed .nd-children{display:none}
@@ -183,7 +183,7 @@ h1{margin:0 0 4px;font-size:26px;color:var(--rose-dk);letter-spacing:.2px}
 }
 .ivr-node .opt-chip{
   background:var(--blush);color:var(--rose-dk);border-radius:999px;
-  font-size:11.5px;font-weight:700;padding:2px 9px;
+  font-size:13px;font-weight:700;padding:3px 11px;
 }
 .ivr-node .nd-toggle{
   margin-left:auto;background:none;border:none;color:#fff;cursor:pointer;font-size:13px;opacity:.9;padding:0 4px;
