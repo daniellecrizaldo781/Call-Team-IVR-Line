@@ -203,7 +203,7 @@ function resolveCardBody(idx, blocks, r, c, title, cardText) {
     return findBlock(idx, "KEY 2 (AUDIOLOGIST CONSULTATION)", "At Oricle Hearing")?.body || null;
   }
   if (t.includes("key 3") && t.includes("subscription")) {
-    return findBlock(idx, "KEY 3 (SUBSCRIPTION CANCELLATION)", "cancellation")?.body || null;
+    return collectMultiBlockBody(idx, blocks, "KEY 3 (SUBSCRIPTION CANCELLATION)");
   }
   // KEY 4-6 bodies span multiple Canva blocks (Waiting Experience, OHA Queues, etc.)
   // Collect all blocks after the KEY header until the next KEY/system header.
@@ -305,13 +305,18 @@ function resolveCardBody(idx, blocks, r, c, title, cardText) {
 function collectMultiBlockBody(idx, blocks, title) {
   const key = title.toLowerCase();
   const candidates = idx.get(key) || [];
-  // Find the block that is just the title (no body)
-  const headerBlock = candidates.find(b => !b.body || b.body === b.full);
-  if (!headerBlock) return null;
+  if (candidates.length === 0) return null;
+  // The header block (may already be merged with first body block by tokenize)
+  const headerBlock = candidates[0];
   const startIdx = blocks.indexOf(headerBlock.full);
   if (startIdx < 0) return null;
 
   const collected = [];
+  // If header block already has a body (merged by tokenize), include it
+  if (headerBlock.body) {
+    collected.push(headerBlock.body);
+  }
+
   for (let i = startIdx + 1; i < blocks.length; i++) {
     const blk = blocks[i];
     const { title: blkTitle, full } = splitBlock(blk);

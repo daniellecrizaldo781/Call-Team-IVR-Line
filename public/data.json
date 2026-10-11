@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T04:56:41.000Z",
+  "generatedAt": "2026-10-11T05:09:55.900Z",
   "sourceSheet": "Canva design (CANVA_DESIGN_DATA secret)",
   "brandCount": 1,
   "brands": [
@@ -102,9 +102,9 @@
         },
         {
           "id": "oricle-hearing-aid_r9c30",
-          "type": "option",
+          "type": "endpoint",
           "title": "Key 3 (Subscription Cancellation)",
-          "body": "Key 3 (Subscription Cancellation)\n\nThank you for calling Oricle Hearing!",
+          "body": "Key 3 (Subscription Cancellation)\n\nThank you for calling Oricle Hearing!\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\nThank you for your understanding.",
           "row": 9,
           "col": 30,
           "colSpan": 1,
@@ -420,9 +420,9 @@
         },
         {
           "id": "oricle-hearing-aid_r14c65",
-          "type": "option",
+          "type": "endpoint",
           "title": "Key 3 (Subscription Cancellation)",
-          "body": "Key 3 (Subscription Cancellation)\n\nThank you for calling Oricle Hearing!",
+          "body": "Key 3 (Subscription Cancellation)\n\nThank you for calling Oricle Hearing!\nFor subscription cancellation requests, please send us an email to support@oriclehearing.com, that is support @ o r i c l e h e a r i n g dot com.\nAll subscription cancellation requests are handled exclusively by our Email Team to ensure they are properly reviewed and processed.\nPlease include your order information and the email address associated with your account in your request. Our Email Team will assist you as soon as possible.\nThank you for your understanding.",
           "row": 14,
           "col": 65,
           "colSpan": 1,
